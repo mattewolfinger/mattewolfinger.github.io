@@ -90,7 +90,7 @@ ul {
 }
 ul li::before {
     content: "";
-    background-image: url(https://github.com/mattewolfinger/mattewolfinger.github.io/blob/1d9270366a952b1ba2258c9b3397e2b6c1f3d7ad/pitchforklogo.png);
+    background-image: url("file://Users/matthewwolfinger/Desktop/Mini%20Project%201/Template%20Materials/pitchforklogo.png");
     background-size: contain;
     display: inline-block;
     width: 1em;
