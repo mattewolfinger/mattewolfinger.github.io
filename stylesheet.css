@@ -90,7 +90,7 @@ ul {
 }
 ul li::before {
     content: "";
-    background-image: url("../pitchforklogo.png");
+    background-image: url("./pitchforklogo.png");
     background-size: contain;
     display: inline-block;
     width: 1em;
