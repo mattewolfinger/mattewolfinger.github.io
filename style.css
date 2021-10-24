@@ -6,7 +6,7 @@ to mimic a phone */
 	position: absolute;
 	width: 550px;
 	top: 0px;
-	left: 0px;
+	left: 2px;
 	height: 2120px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
@@ -19,7 +19,7 @@ to mimic a phone */
 }
 #Blue_Background {
 	position: absolute;
-	width: 360.5px;
+	width: 550px;
 	height: 2120.5px;
 	left: 0px;
 	top: 0px;
@@ -31,7 +31,7 @@ to mimic a phone */
 .Key-background {
 	position: absolute;
 	overflow: visible;
-	width: 360px;
+	width: 550px;
 	height: 2120px;
 	left: 0.5px;
 	top: 0.5px;
@@ -42,7 +42,7 @@ to mimic a phone */
 .Blue-background-two {
 	overflow: visible;
 	position: absolute;
-	width: 359.501px;
+	width: 550px;
 	height: 143.433px;
 	left: 0px;
 	top: 471.312px;
@@ -54,7 +54,7 @@ to mimic a phone */
 .Blue-background-one {
 	position: absolute;
 	overflow: visible;
-	width: 360px;
+	width: 550px;
 	height: 486px;
 	left: 0px;
 	top: 0px;
@@ -73,7 +73,7 @@ to mimic a phone */
 .Footer-box {
 	position: absolute;
 	overflow: visible;
-	width: 360px;
+	width: 550px;
 	height: 183px;
 	left: 0px;
 	top: 0px;
