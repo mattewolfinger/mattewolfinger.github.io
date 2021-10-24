@@ -1,11 +1,3 @@
-#container {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    margin: auto;
-    border: 4px black solid;
-    overflow-y: scroll;
-}
 #Cop_Track_Officer {
 	position: absolute;
 	width: 360px;
