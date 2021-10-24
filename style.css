@@ -5,6 +5,8 @@ to mimic a phone */
 #Cop_Track_Landing {
 	position: absolute;
 	width: 360px;
+	top: 0px;
+	left: 0px;
 	height: 2120px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
