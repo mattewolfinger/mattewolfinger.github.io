@@ -2,14 +2,6 @@
 
 /* This will constrain the display area
 to mimic a phone */
-#container {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    margin: auto;
-    border: 4px black solid;
-    overflow-y: scroll;
-}
 #Cop_Track_Landing {
 	position: absolute;
 	width: 360px;
