@@ -3,7 +3,7 @@
 /* This will constrain the display area
 to mimic a phone */
 @media (max-width: 550px) { 
-  #container {
+  .container {
     width: 90%;
     margin: 0 auto 0 auto;
     background-color: rgb(255, 255, 255);
@@ -16,7 +16,7 @@ to mimic a phone */
 
 /* Larger than tablet */
 @media (min-width: 551px) {
-  #container {
+  .container {
     width: 70%;
     margin: 0 auto 0 auto;
     background-color: rgb(255, 255, 255);
