@@ -1,0 +1,2314 @@
+#container {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 4px black solid;
+    overflow-y: scroll;
+}
+#Cop_Track_Officer {
+	position: absolute;
+	width: 360px;
+	height: 2370px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Cop Track Officer;
+	--web-view-id: Cop_Track_Officer;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-enable-deep-linking: true;
+}
+#Key-background {
+	fill: rgba(255,255,255,1);
+}
+.Key-background {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 715.486px;
+	left: 0px;
+	top: 11px;
+}
+#Footer {
+	position: absolute;
+	width: 360px;
+	height: 184px;
+	left: 0px;
+	top: 2186px;
+	overflow: visible;
+}
+#Footer-box {
+	fill: rgba(38,38,38,1);
+}
+.Footer-box {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 184px;
+	left: 0px;
+	top: 0px;
+}
+#Footer-text {
+	left: 16px;
+	top: 51.5px;
+	position: absolute;
+	overflow: visible;
+	width: 301px;
+	height: 112px;
+	line-height: 20px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+#Social-Icons {
+	position: absolute;
+	width: 55.464px;
+	height: 15.057px;
+	left: 16px;
+	top: 20.593px;
+	overflow: visible;
+}
+#Facebook-Icon {
+	position: absolute;
+	width: 14.738px;
+	height: 15.057px;
+	left: 40.726px;
+	top: 0px;
+	overflow: visible;
+}
+#back-68 {
+	fill: rgba(255,255,255,1);
+}
+.back-68 {
+	position: absolute;
+	overflow: visible;
+	width: 14.738px;
+	height: 15.057px;
+	left: 0px;
+	top: 0px;
+}
+#Facebook-8 {
+	fill: rgba(38,38,38,1);
+}
+.Facebook-8 {
+	overflow: visible;
+	position: absolute;
+	width: 8.057px;
+	height: 8.377px;
+	left: 3.34px;
+	top: 3.34px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Instagram-Icon {
+	position: absolute;
+	width: 14.738px;
+	height: 15.057px;
+	left: 20.363px;
+	top: 0px;
+	overflow: visible;
+}
+#back-65 {
+	fill: rgba(255,255,255,1);
+}
+.back-65 {
+	position: absolute;
+	overflow: visible;
+	width: 14.738px;
+	height: 15.057px;
+	left: 0px;
+	top: 0px;
+}
+#Path_10 {
+	fill: rgba(38,38,38,1);
+}
+.Path_10 {
+	overflow: visible;
+	position: absolute;
+	width: 8.283px;
+	height: 8.585px;
+	left: 3.236px;
+	top: 3.235px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_11 {
+	fill: rgba(38,38,38,1);
+}
+.Path_11 {
+	overflow: visible;
+	position: absolute;
+	width: 4.238px;
+	height: 4.238px;
+	left: 5.25px;
+	top: 5.41px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Ellipse_3 {
+	fill: rgba(38,38,38,1);
+}
+.Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 0.992px;
+	height: 0.992px;
+	left: 9.075px;
+	top: 4.779px;
+}
+#Twitter-Icon {
+	position: absolute;
+	width: 14.738px;
+	height: 15.057px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#back-57 {
+	fill: rgba(255,255,255,1);
+}
+.back-57 {
+	position: absolute;
+	overflow: visible;
+	width: 14.738px;
+	height: 15.057px;
+	left: 0px;
+	top: 0px;
+}
+#Twitter-8 {
+	fill: rgba(38,38,38,1);
+}
+.Twitter-8 {
+	overflow: visible;
+	position: absolute;
+	width: 8.259px;
+	height: 6.707px;
+	left: 3.237px;
+	top: 4.175px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_34 {
+	fill: transparent;
+	stroke: rgba(255,255,255,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_34 {
+	overflow: visible;
+	position: absolute;
+	width: 320.6px;
+	height: 0.6px;
+	left: 20px;
+	top: 163px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Separation-lines {
+	position: absolute;
+	width: 316px;
+	height: 1756px;
+	left: 11px;
+	top: 323px;
+	overflow: visible;
+}
+#Line_11 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_11 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_12 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_12 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 8px;
+	top: 101px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_13 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 201px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_14 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 302px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_15 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_15 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 380px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_16 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_16 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 464px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_17 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_17 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 548px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_18 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_18 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 648px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_19 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_19 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 748px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_20 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_20 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 848px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_21 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_21 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 948px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_22 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_22 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1037px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_23 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_23 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1121px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_24 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_24 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1228px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_25 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_25 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1328px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_26 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_26 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1410px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_27 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_27 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1492px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_28 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_28 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1574px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_29 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_29 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 5px;
+	top: 1672px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_30 {
+	opacity: 0.5;
+	fill: transparent;
+	stroke: rgba(214,214,214,1);
+	stroke-width: 0.6000000238418579px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_30 {
+	overflow: visible;
+	position: absolute;
+	width: 308px;
+	height: 0.6px;
+	left: 0px;
+	top: 1756px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#ALLEGATIONS {
+	position: absolute;
+	width: 320.883px;
+	height: 1911.364px;
+	left: 25.143px;
+	top: 245.662px;
+	overflow: visible;
+}
+#Allegation {
+	position: absolute;
+	width: 258.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 0px;
+	overflow: visible;
+}
+#n_1202019 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty_ {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Alcohol_off_Duty {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_bp {
+	position: absolute;
+	width: 319.715px;
+	height: 53.455px;
+	left: 0.168px;
+	top: 480.656px;
+	overflow: visible;
+}
+#n_3102014 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Neglect_of_Duty__Un {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 320.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Exonerated {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_bt {
+	position: absolute;
+	width: 320.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 847.969px;
+	overflow: visible;
+}
+#n_1252011 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__bv {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Neglect_of_Duty__Un_bw {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 321.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_bx {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_by {
+	position: absolute;
+	width: 320.715px;
+	height: 70.083px;
+	left: 0.168px;
+	top: 1222.626px;
+	overflow: visible;
+}
+#n_3122010 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty_Oral_Reprimand {
+	left: 0px;
+	top: 61.083px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Neglect_of_Duty__Un_b {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 321.715px;
+	height: 27.738739013671875px;
+	line-height: 14px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Not_Sustained {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_b {
+	position: absolute;
+	width: 258.715px;
+	height: 53.455px;
+	left: 0.168px;
+	top: 1593.939px;
+	overflow: visible;
+}
+#n_0202005 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Respectful_Treatmen {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Not_Sustained_b {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_ca {
+	position: absolute;
+	width: 258.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 100px;
+	overflow: visible;
+}
+#n_1202019_b {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__b {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Conduct_Unbecoming {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_cb {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cc {
+	position: absolute;
+	width: 258.715px;
+	height: 53.455px;
+	left: 0.168px;
+	top: 564.313px;
+	overflow: visible;
+}
+#n_1312014 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Respectful_Treatmen_ce {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Not_Sustained_cf {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cg {
+	position: absolute;
+	width: 307px;
+	height: 68.799px;
+	left: 0.168px;
+	top: 947.969px;
+	overflow: visible;
+}
+#n_1252011_ch {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__ci {
+	left: 0px;
+	top: 59.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Neglect_of_Duty__Un_cj {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 308px;
+	height: 19px;
+	line-height: 14px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_ck {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cl {
+	position: absolute;
+	width: 315.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 1326.626px;
+	overflow: visible;
+}
+#n_3122010_cm {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__cn {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Neglect_of_Duty__Un_co {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 316.715px;
+	height: 27.738739013671875px;
+	line-height: 14px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_cp {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cq {
+	position: absolute;
+	width: 313.715px;
+	height: 62.455px;
+	left: 0.168px;
+	top: 1677.596px;
+	overflow: visible;
+}
+#n_9112003 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Neglect_of_Duty__Un_cs {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 314.715px;
+	height: 34.111328125px;
+	line-height: 14px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Unfounded {
+	left: 0px;
+	top: 49.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cu {
+	position: absolute;
+	width: 258.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 200px;
+	overflow: visible;
+}
+#n_1202019_cv {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__cw {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Conformance_to_Laws {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_cy {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_cz {
+	position: absolute;
+	width: 258.715px;
+	height: 69.799px;
+	left: 0.168px;
+	top: 647.969px;
+	overflow: visible;
+}
+#n_1252011_c {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__c {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Collection_of_Evide {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_c {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_c {
+	position: absolute;
+	width: 311.715px;
+	height: 61.455px;
+	left: 0.168px;
+	top: 1047.969px;
+	overflow: visible;
+}
+#n_9102010 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Strip_Search__Visua {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 312.715px;
+	height: 29.3662109375px;
+	line-height: 14px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Unfounded_c {
+	left: 0px;
+	top: 48.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_da {
+	position: absolute;
+	width: 258.715px;
+	height: 53.455px;
+	left: 0.168px;
+	top: 1426.626px;
+	overflow: visible;
+}
+#n_2042009 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Use_of_Force {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Exonerated_db {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_dc {
+	position: absolute;
+	width: 258.715px;
+	height: 55.455px;
+	left: 0.168px;
+	top: 1770.252px;
+	overflow: visible;
+}
+#n_9112003_dd {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Use_of_Force_de {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Unfounded_df {
+	left: 0px;
+	top: 42.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_dg {
+	position: absolute;
+	width: 309.715px;
+	height: 69.799px;
+	left: 0px;
+	top: 300px;
+	overflow: visible;
+}
+#n_1202019_dh {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__di {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Neglect_of_Duty__Un_dj {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 310.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_dk {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_dl {
+	position: absolute;
+	width: 309.715px;
+	height: 69.799px;
+	left: 0px;
+	top: 747.969px;
+	overflow: visible;
+}
+#n_1252011_dm {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Penalty__dn {
+	left: 0px;
+	top: 60.799px;
+	position: absolute;
+	overflow: visible;
+	width: 38px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 9px;
+	color: rgba(76,76,76,1);
+	letter-spacing: 0.26px;
+}
+#Allegation_Courts {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 310.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Sustained_dp {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(9,178,75,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_dq {
+	position: absolute;
+	width: 309.715px;
+	height: 53.455px;
+	left: 0px;
+	top: 1138.969px;
+	overflow: visible;
+}
+#n_9102010_dr {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Use_of_Force_ds {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 310.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Unfounded_dt {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_du {
+	position: absolute;
+	width: 309.715px;
+	height: 53.455px;
+	left: 0px;
+	top: 1510.283px;
+	overflow: visible;
+}
+#n_2102008 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Respectful_Treatmen_dw {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 310.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Not_Sustained_dx {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_dy {
+	position: absolute;
+	width: 309.715px;
+	height: 55.455px;
+	left: 0px;
+	top: 1855.909px;
+	overflow: visible;
+}
+#n_2192002 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Use_of_Force_d {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 310.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Withdrawn {
+	left: 0px;
+	top: 42.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegation_d {
+	position: absolute;
+	width: 258.715px;
+	height: 53.455px;
+	left: 0px;
+	top: 397px;
+	overflow: visible;
+}
+#n_1102017 {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	white-space: nowrap;
+	line-height: 13px;
+	margin-top: -2.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 1.36px;
+}
+#Allegation_Respectful_Treatmen_d {
+	left: 0px;
+	top: 19.344px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 23.738622665405273px;
+	line-height: 40.80000305175781px;
+	margin-top: -14.900001525878906px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Not_Sustained_d {
+	left: 0px;
+	top: 40.71px;
+	position: absolute;
+	overflow: visible;
+	width: 259.715px;
+	height: 12.74505615234375px;
+	line-height: 31.200000762939453px;
+	margin-top: -10.600000381469727px;
+	text-align: left;
+	font-family: Helvetica-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.46px;
+}
+#Allegations-head {
+	position: absolute;
+	width: 110px;
+	height: 23.5px;
+	left: 19.81px;
+	top: 199.974px;
+	overflow: visible;
+}
+#Allegations-header {
+	left: 1.5px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(0,0,0,1);
+	letter-spacing: 0.28px;
+}
+#Line_6 {
+	fill: transparent;
+	stroke: rgba(0,0,0,1);
+	stroke-width: 1.2000000476837158px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_6 {
+	overflow: visible;
+	position: absolute;
+	width: 111.2px;
+	height: 1.2px;
+	left: 0px;
+	top: 23.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#cop-info {
+	position: absolute;
+	width: 360px;
+	height: 174px;
+	left: 0px;
+	top: 11px;
+	overflow: visible;
+	z-index: 99 !important;
+}
+#fixed-layer {
+	position: fixed;
+}
+#Cop-profile-background {
+	fill: rgba(48,95,124,1);
+}
+.Cop-profile-background {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 174px;
+	left: 0px;
+	top: 0px;
+	z-index: 98 !important;
+}
+#Officer-name {
+	left: 114.143px;
+	top: 64.5px;
+	position: absolute;
+	overflow: visible;
+	width: 100px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.4px;
+	z-index: 99 !important;
+}
+#Officer-title {
+	left: 114.143px;
+	top: 86px;
+	position: absolute;
+	overflow: visible;
+	width: 77px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(208,208,208,1);
+	letter-spacing: 0.26px;
+	z-index: 99 !important;
+}
+#Allegations-count {
+	left: 114.143px;
+	top: 127.551px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.6px;
+	z-index: 99 !important;
+}
+#Active-status {
+	left: 40.143px;
+	top: 137.551px;
+	position: absolute;
+	overflow: visible;
+	width: 41px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.6px;
+	z-index: 99 !important;
+}
+#Badge-number {
+	left: 135.643px;
+	top: 107.563px;
+	position: absolute;
+	overflow: visible;
+	width: 24px;
+	white-space: nowrap;
+	line-height: 16px;
+	margin-top: -3px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.26px;
+	z-index: 99 !important;
+}
+#badge-icon-cop {
+	fill: rgba(255,255,255,1);
+}
+.badge-icon-cop {
+	overflow: visible;
+	position: absolute;
+	width: 12.387px;
+	height: 13.063px;
+	left: 114.552px;
+	top: 104.5px;
+	transform: matrix(1,0,0,1,0,0);
+	z-index: 99 !important;
+}
+#Cop-icon-circle {
+	fill: rgba(255,255,255,1);
+}
+.Cop-icon-circle {
+	position: absolute;
+	overflow: visible;
+	width: 70px;
+	height: 69px;
+	left: 25.143px;
+	top: 58.5px;
+	z-index: 99 !important;
+}
+#Cop-Hat-Png {
+	position: absolute;
+	width: 48.69px;
+	height: 48.69px;
+	left: 35.797px;
+	top: 68.655px;
+	overflow: visible;
+	z-index: 99 !important;
+}
+#Nav-bar {
+	position: absolute;
+	width: 360px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	z-index: 99 !important;
+}
+#Nav-bar-box {
+	position: absolute;
+	width: 360px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Main-header-box {
+	fill: rgba(48,95,124,1);
+}
+.Main-header-box {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+}
+#badge-white {
+	position: absolute;
+	width: 51.579px;
+	height: 42.322px;
+	left: 1px;
+	top: 8.85px;
+	overflow: visible;
+}
+a:link {
+	color: rgba(255,255,255,0.902);
+	text-decoration: none;
+	background-color: transparent;
+}
+a:visited {
+	color: rgba(255,255,255,0.902);
+	text-decoration: none;
+	background-color: transparent;
+}
+a:hover {
+	color: rgba(255,255,255,0.902);
+	text-decoration: none;
+	background-color: transparent;
+}
+a:active {
+	color: rgba(255,255,255,0.902);
+	text-decoration: none;
+	background-color: transparent;
+}
+#Boston_Cop_Track {
+	left: 45.58px;
+	top: 24px;
+	position: absolute;
+	overflow: visible;
+	width: 140px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.1px;
+}
+#Hamburger {
+	position: absolute;
+	width: 15px;
+	height: 12px;
+	left: 330.5px;
+	top: 24.5px;
+	overflow: visible;
+}
+#Rectangle_31 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_31 {
+	position: absolute;
+	overflow: visible;
+	width: 15px;
+	height: 2px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_32 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_32 {
+	position: absolute;
+	overflow: visible;
+	width: 15px;
+	height: 2px;
+	left: 0px;
+	top: 5px;
+}
+#Rectangle_33 {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_33 {
+	position: absolute;
+	overflow: visible;
+	width: 15px;
+	height: 2px;
+	left: 0px;
+	top: 10px;
+}
