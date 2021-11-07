@@ -251,7 +251,7 @@ details {
 		width: 138%;
 		overflow: hidden;
 		height: auto;
-		margin-top: -10%;
+		margin-top: 1%;
 		margin-left: -14%;
 		margin-bottom: -2%;
 	}
@@ -329,11 +329,11 @@ Aside {
 	}
 @media (max-width: 550px) {
 	p {
-		font-size: 16px;
+		font-size: 14px;
 		padding-top: 0.5%;
 		padding-bottom: 2%;
 		margin-left: -24%;
-		padding-right: 60%;
+		padding-right: 55%;
 		font-family: Helvetica;
 		color: white;
 		line-height: 26px;
