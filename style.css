@@ -294,6 +294,7 @@ Aside {
 	padding-top: -8px;
 	padding-bottom: 10px;
 	line-height: 24px;
+	z-index: 100 !important;
 }
 }
 @media (max-width: 550px) {
