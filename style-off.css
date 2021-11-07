@@ -222,7 +222,7 @@ img {
     width: 80%;
 }
 #complaints-container {
-    padding-right: 4%;
+    padding-right: 2%;
     flex: 1 0 60%;
 }
 @media (max-width: 550px) { 
