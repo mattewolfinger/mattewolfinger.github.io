@@ -244,7 +244,7 @@ details {
 	#Hat-section {
 		display: none;
 	}
-	#Hat-section-mobile img {
+	#Hat-section-mobile {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
