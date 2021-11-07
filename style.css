@@ -251,7 +251,7 @@ details {
 		align-content: center;
 		width: 182%;
 		height: auto;
-		margin-top: -12%;
+		margin-top: -10%;
 		margin-left: 36%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
@@ -288,13 +288,13 @@ details {
 @media (max-width: 550px) { 
 Aside {
 	width: 100%;
-	font-size: 7pt;
+	font-size: 8pt;
 	margin-left: 4px;
 	padding-right: -40%;
 	text-align: left;
 	padding-top: -8px;
 	padding-bottom: 10px;
-	line-height: 14px;
+	line-height: 16px;
 	z-index: 100 !important;
 }
 }
