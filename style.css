@@ -247,6 +247,7 @@ details {
 	#Hat-section-mobile {
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 		align-content: center;
 		width: 180%;
 		height: auto;
