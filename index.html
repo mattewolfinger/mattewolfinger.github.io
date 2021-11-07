@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boston Cop Track - Home</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./your-rights.html">Your Rights</a>
+            <a href="./definitions.html">Definitions</a>
+            <a href="./resources.html">Resources</a>
+            <a href="./history.html">History of the BPD</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="container" id="Header">
+            <div class="item" id="Title">
+                <img src="./cop-track-logo.png">
+            <h1>Run a search.</h1>
+            <p>Look up a Boston Police Department employee to see their misconduct history</p>
+                <div class="item" id="Search-Duo">
+                <input type="text" id="search--value" placeholder="Enter name or badge ID number">
+                <button id="search--button">Search</button>
+                <aside>Boston Cop Track was assembled from multiple decades of reports from the Boston Police Department's Internal Affairs division, and various archival records.</aside>
+                </div>
+            </div>
+            <div class="item" id="Hat-section">
+                <img src="./cop-hat-svg.svg">
+            </div>
+            <div class="item" id="Hat-section-mobile">
+                <img src="./images/hat-mobile-sect.png">
+            </div>
+        </div>
+        <div class="container" id="White-sect">
+            <div class="container" id="About">
+                <h2>About</h2>
+                <img src="./about-sect.png">
+            </div>
+            <div class="container" id="Definitions">
+                <h2>Definitions</h2>
+                <details>
+                    <summary>Neglect of Duty/Unreasonable Judgment</summary>
+                This includes any condcut or omission which is not in accordance with established and ordinary duties or procedures as to such employees or which constitutes use of unreasonable judgment in the exercising of any discretion granted to an employee. [Rule 102 Section 04]
+                </details>
+                <details>
+                    <summary>Respectful Treatment</summary>
+                    Employees shall, on all occasions, be civil and respectful, curteous and considerate toward their supervisors, their subordinates and all other members of the Department and the general public. No employee shall use epithets or terms that tend to denigrate any person(s) due to their race, color, creed, gender identity or sexual orientation except when necessary in police reports or in testimony. [Rule 102 Section 09]
+                </details>
+                <details>
+                    <summary>Use of Force</summary>
+                    Force is defined by the BPD as "the amount of physical effort, however slight, required by police to compel compliance by an unwilling individual." This definition has since become a lot more complex.
+                </details>
+                <details>
+                    <summary>Conduct Unbecoming</summary>
+                    Employees shall condcut themselves at all times, both on and off duty in such a manner as to reflect most favorably on the Department. Condcut unbecoming an employee shall include that which tends to indicate that the employee is unable or unfit to continue as a member of the Department, or tends to impair the operation of the Department or its employees. [Rule 102 Section 03]
+                </details>
+                <details>
+                    <summary>Finding: Sustained</summary>
+                    Sufficient evidence supports the complainant's allegations. The offending officer is subject to disciplinary action.
+                </details>
+                <details>
+                    <summary>Finding: Not Sustained</summary>
+                    Investigation failed to prove or disprove the allegations.
+                </details>
+                <details>
+                    <summary>Finding: Exonerated</summary>
+                    Complained of action did occur - however action was reasonable, proper and legal.
+                </details>
+                <details>
+                    <summary>Finding: Unfounded</summary>
+                    Investiation reveals complained of action did not occur.
+                </details>
+            </div>
+        </div>
+        <div class="container" id="Resources">
+            <ul>Resources
+            <li>Bail Funds</li>
+            <li>Black Lives Matter</li>
+            <li>Lawyers</li>
+            <li>Bpdnews.com</li>
+            <li>Download statistics and infographics</li>
+            </ul>
+        </div>
+        <div class="container" id="YOUR-RIGHTS">
+            <ul>Your Rights
+                <li>An officer has arrested you</li>
+                <li>You're recording an officer</li>
+                <li>An officer pulls you over</li>
+                <li>You've been stopped by an officer</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="Footer">
+        <ul>
+            <li>
+                Download the data
+            </li>
+            <li>
+                Take action
+            </li>
+            <li>
+                File a complaint of your own
+            </li>
+        </ul>
+    </div>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+
+
+        d3.select("#search--button").on("click", function() {
+
+            let badge_id = d3.select("#search--value").property("value");
+
+            let url = `./single-officer.html#${badge_id}`;
+
+            window.location = url;
+
+
+        });
+
+        var size = [window.width,window.height];
+
+        $(window).resize(function() {
+            window.resizeTo(size[0],size[1]);
+        });
+
+    </script>
+    </body>
+</html>
