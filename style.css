@@ -278,10 +278,10 @@ details {
 @media (max-width: 550px) { 
 #Search-Duo {
 	width: 124%;
-	margin-left: -70px;
+	margin-left: -69px;
 	align-content: center;
 	padding-top: 0px;
-	padding-bottom: -3px;
+	padding-bottom: -6px;
 }
 }
 @media (max-width: 550px) { 
