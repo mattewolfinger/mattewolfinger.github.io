@@ -254,7 +254,7 @@ details {
 		margin-top: -16%;
 		margin-left: 36%;
 		margin-bottom: -2%;
-		z-index: 98 !important;
+		z-index: 99 !important;
 	}
 	}
 	@media (min-width: 551px) {
@@ -288,14 +288,14 @@ details {
 @media (max-width: 550px) { 
 Aside {
 	width: 100%;
-	font-size: 8pt;
+	font-size: 9pt;
 	margin-left: 4px;
 	padding-right: -40%;
 	text-align: left;
-	padding-top: -8px;
+	padding-top: -12px;
 	padding-bottom: 10px;
 	line-height: 16px;
-	z-index: 99 !important;
+	z-index: 100 !important;
 }
 }
 @media (max-width: 550px) {
@@ -322,7 +322,7 @@ Aside {
 @media (max-width: 550px) {
 	h1 {
 		font-size: 24px;
-		padding-top: 0.5%;
+		padding-top: -2%;
 		margin-left: -24%;
 		font-family: Helvetica;
 		color: white;
