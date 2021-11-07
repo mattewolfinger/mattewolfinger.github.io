@@ -254,7 +254,7 @@ details {
 		margin-top: -16%;
 		margin-left: 36%;
 		margin-bottom: -2%;
-		z-index: 99 !important;
+		z-index: 98 !important;
 	}
 	}
 	@media (min-width: 551px) {
@@ -295,7 +295,7 @@ Aside {
 	padding-top: -8px;
 	padding-bottom: 10px;
 	line-height: 16px;
-	z-index: 100 !important;
+	z-index: 99 !important;
 }
 }
 @media (max-width: 550px) {
