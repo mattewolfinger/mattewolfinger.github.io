@@ -252,7 +252,7 @@ details {
 		width: 182%;
 		height: auto;
 		margin-top: -7%;
-		margin-left: 35%;
+		margin-left: 40%;
 		margin-bottom: -2%;
 	}
 	}
@@ -278,7 +278,7 @@ details {
 @media (max-width: 550px) { 
 #Search-Duo {
 	width: 124%;
-	margin-left: -88px;
+	margin-left: -80px;
 	align-content: center;
 	padding-top: 0px;
 	padding-bottom: 0px;
