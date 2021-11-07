@@ -288,13 +288,13 @@ details {
 @media (max-width: 550px) { 
 Aside {
 	width: 100%;
-	font-size: 9pt;
+	font-size: 8pt;
 	margin-left: 4px;
 	padding-right: -40%;
 	text-align: left;
 	padding-top: -8px;
 	padding-bottom: 10px;
-	line-height: 24px;
+	line-height: 22px;
 	z-index: 100 !important;
 }
 }
