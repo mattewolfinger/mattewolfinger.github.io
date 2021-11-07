@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boston Cop Track - Your Rights</title>
+        <link rel="stylesheet" href="./style-error.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <div class="container">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./your-rights.html">Your Rights</a>
+            <a href="./definitions.html">Definitions</a>
+            <a href="./resources.html">Resources</a>
+            <a href="./history.html">History of the BPD</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="container" id="Header">
+            <div class="item" id="Title">
+                <img src="./images/cop-track-logo.png" style="margin-top: -10%;">
+            <h1>We're not ready for you yet.</h1>
+            <aside>This prototype is still a work in progress, check back soon for more updates.</aside>
+            </div>
+            <div class="item" id="Hat-section">
+                <img src="./images/warning-sign.svg" style="margin-right: 10%; margin-top: 6%;">
+            </div>
+        </div>
+        <div class="container" id="Footer">
+            <ul>
+                <li>
+                    Download the data
+                </li>
+                <li>
+                    Take action
+                </li>
+                <li>
+                    File a complaint of your own
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+    </script>
+    </body>
+</html>

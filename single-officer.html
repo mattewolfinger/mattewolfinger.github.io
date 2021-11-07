@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Officer Detail </title>
+        <link rel="stylesheet" href="./style-off.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <script src="./lib/jquery-3.6.0.slim.min.js"></script>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./your-rights.html">Your Rights</a>
+            <a href="./definitions.html">Definitions</a>
+            <a href="./resources.html">Resources</a>
+            <a href="./history.html">History of the BPD</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="main--container" class="container">
+
+        <div id="profile">
+            <div id="headshot">
+                <img src="./cop-circle.png">
+            </div>
+            <div id="cop-info">
+                <a href="https://bpdnews.com/complaintform" target="_blank"><input type="image"  id="report-button" src="./images/report-button.png" /></img></a>
+                <h1 id="officer-name"><!-- Sean F Deery --></h1>
+                <h2 id="officer-title"><!-- Police Detective --></h2>
+                <ul>
+                    <li id="badge-id">
+                        <span id="officer-badge"><!-- 6732 --></span>
+                    </li>
+                    <!-- <li>
+                        <b>Organization</b>: <span id="officer-org"> E-18 Detective</span>
+                    </li> -->
+                    <li>
+                        <b><span id="officer-active">ACTIVE</span></b>
+                    </li>
+                    <li id="counts">
+                        <!-- <span id="officer-alleg"><b>21</b></span>  Allegations <span id="officer-sus"><b>9</b></span>  Sustained -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="complaints-container">
+            <img src="allegations-header.png" id="alleg-head">
+            <!-- Allegations info should go here. -->
+        </div>
+    </div>
+    <div class="container" id="Footer">
+        <ul>
+            <li>
+                Download the data
+            </li>
+            <li>
+                Take action
+            </li>
+            <li>
+                File a complaint of your own
+            </li>
+        </ul>
+    </div>
+    <script src="./get-officer-data-csv-sg.js"></script>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+    </script>
+    </body>
+</html>
