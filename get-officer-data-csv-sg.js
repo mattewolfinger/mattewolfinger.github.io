@@ -64,8 +64,14 @@ Promise.all(promises).then(function(data) {
         // Finding
         div.append("h4").html(complaint.finding);
     
-        // Penalty
-        div.append("p").html(`Penalty: ${complaint.penalty}`);
+        // // Penalty
+        // div.append("p").html(`Penalty: ${complaint.penalty}`);
+
+        if(complaint.penalty === "") {
+            div.append("p").html(`Penalty: None`);
+        } else {
+            div.append("p").html(`Penalty: ${complaint.penalty}`);
+        }
     
         // Incident date
         div.append("h5").html(complaint.received_date);
