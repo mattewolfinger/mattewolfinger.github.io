@@ -80,6 +80,11 @@ p {
 	display: flex;
 	padding-right: 54%;
 }
+#search--preview p {
+	font-size: 16px;
+	padding-right: 30%;
+	cursor: pointer;
+}
 #Search-Duo {
 	width: 70%;
 	margin: 10px 0px;
@@ -95,6 +100,9 @@ input {
 	width: 100%;
 	height: 50px;
 	text-indent: 14px;
+}
+u {
+	color: white;
 }
 Button {
 	background-color: rgba(38,38,38,1);
@@ -112,7 +120,9 @@ h1 {
 	display: flex;
 	color: white;
 	font-family: Helvetica;
-	font-size: 30px;
+	font-size: 29px;
+	padding-right: 20%;
+	line-height: 42px;
 }
 #Badge-black {
 	width: 260px;
@@ -321,10 +331,12 @@ Aside {
 }
 @media (max-width: 550px) {
 	h1 {
-		font-size: 24px;
+		font-size: 22px;
+		padding-right: 28%;
 		padding-top: 0.5%;
 		margin-left: -24%;
 		font-family: Helvetica;
+		line-height: 30px;
 		color: white;
 		letter-spacing: 0.4px;
 	}
