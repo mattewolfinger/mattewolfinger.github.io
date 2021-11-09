@@ -75,13 +75,13 @@ h2 {
 }
 p {
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 30px;
 	display: flex;
 	padding-right: 54%;
 }
 #search--preview p {
-	font-size: 12px;
+	font-size: 14px;
 	padding-right: 20%;
 	cursor: pointer;
 }
@@ -121,7 +121,7 @@ h1 {
 	color: white;
 	font-family: Helvetica;
 	font-size: 29px;
-	padding-right: 34%;
+	padding-right: 40%;
 	line-height: 42px;
 }
 #Badge-black {
