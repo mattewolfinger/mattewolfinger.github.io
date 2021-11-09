@@ -22,8 +22,8 @@
         <div class="container" id="Header">
             <div class="item" id="Title">
                 <img src="./cop-track-logo.png">
-            <h1>Run a search.</h1>
-            <p>Look up a Boston Police Department employee to see their misconduct history</p>
+            <h1>Look up a Boston Police Department employee to see their misconduct history.</h1>
+                <div id="search--preview"><p><u>Don't have the details? See a preview here.</u></p></div>
                 <div class="item" id="Search-Duo">
                 <input type="text" id="search--value" placeholder="Enter name or badge ID number">
                 <button id="search--button">Search</button>
@@ -131,6 +131,18 @@
 
 
         });
+        
+        d3.select("#search--preview").on("click", function() {
+
+            let badge_id = "1877";
+
+            let url = `./single-officer.html#${badge_id}`;
+
+            window.location = url;
+
+
+        });
+
 
         var size = [window.width,window.height];
 
