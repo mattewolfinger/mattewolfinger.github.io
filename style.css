@@ -81,8 +81,8 @@ p {
 	padding-right: 54%;
 }
 #search--preview p {
-	font-size: 12px;
-	padding-right: 24%;
+	font-size: 10px;
+	padding-right: 10%;
 	cursor: pointer;
 }
 #Search-Duo {
@@ -121,7 +121,7 @@ h1 {
 	color: white;
 	font-family: Helvetica;
 	font-size: 29px;
-	padding-right: 20%;
+	padding-right: 34%;
 	line-height: 42px;
 }
 #Badge-black {
