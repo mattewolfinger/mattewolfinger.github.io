@@ -357,15 +357,16 @@ Aside {
 		line-height: 26px;
 		letter-spacing: 0.4px;
 	}
-	#search-preview {
-		font-size: 7px;
+	#search-preview p {
+		font-size: 8px;
+		padding-right: 2%;
 	}
 	#error {
 		margin-top: 1px;
 		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -52px;
+		margin-left: -59px;
 	}
 	}
 @media (max-width: 550px) {
