@@ -154,15 +154,15 @@ img {
     #officer-name {
         font-size: 12pt;
         line-height: 20px;
-        padding-bottom: -2px;
     }
     #officer-title {
         font-size: 10pt;
+        padding-top: -10px;
         padding-bottom: 5px;
     }
     #officer-active {
-        margin-left: -91px;
-        margin-top: -3px;
+        margin-left: -86px;
+        margin-top: -2px;
         font-size: 9pt;
     }
     #report-button {
@@ -171,7 +171,7 @@ img {
         float: right;
         margin-top: 6px;
         padding-left: 0%;
-        padding-right: 14%;
+        padding-right: 13%;
     }
     #badge-id{
         margin: 0;
@@ -292,10 +292,10 @@ img {
 #profile {
     flex-wrap: wrap;
     align-content: left;
-    padding-top: -2%;
+    padding-top: -1%;
     border-bottom: 2px solid black;
     padding-left: 10%;
-    padding-bottom: -2%;
+    padding-bottom: -4%;
 }
 }
 @media (min-width: 551px) {
