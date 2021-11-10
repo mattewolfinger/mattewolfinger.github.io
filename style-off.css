@@ -70,8 +70,8 @@ img {
 #headshot img {
 	display: flex;
 	flex-direction: column;
-    margin-left: -20%;
-	width: 100px;
+    margin-left: -40%;
+	width: 140px;
 	height: auto;
 }
 #alleg-head {
@@ -154,8 +154,8 @@ img {
     #headshot img {
         display: flex;
         flex-direction: column;
-        margin-left: -10%;
-        width: 90px;
+        margin-left: -20%;
+        width: 120px;
         height: auto;
     }
     #officer-name {
@@ -169,7 +169,7 @@ img {
     }
     #officer-active {
         margin-left: -90px;
-        margin-top: -1px;
+        margin-top: -3px;
         font-size: 9pt;
     }
     #report-button {
