@@ -359,13 +359,12 @@ Aside {
 	}
 	#search--preview p {
 		font-size: 12px;
-		padding-right: 2%;
 	}
 	#error {
 		font-size: 8px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -67px;
+		margin-left: -66px;
 	}
 	}
 @media (max-width: 550px) {
