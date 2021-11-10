@@ -24,8 +24,9 @@
                 <img src="./cop-track-logo.png">
             <h1>Look up a Boston Police Department employee to see their misconduct history.</h1>
             <div id="search--preview"><p><u>Don't have the details? See a preview here.</u></p></div>
+            <div id="error"></div>
                 <div class="item" id="Search-Duo">
-                <input type="text" id="search--value" placeholder="Enter name or badge ID number">
+                <input type="text" id="search--value" placeholder="Enter badge ID number">
                 <button id="search--button">Search</button>
                 <aside>Boston Cop Track was assembled from multiple decades of reports from the Boston Police Department's Internal Affairs division, and various archival records.</aside>
                 <div class="item" id="Hat-section-mobile">
@@ -121,13 +122,53 @@
         }
 
 
+        d3.csv("./data/2021-11-04_officers.csv").then(function(data) {
+
+            let ids = data.map(function(d) {
+                return d.badge;
+            });
+
+            d3.select("#search--button").on("click", function() {
+
+                let badge_id = d3.select("#search--value").property("value");
+
+                if (badge_id === "") {
+                    d3.select("#error").html("You must enter a badge ID");
+                } else if(ids.indexOf(badge_id) < 0) {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                }
+                else {
+                    let url = `./single-officer.html#${badge_id}`;
+                    window.location = url;
+                }
+
+            });
+
+                d3.select("#search--preview").on("click", function() {
+
+                let badge_id = "1877";
+
+                let url = `./single-officer.html#${badge_id}`;
+
+                window.location = url;
+
+
+});
+
+
+        });
+
+
         d3.select("#search--button").on("click", function() {
 
             let badge_id = d3.select("#search--value").property("value");
 
-            let url = `./single-officer.html#${badge_id}`;
-
-            window.location = url;
+            if (badge_id === "") {
+                d3.select("#error").html("You must enter a badge ID");
+            } else {
+                let url = `./single-officer.html#${badge_id}`;
+                window.location = url;
+            }
 
 
         });
