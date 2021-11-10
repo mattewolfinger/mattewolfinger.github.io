@@ -362,11 +362,11 @@ Aside {
 		padding-right: 2%;
 	}
 	#error {
-		margin-top: 1px;
+		margin-top: -4px;
 		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -74px;
+		margin-left: -73px;
 	}
 	}
 @media (max-width: 550px) {
