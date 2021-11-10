@@ -304,7 +304,7 @@ Aside {
 	width: 100%;
 	font-size: 9pt;
 	margin-left: 4px;
-	padding-right: -40%;
+	padding-right: -42%;
 	text-align: left;
 	padding-top: -12px;
 	padding-bottom: 20px;
@@ -366,10 +366,7 @@ Aside {
 		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -20px;
-		font-weight: bolder;
-		color: #ffffff;
-		height: 2px;
+		margin-left: -30px;
 	}
 	}
 @media (max-width: 550px) {
