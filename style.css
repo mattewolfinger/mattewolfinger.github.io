@@ -358,15 +358,15 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search-preview {
-		font-size: 10px;
-		padding-right: 15%;
+		font-size: 9px;
+		padding-right: 2%;
 	}
 	#error {
 		margin-top: 1px;
 		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -30px;
+		margin-left: -46px;
 	}
 	}
 @media (max-width: 550px) {
