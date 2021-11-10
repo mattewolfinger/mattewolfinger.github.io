@@ -40,12 +40,12 @@ h3 {
 }
 h4 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.6px;
 }
 h5 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.4px;
 }
 ul {
@@ -164,11 +164,11 @@ img {
     }
     #officer-title {
         font-size: 10pt;
-        padding-top: -10px;
+        padding-top: -20px;
         padding-bottom: 5px;
     }
     #officer-active {
-        margin-left: -84px;
+        margin-left: -90px;
         margin-top: -1px;
         font-size: 9pt;
     }
@@ -288,21 +288,22 @@ img {
     padding-left: 5%;
 }
 .allegation--detail {
-    font-size: 12pt;
-    line-height: 12px;
+    font-size: 13pt;
+    line-height: 24px;
     width: 86%;
 }
 #complaints-container {
     padding-right: 2%;
+    line-height: 24px;
     flex: 1 0 60%;
 }
 #profile {
     flex-wrap: wrap;
     align-content: left;
-    padding-top: 1%;
+    padding-top: 2%;
     border-bottom: 2px solid black;
     padding-left: 10%;
-    padding-bottom: -2%;
+    margin-bottom: -2px;
 }
 }
 @media (min-width: 551px) {
