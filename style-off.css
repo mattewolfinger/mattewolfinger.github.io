@@ -154,7 +154,7 @@ img {
     #headshot img {
         display: flex;
         flex-direction: column;
-        margin-left: -14%;
+        margin-left: -18%;
         width: 98px;
         height: auto;
     }
