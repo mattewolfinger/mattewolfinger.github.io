@@ -358,7 +358,7 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size: 10pt;
+		font-size: 6px;
 		padding-right: 2%;
 	}
 	#error {
@@ -366,7 +366,7 @@ Aside {
 		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -66px;
+		margin-left: -74px;
 	}
 	}
 @media (max-width: 550px) {
