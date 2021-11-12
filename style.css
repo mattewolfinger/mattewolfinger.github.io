@@ -139,7 +139,7 @@ Aside {
 	margin-bottom: 5%;
 	padding-right: 14%;
 	text-align: left;
-	line-height: 21px;
+	line-height: 26px;
 	color: #ffffff;
 	letter-spacing: 0.2px;
 }
@@ -263,10 +263,10 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width: 182%;
+		width: 186%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 36%;
+		margin-left: 32%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -358,14 +358,15 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size: 12px;
-		margin-bottom: 2px;
+		font-size: 6px;
+		padding-right: 2%;
 	}
 	#error {
-		font-size: 7px;
+		margin-top: 1px;
+		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -65px;
+		margin-left: -74px;
 	}
 	}
 @media (max-width: 550px) {
