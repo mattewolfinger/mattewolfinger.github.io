@@ -266,7 +266,7 @@ details {
 		width: 186%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 32%;
+		margin-left: 36%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -358,15 +358,14 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size: 9px;
-		padding-right: 2%;
+		font-size: 8px;
 	}
 	#error {
 		margin-top: 1px;
-		font-size: 8px;
+		font-size: 7px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -76px;
+		margin-left: -70px;
 	}
 	}
 @media (max-width: 550px) {
