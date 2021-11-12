@@ -82,7 +82,7 @@ p {
 }
 #search--preview p {
 	font-size: 14px;
-	margin-top: -6px;
+	margin-top: -10px;
 	padding-right: 20%;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -337,7 +337,7 @@ Aside {
 	h1 {
 		font-size: 22px;
 		padding-right: 22%;
-		padding-top: 0.5%;
+		padding-top: 0.2%;
 		margin-left: -24%;
 		font-family: Helvetica;
 		line-height: 30px;
@@ -358,7 +358,7 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		margin-top: -2px;
+		margin-top: -6px;
 		font-size: 14px;
 	}
 	#error {
