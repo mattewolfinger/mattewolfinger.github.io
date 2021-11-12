@@ -139,7 +139,7 @@ Aside {
 	margin-bottom: 5%;
 	padding-right: 14%;
 	text-align: left;
-	line-height: 26px;
+	line-height: 22px;
 	color: #ffffff;
 	letter-spacing: 0.2px;
 }
@@ -266,7 +266,7 @@ details {
 		width: 192%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 35%;
+		margin-left: 35.5%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
