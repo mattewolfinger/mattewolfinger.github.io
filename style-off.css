@@ -71,7 +71,7 @@ li {
 img {
 	display: flex;
 	flex-direction: column;
-    	margin-left: 4%;
+    margin-left: 4%;
 	margin-bottom: 30px;
 	width: 178px;
 	height: auto;
@@ -79,8 +79,8 @@ img {
 #headshot img {
 	display: flex;
 	flex-direction: column;
-   	 margin-left: -20%;
-    	margin-bottom: -36px;
+    margin-left: -20%;
+    margin-bottom: -36px;
 	width: 124px;
 	height: auto;
 }
@@ -182,11 +182,11 @@ img {
         padding-bottom: 5px;
     }
     #report-button {
-        width: 104%;
+        width: 100%;
         height: auto;
-        margin-top: 44px;
+        margin-top: 42px;
         margin-left: -112px;
-        padding-right: 22%;
+        padding-right: 28%;
         padding-bottom: 1%;
     }
     #badge-id{
