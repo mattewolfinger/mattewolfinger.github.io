@@ -66,12 +66,12 @@ li {
 #counts {
     font-size: 12pt;
     margin-top: 10px;
-    margin-bottom: -50px;
+    margin-bottom: -46px;
 }
 img {
 	display: flex;
 	flex-direction: column;
-    margin-left: 4%;
+    	margin-left: 4%;
 	margin-bottom: 30px;
 	width: 178px;
 	height: auto;
@@ -79,8 +79,8 @@ img {
 #headshot img {
 	display: flex;
 	flex-direction: column;
-    margin-left: -20%;
-    margin-bottom: -36px;
+   	 margin-left: -20%;
+    	margin-bottom: -36px;
 	width: 124px;
 	height: auto;
 }
@@ -88,7 +88,7 @@ img {
     width: 22%;
     margin-top: 20px;
     margin-left: 10px;
-    margin-bottom: -6px;
+    margin-bottom: 16px;
 }
 #officer-active {
     margin-left: 12px;
@@ -110,7 +110,7 @@ img {
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
-    padding-top: 3.5%;
+    padding-top: 1%;
 	color: white;
     padding-left: 8%;
 	height: auto;
@@ -127,20 +127,20 @@ img {
 	font-size: 14px;
 }
 #officer-name {
-    font-size: 17pt;
+    font-size: 18pt;
     line-height: 10px;
     padding-bottom: 2px;
     margin-left: -3px;
 }
 #officer-title {
-    font-size: 12pt;
+    font-size: 13pt;
     padding-bottom: 4px;
 }
 #report-button {
     width: 100%;
     height: auto;
     margin-top: 30px;
-    margin-left: -40%;
+    margin-left: -45%;
 }
 #badge-id{
     margin: 0;
@@ -286,6 +286,7 @@ img {
 }
 #complaints-container {
     padding-right: 6%;
+    margin-bottom: 10px;
     flex: 1 0 60%;
 }
 #no-allegations {
