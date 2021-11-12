@@ -71,7 +71,7 @@ li {
 img {
 	display: flex;
 	flex-direction: column;
-    margin-left: 4%;
+    	margin-left: 4%;
 	margin-bottom: 30px;
 	width: 178px;
 	height: auto;
@@ -79,8 +79,8 @@ img {
 #headshot img {
 	display: flex;
 	flex-direction: column;
-    margin-left: -20%;
-    margin-bottom: -36px;
+   	 margin-left: -20%;
+    	margin-bottom: -36px;
 	width: 124px;
 	height: auto;
 }
