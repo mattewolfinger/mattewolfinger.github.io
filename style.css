@@ -286,7 +286,7 @@ details {
 	align-content: center;
 	margin-left: -25%;
 	margin-bottom: -3%;
-	margin-top: -10px;
+	margin-top: -14px;
 	padding-top: 0px;
 	padding-bottom: -6px;
 }
@@ -294,10 +294,11 @@ details {
 @media (max-width: 550px) { 
 #Search-Duo {
 	width: 124%;
+	height: auto;
 	margin-left: -71px;
 	align-content: center;
 	padding-top: 0px;
-	padding-bottom: -6px;
+	padding-bottom: -10px;
 }
 }
 @media (max-width: 550px) { 
@@ -363,7 +364,7 @@ Aside {
 		font-size: 11px;
 	}
 	#error {
-		margin-top: -20px;
+		margin-top: -26px;
 		font-size: 2px;
 		padding-top: 0px;
 		padding-bottom: 16px;
