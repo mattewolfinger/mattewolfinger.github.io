@@ -267,7 +267,7 @@ details {
 		width: 192%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 37%;
+		margin-left: 36%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -287,7 +287,7 @@ details {
 	align-content: center;
 	margin-left: -25%;
 	margin-bottom: -3%;
-	margin-top: -14px;
+	margin-top: -16px;
 	padding-top: 0px;
 	padding-bottom: -6px;
 }
@@ -296,7 +296,7 @@ details {
 #Search-Duo {
 	width: 124%;
 	height: auto;
-	margin-left: -71px;
+	margin-left: -69px;
 	align-content: center;
 	padding-top: 0px;
 	padding-bottom: -10px;
@@ -366,8 +366,8 @@ Aside {
 		font-size: 11px;
 	}
 	#error {
-		margin-top: -26px;
-		font-size: 2px;
+		margin-top: -28px;
+		font-size: 1.5px;
 		padding-top: 0px;
 		padding-bottom: 16px;
 		margin-left: -64px;
