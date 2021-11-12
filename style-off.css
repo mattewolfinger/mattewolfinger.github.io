@@ -186,8 +186,8 @@ img {
         height: auto;
         margin-top: 42px;
         margin-left: -112px;
-        padding-right: 28%;
-        padding-bottom: 1%;
+        padding-right: 24%;
+        margin-bottom: 8px;
     }
     #badge-id{
         margin: 0;
@@ -286,7 +286,7 @@ img {
 }
 #complaints-container {
     padding-right: 6%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     flex: 1 0 60%;
 }
 #no-allegations {
