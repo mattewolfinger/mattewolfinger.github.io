@@ -263,10 +263,10 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width: 188%;
+		width: 190%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 43%;
+		margin-left: 40%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -358,12 +358,12 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		margin-top: -6px;
-		font-size: 14px;
+		margin-top: -10px;
+		font-size: 9px;
 	}
 	#error {
-		margin-top: -1px;
-		font-size: 6px;
+		margin-top: -6px;
+		font-size: 4px;
 		padding-top: 0px;
 		padding-bottom: 16px;
 		margin-left: -64px;
