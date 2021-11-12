@@ -266,7 +266,7 @@ details {
 		width: 192%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 34%;
+		margin-left: 35%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -363,7 +363,7 @@ Aside {
 		font-size: 11px;
 	}
 	#error {
-		margin-top: -6px;
+		margin-top: -20px;
 		font-size: 2px;
 		padding-top: 0px;
 		padding-bottom: 16px;
