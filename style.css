@@ -263,10 +263,10 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width: 190%;
+		width: 192%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 40%;
+		margin-left: 34%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -286,8 +286,8 @@ details {
 	align-content: center;
 	margin-left: -25%;
 	margin-bottom: -3%;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-top: -10px;
+	padding-bottom: -6px;
 }
 }
 @media (max-width: 550px) { 
@@ -359,11 +359,11 @@ Aside {
 	}
 	#search--preview p {
 		margin-top: -10px;
-		font-size: 9px;
+		font-size: 11px;
 	}
 	#error {
 		margin-top: -6px;
-		font-size: 4px;
+		font-size: 2px;
 		padding-top: 0px;
 		padding-bottom: 16px;
 		margin-left: -64px;
