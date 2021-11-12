@@ -24,7 +24,7 @@
                 <img src="./cop-track-logo.png">
             <h1>Look up a Boston Police Department employee to see their misconduct history.</h1>
             <div id="search--preview"><p><u>Don't have the details? See a preview here.</u></p></div>
-            <div id="error" style="color: #ffffff; font-size: 14px; font-weight: bolder;"></div>
+            <div id="error"></div>
                 <div class="item" id="Search-Duo">
                 <input type="text" id="search--value" placeholder="Enter badge ID number">
                 <button id="search--button">Search</button>
@@ -84,7 +84,7 @@
             <li>Bail Funds</li>
             <li>Black Lives Matter</li>
             <li>Lawyers</li>
-            <li>Bpdnews.com</li>
+            <li><a href="https://bpdnews.com/" target="_blank">Bpdnews.com</a></li>
             <li>Download statistics and infographics</li>
             </ul>
         </div>
@@ -106,7 +106,7 @@
                 Take action
             </li>
             <li>
-                File a complaint of your own
+                <a href="https://bpdnews.com/complaintform" target="_blank">File a complaint</a>
             </li>
         </ul>
     </div>
@@ -136,8 +136,21 @@
                     d3.select("#error").html("You must enter a badge ID");
                 } else if(ids.indexOf(badge_id) < 0) {
                     d3.select("#error").html("Please enter a valid badge ID");
-                }
-                else {
+                } else if(badge_id === "ZZZZZ") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "DSUPT") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "DT419") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "LT96") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "PC") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "SUPT") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else if(badge_id === "CAPT") {
+                    d3.select("#error").html("Please enter a valid badge ID");
+                } else {
                     let url = `./single-officer.html#${badge_id}`;
                     window.location = url;
                 }
