@@ -263,10 +263,11 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
+		position: relative;
 		width: 192%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 35.5%;
+		margin-left: 37%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -304,13 +305,14 @@ details {
 @media (max-width: 550px) { 
 Aside {
 	width: 100%;
-	font-size: 9pt;
+	font-size: 8.5pt;
+	position: relative;
 	margin-left: 4px;
 	padding-right: -42%;
 	text-align: left;
 	padding-top: -12px;
 	padding-bottom: 20px;
-	line-height: 20px;
+	line-height: 19px;
 	z-index: 100 !important;
 }
 }
