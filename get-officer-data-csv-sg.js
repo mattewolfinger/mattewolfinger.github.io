@@ -26,13 +26,15 @@ Promise.all(promises).then(function(data) {
 
     // let badge_id = id.replace("#", "");
 
-    let filtered = complaints.filter(function(d) {
-        return d.badge === badge_id;
+    complaints.forEach(function(d) {
+        d.date = new Date(d.received_date);
     });
 
-    console.log(filtered)
-
-
+    let filtered = complaints.filter(function(d) {
+        return d.badge === badge_id;
+    }).sort(function(a,b) {
+        return b.date.getTime() - a.date.getTime();
+    });
 
 
     // Allegations
