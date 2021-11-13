@@ -15,7 +15,8 @@
 }
 html, body {
 	font-family: "Helvetica", sans-serif;
-	background-color: white;
+	background-color: #000000;
+    color: #F9F9F9;
 	margin: 0px;
 	padding: 0px;
 }
@@ -31,11 +32,11 @@ h1 {
 h2 {
     font-weight: normal;
     font-size: 18px;
-    color: rgba(98, 97, 97, 1);
+    color: #F9F9F9;
     letter-spacing: 0.6px;
 }
 h3 {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 14px;
     text-align: left;
     margin-left: -2px;
@@ -45,16 +46,14 @@ h3 {
 h4 {
     font-weight: bold;
     font-size: 16px;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
     letter-spacing: 0.6px;
-}
-p {
-    margin-bottom: -12px;
 }
 h5 {
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 0.4px;
+    margin-bottom: 10px;
 }
 ul {
     list-style-type: none;
@@ -64,8 +63,9 @@ li {
     padding-bottom: 20px;
 }
 #counts {
-    font-size: 12pt;
-    margin-top: 10px;
+    font-size: 11.5pt;
+    margin-top: 2px;
+    margin-left: -24px;
     margin-bottom: -46px;
 }
 img {
@@ -79,9 +79,9 @@ img {
 #headshot img {
 	display: flex;
 	flex-direction: column;
-    margin-left: -20%;
-    margin-bottom: -36px;
-	width: 124px;
+    margin-left: -38%;
+    margin-bottom: -33px;
+	width: 110px;
 	height: auto;
 }
 #alleg-head {
@@ -91,7 +91,8 @@ img {
     margin-bottom: 16px;
 }
 #officer-active {
-    margin-left: 12px;
+    margin-left: -11px;
+    color: #000000;
     font-size: 10pt;
 }
 #complaints-container {
@@ -104,19 +105,20 @@ img {
     width: 100%;
     flex-wrap: wrap;
     align-content: left;
-    padding-top: 1%;
-    padding-left: 9%;
+    padding-right: -20px;
+    padding-top: 4%;
+    padding-left: 5%;
 }
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
     padding-top: 1%;
-	color: white;
+	color: #F9F9F9;
     padding-left: 8%;
 	height: auto;
 }
 #Footer ul {
-	color: white;
+	color: #F9F9F9;
 	list-style-type: none;
 	font-size: 16px;
 	line-height: 16px;
@@ -127,32 +129,33 @@ img {
 	font-size: 14px;
 }
 #officer-name {
-    font-size: 18pt;
+    font-size: 15pt;
     line-height: 10px;
     padding-bottom: 2px;
-    margin-left: -3px;
+    margin-left: -28px;
 }
 #officer-title {
-    font-size: 13pt;
+    font-size: 11pt;
+    margin-left: -25px;
     padding-bottom: 4px;
 }
 #report-button {
-    width: 100%;
+    width: 82%;
     height: auto;
     margin-top: 30px;
-    margin-left: -45%;
+    margin-left: -38%;
 }
 #badge-id{
-    margin: 0;
-    margin-top: -20px;
-    padding: 12px 0 12px 24px;
+    margin-top: -12px;
+    /* padding: 12px 0 12px 24px; */
+    margin-left: -25px;
     margin-bottom: -7px;
     font-size: 11pt;
-    list-style: none;
+    /* list-style: none;
     background-image: url("./images/badge-id-symbol.png");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 18px;
+    background-size: 18px; */
 }
 @media (max-width: 550px) { 
     #Main {
@@ -174,37 +177,47 @@ img {
     #officer-name {
         font-size: 14pt;
         line-height: 20px;
+        margin-left: -2px;
         margin-bottom: -6px;
     }
     #officer-title {
         font-size: 10pt;
+        color: rgb(175, 174, 174);
         padding-top: -20px;
+        margin-left: 0px;
         padding-bottom: 5px;
     }
     #report-button {
-        width: 110%;
+        width: 100%;
         height: auto;
-        margin-top: 44px;
-        margin-left: -110px;
-        padding-right: 20%;
-        margin-bottom: 8px;
+        margin-top: 42px;
+        margin-left: -112px;
+        padding-right: 28%;
+        padding-bottom: 1%;
     }
     #badge-id{
         margin: 0;
         margin-top: -30px;
         padding: 12px 0 12px 20px;
-        margin-bottom: 106px;
+        margin-bottom: 110px;
+        margin-left: -20px;
         font-size: 10pt;
         list-style: none;
-        background-image: url("./images/badge-id-symbol.png");
+        /* background-image: url("./images/badge-id-symbol.png");
         background-repeat: no-repeat;
         background-position: left center;
-        background-size: 14px;
+        background-size: 14px; */
     }
     #counts {
-        font-size: 11pt;
+        font-size: 11.5pt;
         margin-top: -116px;
+        margin-left: 0px;
+        letter-spacing: 0.3px;
         margin-bottom: -67px;
+        color: rgb(175, 174, 174);
+    }
+    #counts b {
+        color: #F9F9F9;
     }
     }
     @media (min-width: 551px) {
@@ -276,7 +289,8 @@ img {
 
 /* SG EDITS */
 .allegation {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #131517;
+    border-left: 1px solid #131517;
     padding-left: 2%;
 }
 .allegation--detail {
@@ -285,8 +299,8 @@ img {
     width: 80%;
 }
 #complaints-container {
-    padding-right: 6%;
-    margin-bottom: 12px;
+    padding-right: 2%;
+    margin-bottom: 10px;
     flex: 1 0 60%;
 }
 #no-allegations {
@@ -309,9 +323,11 @@ img {
     flex-direction: column;
 }
 .allegation {
-    border-bottom: 1.5px solid rgb(146, 146, 146);
+    border-bottom: 0.001px solid #131517;
+    border-left: none;
     border-width: 100%;
     padding-left: 4%;
+    padding-bottom: 0px;
     align-content: left;
 }
 .allegation--detail {
@@ -328,20 +344,21 @@ img {
 p {
     margin-bottom: -14px;
     margin-top: 12px;
+    font-size: 10pt;
 }
 #profile {
     flex-wrap: wrap;
     align-content: left;
     padding-top: 1.8%;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #F9F9F9;
     padding-left: 10%;
-    margin-bottom: -2px;
+    padding-bottom: 3px;
 }
 #alleg-head {
     width: 34%;
-    margin-top: 20px;
+    margin-top: 14px;
     margin-left: 14px;
-    margin-bottom: -6px;
+    margin-bottom: -2px;
 }
 #officer-active {
     margin-left: 9px;
@@ -360,8 +377,29 @@ p {
     top: 0;
     line-height: 18px;
     align-self: flex-start;
-    background-color: white;
+    color: #F9F9F9;
+    background-color: #000000;
 }
 #cop-info {
     flex: 1 0 40%;
+}
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:active {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
 }
