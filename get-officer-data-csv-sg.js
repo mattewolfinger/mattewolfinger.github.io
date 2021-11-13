@@ -37,6 +37,9 @@ Promise.all(promises).then(function(data) {
     });
 
 
+
+
+
     // Allegations
 
     // if(idType === "badge_id") {
@@ -51,35 +54,50 @@ Promise.all(promises).then(function(data) {
     //     });
     // }
 
+    let count = filtered.length;
 
-    filtered.forEach(function(complaint) {
+    if(count == 0) {
 
-        let div = d3.select("#complaints-container")
+        d3.select("#complaints-container")
             .append("div")
-            .attr("class", "allegation");
-    
-        // Allegation
-        div.append("h3")
-            .attr("class", "allegation--detail")
-            .html(complaint.allegation);
-    
-        // Finding
-        div.append("h4").html(complaint.finding);
-    
-        // // Penalty
-        // div.append("p").html(`Penalty: ${complaint.penalty}`);
+            .attr("id", "no-allegations")
+            .html("This officer has no allegations.");
 
-        if(complaint.penalty === "") {
-            div.append("p").html(`Penalty: None`);
-        } else {
-            div.append("p").html(`Penalty: ${complaint.penalty}`);
-        }
+    } else {
+
+        filtered.forEach(function(complaint) {
+
+            let div = d3.select("#complaints-container")
+                .append("div")
+                .attr("class", "allegation");
+        
+            // Allegation
+            div.append("h3")
+                .attr("class", "allegation--detail")
+                .html(complaint.allegation);
+        
+            // Finding
+            div.append("h4").html(complaint.finding);
+        
+            // // Penalty
+            // div.append("p").html(`Penalty: ${complaint.penalty}`);
+
+            if(complaint.finding === "Sustained") {
+                if(complaint.penalty === "") {
+                    div.append("p").html(`Penalty: None`);
+                } else {
+                    div.append("p").html(`Penalty: ${complaint.penalty}`);
+                }
+            }
+
+        
+            // Incident date
+            div.append("h5").html(complaint.received_date);
+        
+        
+        });
     
-        // Incident date
-        div.append("h5").html(complaint.received_date);
-    
-    
-    });
+    }
 
     // Officer data
 
@@ -116,8 +134,6 @@ Promise.all(promises).then(function(data) {
 
 
     // Counts of allegations
-
-    let count = filtered.length;
 
     let sustained = filtered.filter(function(d) {
         return d.finding === "Sustained";
