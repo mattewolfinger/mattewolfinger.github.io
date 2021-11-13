@@ -339,9 +339,9 @@ Aside {
 }
 @media (max-width: 550px) {
 	h1 {
-		font-size: 22px;
-		padding-right: 22%;
-		padding-top: 0.2%;
+		font-size: 21px;
+		padding-right: 20%;
+		padding-top: 0.5%;
 		margin-left: -24%;
 		font-family: Helvetica;
 		line-height: 30px;
