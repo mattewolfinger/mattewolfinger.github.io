@@ -387,7 +387,7 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#Definitions h2 {
-		margin-left: -30%;
+		margin-left: -20%;
 	}
 	}
 /* Add a black background color to the top navigation */
@@ -485,8 +485,8 @@ Aside {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1;
-	margin: 20px;
-	padding: 14px;
+	margin: 10px;
+	padding: 16px;
 	border: 2px solid black;
 	border-radius: 4px;
 	transition: all .3s ease;
@@ -532,7 +532,7 @@ Aside {
 	text-transform: uppercase;
 	}
 	.content p{
-	font-size: 17px;
+	font-size: 14px;
 	padding-right: 0%;
 	color: black;
 	margin-left: 0%;
