@@ -56,11 +56,9 @@ h2 {
 	/* SG: Get rid of padding-left here */
 	/* padding-left: 8%; */
 	/* SG: Set padding-top equal to 1/2 height of hat image	 */
-	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-content: left;
-	padding-bottom: 20px;
 	padding-right: 40%;
 	/* SG: get rid of margin-top */
 	/* margin-top: 5%; */
@@ -173,7 +171,6 @@ li {
 	width: 100%;
 	padding-bottom: 10px;
 	color: #ffffff;
-	margin-top: 10px;
 	height: auto;
 	line-height: 30px;
 }
