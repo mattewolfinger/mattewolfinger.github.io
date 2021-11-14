@@ -338,7 +338,7 @@ Aside {
 @media (max-width: 550px) {
 #About img {
 	width: 164%;
-	margin-left: 200px;
+	margin-left: 160px;
 }
 }
 @media (max-width: 550px) {
@@ -380,7 +380,7 @@ Aside {
 @media (max-width: 550px) {
 	h2 {
 		font-size: 34px;
-		margin-left: -40%;
+		margin-left: -30%;
 		padding-top: -26%;
 		font-family: Helvetica;
 		color: black;
@@ -485,7 +485,7 @@ Aside {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1;
-	margin: 10px;
+	margin: 20px;
 	padding: 14px;
 	border: 2px solid black;
 	border-radius: 4px;
