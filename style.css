@@ -50,7 +50,7 @@ html, body {
 }
 h2 {
 	font-size: 34px;
-	margin-left: -800px;
+	margin-left: -400px;
 }
 #White-sect {
 	/* SG: Get rid of padding-left here */
@@ -146,7 +146,7 @@ Aside {
 	letter-spacing: 0.2px;
 }
 #Definitions h2 {
-	margin-left: -440px;
+	margin-left: -400px;
 }
 #About img{
 	width: 560px;
