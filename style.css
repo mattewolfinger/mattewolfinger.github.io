@@ -267,7 +267,7 @@ details {
 		width: 194%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 35.5%;
+		margin-left: 35.7%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -340,7 +340,7 @@ Aside {
 @media (max-width: 550px) {
 	h1 {
 		font-size: 21px;
-		padding-right: 20%;
+		padding-right: 17%;
 		padding-top: 0.5%;
 		margin-left: -24%;
 		font-family: Helvetica;
