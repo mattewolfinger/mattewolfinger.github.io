@@ -50,7 +50,7 @@ html, body {
 }
 h2 {
 	font-size: 34px;
-	margin-left: -400px;
+	margin-left: -300px;
 }
 #White-sect {
 	/* SG: Get rid of padding-left here */
@@ -60,6 +60,7 @@ h2 {
 	flex-direction: column;
 	align-content: left;
 	padding-right: 40%;
+	margin-bottom: -20px;
 	/* SG: get rid of margin-top */
 	/* margin-top: 5%; */
 	background-color: white;
