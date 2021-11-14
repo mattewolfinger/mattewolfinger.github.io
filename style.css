@@ -171,6 +171,7 @@ li {
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
+	padding-top: 20px;
 	padding-bottom: 10px;
 	color: #ffffff;
 	height: auto;
@@ -337,7 +338,7 @@ Aside {
 @media (max-width: 550px) {
 #About img {
 	width: 164%;
-	margin-left: 164px;
+	margin-left: 200px;
 }
 }
 @media (max-width: 550px) {
