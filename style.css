@@ -565,8 +565,8 @@ Aside {
 		margin: 0 auto;
 		text-align: left;
 		padding: 10px;
-		padding-bottom: 200px;
-		padding-top: 200px;
+		padding-bottom: 20px;
+		padding-top: 20px;
 		}
 		.cards h3.header{
 		font-size: 34px;
@@ -624,7 +624,7 @@ Aside {
 		color: rgba(48,95,124,1);
 		}
 		.content h3{
-		font-size: 16px;
+		font-size: 14px;
 		padding-left: 2%;
 		margin: 16px 0;
 		margin-bottom: 6px;
@@ -632,10 +632,10 @@ Aside {
 		text-transform: uppercase;
 		}
 		.content p{
-		font-size: 14px;
+		font-size: 12px;
 		padding-right: 1%;
 		color: black;
-		line-height: 26px;
+		line-height: 22px;
 		padding-left: 2%;
 		font-family: 'Helvetica',sans-serif;
 		}
