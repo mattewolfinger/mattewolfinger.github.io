@@ -655,7 +655,7 @@ Aside {
 		.content a:hover{
 		border-radius: 4px;
 		}
-		@media (max-width: 900px) {
+		@media (max-width: 550px) {
 		.services{
 		display: flex;
 		flex-direction: column;
