@@ -561,10 +561,10 @@ Aside {
 
 @media (max-width: 550px) {
 	.cards{
-		max-width: 1600px;
+		max-width: 1400px;
 		margin: 0 auto;
 		text-align: left;
-		padding: 10px;
+		padding: 20px;
 		padding-bottom: 40px;
 		padding-top: 40px;
 		}
