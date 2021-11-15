@@ -468,7 +468,7 @@ Aside {
 	max-width: 1600px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 50px;
+	padding: 20px;
 	}
 	.cards h3.header{
 	font-size: 34px;
@@ -485,7 +485,8 @@ Aside {
 	flex-wrap: wrap;
 	flex: 1;
 	margin: 10px;
-	padding: 14px;
+	margin-bottom: 40px;
+	padding: 10px;
 	border: 2px solid black;
 	border-radius: 4px;
 	transition: all .3s ease;
