@@ -565,8 +565,8 @@ Aside {
 		margin: 0 auto;
 		text-align: left;
 		padding: 10px;
-		padding-bottom: 20px;
-		padding-top: 20px;
+		padding-bottom: 40px;
+		padding-top: 40px;
 		}
 		.cards h3.header{
 		font-size: 34px;
@@ -627,6 +627,7 @@ Aside {
 		font-size: 18px;
 		padding-left: 2%;
 		margin: 16px 0;
+		margin-bottom: 6px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		}
