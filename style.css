@@ -526,7 +526,7 @@ Aside {
 	color: rgba(48,95,124,1);
 	}
 	.content h3{
-	font-size: 18px;
+	font-size: 16px;
 	margin: 16px 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -535,11 +535,13 @@ Aside {
 	font-size: 14px;
 	padding-right: 0%;
 	color: black;
+	line-height: 22px;
 	margin-left: 0%;
 	font-family: 'Helvetica',sans-serif;
 	}
 	.content a{
 	margin: 22px 0;
+	margin-top: 1px;
 	background: black;
 	color: white;
 	text-decoration: none;
