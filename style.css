@@ -561,7 +561,7 @@ Aside {
 	}
 	}
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 	.cards{
 		max-width: 1600px;
 		margin: 0 auto;
