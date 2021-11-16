@@ -299,11 +299,18 @@ details {
 }
 @media (max-width: 550px) { 
 #Search-Duo {
-	width: 124%;
+	width: 120%;
 	margin-left: -68px;
 	align-content: center;
 	padding-top: 0px;
 	padding-bottom: -6px;
+}
+input {
+	height: 48px;
+}
+Button {
+	height: 48px;
+	font-size: 15px;
 }
 }
 @media (max-width: 550px) { 
@@ -346,6 +353,7 @@ Aside {
 		padding-right: 16%;
 		padding-top: 0.5%;
 		margin-left: -24%;
+		margin-bottom: -1px;
 		font-family: Helvetica;
 		line-height: 28px;
 		color: white;
@@ -367,10 +375,11 @@ Aside {
 	#search--preview p {
 		font-size: 10px;
 		padding-right: 2%;
+		margin-bottom: -2px;
 	}
 	#error {
 		margin-top: -6px;
-		font-size: 7px;
+		font-size: 5px;
 		padding-top: 0px;
 		padding-bottom: 16px;
 		margin-left: -66px;
