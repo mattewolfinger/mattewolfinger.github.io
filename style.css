@@ -462,9 +462,7 @@ Aside {
 	color: #ffffff;
 	height: 2px;
 }
-
 /* Know Your Rights Card Styling */
-
 
 
 .cards{
@@ -490,10 +488,11 @@ Aside {
 	margin: 10px;
 	padding: 14px;
 	border: 2px solid rgba(48,95,124,1);
+	border-radius: 4px;
 	color: white;
 	background: rgba(48,95,124,1);
-	border-radius: 4px;
 	transition: all .3s ease;
+	
 	}
 	.content > *{
 	flex: 1 1 100%;
@@ -568,7 +567,7 @@ Aside {
 		max-width: 1400px;
 		margin: 0 auto;
 		text-align: left;
-		padding: 8px;
+		padding: 10px;
 		padding-bottom: 20px;
 		padding-top: 20px;
 		}
@@ -587,8 +586,10 @@ Aside {
 		flex-wrap: wrap;
 		flex: 1;
 		margin: 10px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		padding: 10px;
+		border: 2px solid rgba(48,95,124,1);
+		color: white;
 		border-radius: 4px;
 		transition: all .3s ease;
 		}
@@ -627,16 +628,17 @@ Aside {
 		color: rgba(48,95,124,1);
 		}
 		.content h3{
-		font-size: 14px;
+		font-size: 16px;
 		padding-left: 2%;
 		margin: 16px 0;
-		margin-bottom: 6px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		}
 		.content p{
-		font-size: 12px;
+		font-size: 15px;
 		padding-right: 1%;
+		font-weight: bold;
+		color: white;
 		line-height: 22px;
 		padding-left: 2%;
 		font-family: 'Helvetica',sans-serif;
@@ -645,7 +647,7 @@ Aside {
 		margin: 22px 0;
 		margin-top: 1px;
 		margin-right: 6%;
-		margin-left: 40%;
+		margin-left: 50%;
 		background: black;
 		text-align: center;
 		color: white;
@@ -653,7 +655,7 @@ Aside {
 		text-transform: uppercase;
 		border: 1px solid black;
 		padding: 15px 0;
-		font-size: 12px;
+		font-size: 13px;
 		border-radius: 25px;
 		transition: .3s ease;
 		}
