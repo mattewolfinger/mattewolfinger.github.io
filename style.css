@@ -152,10 +152,13 @@ Aside {
 #Definitions h2 {
 	margin-left: -712px;
 }
+#About h2 {
+
 #About img{
 	width: 560px;
 	height: auto;
 	margin-left: -3px;
+	padding-bottom: 2%;
 }
 ul {
 	color: #ffffff;
@@ -492,7 +495,7 @@ Aside {
 	padding: 14px;
 	border: 2px solid rgba(48,95,124,1);
 	color: white;
-	backbround-color: rgba(48,95,124,1);
+	background: rgba(48,95,124,1);
 	border-radius: 4px;
 	transition: all .3s ease;
 	}
