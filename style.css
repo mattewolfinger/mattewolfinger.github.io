@@ -300,7 +300,7 @@ details {
 @media (max-width: 550px) { 
 #Search-Duo {
 	width: 124%;
-	margin-left: -71px;
+	margin-left: -69px;
 	align-content: center;
 	padding-top: 0px;
 	padding-bottom: -6px;
@@ -310,7 +310,7 @@ details {
 Aside {
 	width: 100%;
 	font-size: 9pt;
-	margin-left: 4px;
+	margin-left: 6px;
 	padding-right: -42%;
 	text-align: left;
 	padding-top: -12px;
@@ -342,8 +342,8 @@ Aside {
 }
 @media (max-width: 550px) {
 	h1 {
-		font-size: 21px;
-		padding-right: 20%;
+		font-size: 19px;
+		padding-right: 16%;
 		padding-top: 0.5%;
 		margin-left: -24%;
 		font-family: Helvetica;
@@ -365,15 +365,15 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size: 6px;
+		font-size: 10px;
 		padding-right: 2%;
 	}
 	#error {
-		margin-top: 1px;
-		font-size: 9px;
+		margin-top: -2px;
+		font-size: 8px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -76px;
+		margin-left: -74px;
 	}
 	}
 @media (max-width: 550px) {
