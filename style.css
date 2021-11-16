@@ -299,8 +299,8 @@ details {
 }
 @media (max-width: 550px) { 
 #Search-Duo {
-	width: 124%;
-	margin-left: -69px;
+	width: 122%;
+	margin-left: -67px;
 	align-content: center;
 	padding-top: 0px;
 	padding-bottom: -6px;
@@ -370,10 +370,10 @@ Aside {
 	}
 	#error {
 		margin-top: -2px;
-		font-size: 8px;
+		font-size: 7px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -74px;
+		margin-left: -70px;
 	}
 	}
 @media (max-width: 550px) {
