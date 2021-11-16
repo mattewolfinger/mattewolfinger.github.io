@@ -332,6 +332,7 @@ Aside {
 #Header {
 	flex-direction: column;
 	width: 90%;
+	padding-left: 10%;
 	margin: 0 auto 0 auto;
 }
 }
