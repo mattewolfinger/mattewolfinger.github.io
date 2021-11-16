@@ -33,16 +33,16 @@ html, body {
 	font-size: 15px;
 }
 #Header {
-	padding-bottom: 1%;
+	padding-bottom: 0.5%;
 	flex-direction: row;
 	align-content: left;
-	padding-left: 10%;
+	padding-left: 6%;
 	margin-left: 0px;
 }
 #Hat-section {
 	/* padding-bottom: 14%; */
 	/* SG: shift element by 1/2 height of image */
-	margin-bottom: -133px;
+	margin-bottom: 34px;
 	width: 640px;
 	/* SG: change z-index so image sits on top */
 	z-index: 100;
@@ -75,8 +75,8 @@ h2 {
 #Title img {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 2px;
-	width: 260px;
+	margin-bottom: -14px;
+	width: 220px;
 	height: auto;
 }
 p {
@@ -95,6 +95,7 @@ p {
 }
 #Search-Duo {
 	width: 70%;
+	height: auto;
 	margin: 10px 0px;
 }
 input {
@@ -129,7 +130,7 @@ h1 {
 	display: flex;
 	color: #ffffff;
 	font-family: Helvetica;
-	font-size: 29px;
+	font-size: 32px;
 	padding-right: 40%;
 	line-height: 42px;
 }
@@ -142,8 +143,9 @@ h1 {
 Aside {
 	margin-top: 3%;
 	margin-left: 2px;
-	margin-bottom: 4%;
+	margin-bottom: 5%;
 	padding-right: 14%;
+	font-size: 12px;
 	text-align: left;
 	line-height: 26px;
 	color: #ffffff;
