@@ -270,7 +270,7 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width: 190%;
+		width: 194%;
 		height: auto;
 		margin-top: -10%;
 		margin-left: 36.3%;
@@ -499,7 +499,7 @@ Aside {
 	padding: 14px;
 	border: 2px solid rgba(48,95,124,1);
 	color: white;
-	background: rgba(48,95,124,1);
+	background-color: rgba(48,95,124,1);
 	border-radius: 4px;
 	transition: all .3s ease;
 	}
