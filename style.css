@@ -499,7 +499,7 @@ Aside {
 	padding: 14px;
 	border: 2px solid rgba(48,95,124,1);
 	color: white;
-	backbround-color: rgba(48,95,124,1);
+	background: rgba(48,95,124,1);
 	border-radius: 4px;
 	transition: all .3s ease;
 	}
