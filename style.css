@@ -50,20 +50,22 @@ html, body {
 }
 h2 {
 	font-size: 34px;
-	margin-left: -300px;
+	margin-left: -800px;
 }
 #White-sect {
 	/* SG: Get rid of padding-left here */
 	/* padding-left: 8%; */
 	/* SG: Set padding-top equal to 1/2 height of hat image	 */
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 	align-content: left;
+	padding-bottom: 20px;
 	padding-right: 40%;
-	margin-bottom: -20px;
-	padding-bottom: 4%;
+	margin-left: 10%;
 	/* SG: get rid of margin-top */
 	/* margin-top: 5%; */
+	margin-bottom: 2%;
 	background-color: white;
 }
 #White-before {
@@ -86,7 +88,7 @@ p {
 }
 #search--preview p {
 	font-size: 14px;
-	margin-top: -10px;
+	margin-top: -6px;
 	padding-right: 20%;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -143,17 +145,17 @@ Aside {
 	margin-bottom: 5%;
 	padding-right: 14%;
 	text-align: left;
-	line-height: 22px;
+	line-height: 26px;
 	color: #ffffff;
 	letter-spacing: 0.2px;
 }
 #Definitions h2 {
-	margin-left: -200px;
+	margin-left: -712px;
 }
 #About img{
 	width: 560px;
 	height: auto;
-	margin-left: -46px;
+	margin-left: -3px;
 }
 ul {
 	color: #ffffff;
@@ -171,9 +173,10 @@ li {
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
-	padding-top: 20px;
 	padding-bottom: 10px;
+	padding-top: 20px;
 	color: #ffffff;
+	margin-top: 0px;
 	height: auto;
 	line-height: 30px;
 }
@@ -202,7 +205,7 @@ details {
     border-radius: 4px;
     padding: .5em .6em 0;
     width: 50%;
-	margin-left: -16%;
+	margin-left: -52%;
 	margin-bottom: 2%;
 	display: flex;
 	letter-spacing: 0.5px;
@@ -267,11 +270,10 @@ details {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		position: relative;
-		width: 194%;
+		width: 186%;
 		height: auto;
 		margin-top: -12.4%;
-		margin-left: 36.5%;
+		margin-left: 32%;
 		margin-bottom: -2%;
 		z-index: 99 !important;
 	}
@@ -291,32 +293,29 @@ details {
 	align-content: center;
 	margin-left: -25%;
 	margin-bottom: -3%;
-	margin-top: -16px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+}
+@media (max-width: 550px) { 
+#Search-Duo {
+	width: 124%;
+	margin-left: -71px;
+	align-content: center;
 	padding-top: 0px;
 	padding-bottom: -6px;
 }
 }
 @media (max-width: 550px) { 
-#Search-Duo {
-	width: 123%;
-	height: auto;
-	margin-left: -68px;
-	align-content: center;
-	padding-top: 0px;
-	padding-bottom: -10px;
-}
-}
-@media (max-width: 550px) { 
 Aside {
 	width: 100%;
-	font-size: 8.5pt;
-	position: relative;
+	font-size: 9pt;
 	margin-left: 4px;
 	padding-right: -42%;
 	text-align: left;
 	padding-top: -12px;
 	padding-bottom: 20px;
-	line-height: 19px;
+	line-height: 20px;
 	z-index: 100 !important;
 }
 }
@@ -338,13 +337,13 @@ Aside {
 @media (max-width: 550px) {
 #About img {
 	width: 164%;
-	margin-left: 160px;
+	margin-left: 164px;
 }
 }
 @media (max-width: 550px) {
 	h1 {
-		font-size: 20px;
-		padding-right: 14%;
+		font-size: 21px;
+		padding-right: 20%;
 		padding-top: 0.5%;
 		margin-left: -24%;
 		font-family: Helvetica;
@@ -366,31 +365,29 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		margin-top: -10px;
-		font-size: 11px;
+		font-size: 6px;
+		padding-right: 2%;
 	}
 	#error {
-		margin-top: -28px;
-		font-size: 1.5px;
+		margin-top: 1px;
+		font-size: 9px;
 		padding-top: 0px;
 		padding-bottom: 16px;
-		margin-left: -64px;
+		margin-left: -76px;
 	}
 	}
 @media (max-width: 550px) {
 	h2 {
 		font-size: 34px;
-		margin-left: -32%;
+		margin-left: -58%;
 		padding-top: -26%;
 		font-family: Helvetica;
 		color: black;
 		letter-spacing: 0.4px;
 	}
 	#Definitions h2 {
-		margin-left: -2%;
+		margin-left: -30%;
 	}
-	h3 {
-		margin-left: 3px;
 	}
 /* Add a black background color to the top navigation */
 .topnav {
@@ -463,8 +460,8 @@ Aside {
 	height: 2px;
 }
 
-/* Know Your Rights Card Styling */
 
+/* Know Your Rights Card Styling */
 
 
 .cards{
@@ -472,6 +469,9 @@ Aside {
 	margin: 0 auto;
 	text-align: center;
 	padding: 30px;
+	}
+	#header h3 {
+		margin-left: 20px;
 	}
 	.cards h3.header{
 	font-size: 34px;
@@ -566,7 +566,7 @@ Aside {
 		max-width: 1400px;
 		margin: 0 auto;
 		text-align: left;
-		padding: 8px;
+		padding: 10px;
 		padding-bottom: 20px;
 		padding-top: 20px;
 		}
@@ -585,7 +585,7 @@ Aside {
 		flex-wrap: wrap;
 		flex: 1;
 		margin: 10px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		padding: 10px;
 		border: 2px solid black;
 		border-radius: 4px;
@@ -626,18 +626,17 @@ Aside {
 		color: rgba(48,95,124,1);
 		}
 		.content h3{
-		font-size: 14px;
+		font-size: 16px;
 		padding-left: 2%;
 		margin: 16px 0;
-		margin-bottom: 6px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		}
 		.content p{
-		font-size: 12px;
+		font-size: 14px;
 		padding-right: 1%;
 		color: black;
-		line-height: 22px;
+		line-height: 26px;
 		padding-left: 2%;
 		font-family: 'Helvetica',sans-serif;
 		}
@@ -645,7 +644,7 @@ Aside {
 		margin: 22px 0;
 		margin-top: 1px;
 		margin-right: 6%;
-		margin-left: 40%;
+		margin-left: 50%;
 		background: black;
 		text-align: center;
 		color: white;
@@ -653,7 +652,7 @@ Aside {
 		text-transform: uppercase;
 		border: 1px solid black;
 		padding: 15px 0;
-		font-size: 12px;
+		font-size: 13px;
 		border-radius: 25px;
 		transition: .3s ease;
 		}
