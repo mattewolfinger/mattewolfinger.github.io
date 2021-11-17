@@ -379,6 +379,13 @@ Aside {
 		padding-right: 2%;
 		margin-bottom: -2px;
 	}
+	#error {
+		margin-top: -6px;
+		font-size: 5px;
+		padding-top: 0px;
+		padding-bottom: 16px;
+		margin-left: -66px;
+	}
 	}
 @media (max-width: 550px) {
 	h2 {
