@@ -98,15 +98,6 @@ p {
 	height: auto;
 	margin: 10px 0px;
 }
-#error {
-	margin-top: 1px;
-	font-size: 11px;
-	padding-top: 0px;
-	padding-bottom: 10px;
-	font-weight: bolder;
-	color: #ffffff;
-	height: 2px;
-}
 input {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(104,114,119,1);
@@ -401,15 +392,6 @@ Aside {
 	#Definitions h2 {
 		margin-left: -24%;
 	}
-	#error {
-	margin-top: 1px;
-	font-size: 10px;
-	padding-top: 0px;
-	padding-bottom: 8px;
-	font-weight: bolder;
-	color: #ffffff;
-	height: 2px;
-	}
 	}
 /* Add a black background color to the top navigation */
 .topnav {
@@ -470,6 +452,16 @@ Aside {
 	display: block;
 	text-align: left;
 	}
+}
+
+#error {
+	margin-top: 1px;
+	font-size: 14px;
+	padding-top: 0px;
+	padding-bottom: 16px;
+	font-weight: bolder;
+	color: #ffffff;
+	height: 2px;
 }
 
 /* Know Your Rights Card Styling */
