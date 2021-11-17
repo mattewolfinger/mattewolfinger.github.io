@@ -218,7 +218,7 @@ details {
     border: 1px solid black;
     	padding: .5em .6em 0;
 	margin-top: 0px;
-    	width: 68%;
+    	width: 70%;
 	font-size: 14pt;
 	margin-left: -32%;
 	display: flex;
@@ -409,13 +409,13 @@ Aside {
 		letter-spacing: 0.4px;
 	}
 	#Definitions h2 {
-		margin-left: 36%;
+		margin-left: 34%;
 		font-size: 16pt;
 		padding-bottom: 2%;
 		margin-top: -30px;
 		padding-top: 2%;
 		text-indent: 9px;
-		padding-right: 89%;
+		padding-right: 91%;
 	}
 	}
 /* Add a black background color to the top navigation */
