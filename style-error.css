@@ -33,8 +33,7 @@ html, body {
 #Hat-section {
 	/* padding-bottom: 14%; */
 	width: 520px;
-
-    height: auto;
+        height: auto;
 	/* SG: change z-index so image sits on top */
 	z-index: 100;
 	padding-right: 20%;
@@ -90,7 +89,6 @@ li {
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
-    position: absolute; bottom: 0;
 	color: white;
 	height: auto;
 	line-height: 30px;
