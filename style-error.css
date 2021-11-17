@@ -130,7 +130,7 @@ a:active {
 #Header {
 	flex-direction: column;
 	width: 90%;
-	margin-left: -130px;
+	margin-left: -112px;
     text-align: center;
 }
 }
@@ -172,8 +172,8 @@ a:active {
 	}
 	Aside {
 		margin-top: 5%;
-		margin-bottom: 74%;
-		padding-right: 20%;
+		margin-bottom: 62%;
+		padding-right: 6%;
 		padding-left: 6%;
 		text-align: left;
 		line-height: 24px;
