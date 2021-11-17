@@ -59,6 +59,21 @@ Aside {
 	color: white;
 	letter-spacing: 0.2px;
 }
+#Definitions h2 {
+	margin-left: -257px;
+	margin-bottom: 0px;
+	margin-top: -10px;
+	font-size: 18pt;
+	padding: .2em .4em 0;
+	letter-spacing: 1px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	border: 1px solid black;
+	padding-left: 0%;
+	padding-right: 53%;
+	background-color: black;
+}
 #About p{
 	color: rgb(54, 53, 55);
 	font-size: 16px;
