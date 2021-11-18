@@ -216,11 +216,11 @@ a:active {
 }
 details {
     border: 1px solid black;
-    	padding: .5em .6em 0;
+    padding: .5em .6em 0;
 	margin-top: 0px;
-    	width: 70%;
+    width: 70%;
 	font-size: 14pt;
-	margin-left: -33%;
+	margin-left: -30%;
 	display: flex;
 	letter-spacing: 0.8px;
 }
