@@ -172,6 +172,9 @@ Aside {
 	height: auto;
 	margin-left: -20px;
 }
+#rights-head {
+    padding-left: 2%;
+}
 ul {
 	color: #ffffff;
 	list-style-type: none;
