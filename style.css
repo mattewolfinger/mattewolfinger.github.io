@@ -165,9 +165,9 @@ Aside {
     background-color: black;
 }
 #About img{
-	width: 560px;
+	width: 80%;
 	height: auto;
-	margin-left: -20px;
+	margin-left: -160px;
 }
 #rights-head {
     padding-left: 2%;
