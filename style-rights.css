@@ -320,3 +320,60 @@ h2 {
 	text-align: left;
 	}
 }
+@media (max-width: 550px) { 
+	#main--container {
+		flex-direction: column;
+	}
+	#index {
+		flex-wrap: wrap;
+		position: relative;
+		align-content: left;
+		padding-top: 2%;
+		padding-left: 10%;
+		padding-bottom: 3px;
+	}
+	Aside {
+		margin-top: 2%;
+		margin-bottom: 11%;
+		padding-right: 2%;
+		text-align: left;
+		font-size: 10pt;
+		line-height: 26px;
+		color: white;
+		letter-spacing: 0.2px;
+	}
+	#Title img {
+		padding: 0%;
+		width: 160px;
+	}
+	li {
+		line-height: 26px;
+		font-size: 11pt;
+		letter-spacing: 0.2px;
+	}
+	ul {
+		color: rgb(54, 53, 55);
+		font-size: 16px;
+		line-height: 28px;
+		padding-right: 20%;
+	}
+	h2 {
+		font-size: 14pt;
+		margin-left: -22px;
+	}
+	#scenario-list p {
+		line-height: 24px;
+		font-size: 11pt;
+		padding-right: 20%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		border-bottom: rgb(54, 53, 55) 1px solid;
+	}
+	#explanations p {
+		padding-right: 30%;
+		padding-top: 0%;
+		font-size: 8pt;
+		color: rgb(80, 79, 79);
+		line-height: 22px;
+	}
+}
