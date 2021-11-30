@@ -35,7 +35,6 @@ html, body {
 #Header {
 	padding-bottom: 0.5%;
 	flex-direction: row;
-	align-content: left;
 	padding-left: 6%;
 	margin-left: 0px;
 }
@@ -59,7 +58,6 @@ h2 {
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
-	align-content: left;
 	padding-bottom: 20px;
 	padding-right: 40%;
 	margin-left: 10%;
@@ -319,7 +317,6 @@ details {
 	margin-left: -68px;
 	align-content: center;
 	padding-top: 0px;
-	padding-bottom: -6px;
 }
 input {
 	height: 48px;
@@ -334,9 +331,7 @@ Aside {
 	width: 100%;
 	font-size: 7pt;
 	margin-left: 6px;
-	padding-right: -42%;
 	text-align: left;
-	padding-top: -12px;
 	padding-bottom: 20px;
 	line-height: 16px;
 	z-index: 100 !important;
@@ -406,7 +401,6 @@ Aside {
 	h2 {
 		font-size: 34px;
 		margin-left: -58%;
-		padding-top: -26%;
 		font-family: Helvetica;
 		color: black;
 		letter-spacing: 0.4px;
@@ -703,3 +697,4 @@ Aside {
 		flex-direction: column;
 		}
 		}
+	
