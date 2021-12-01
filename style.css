@@ -209,13 +209,13 @@ li {
 #Footer ul {
 	padding-top: 2%;
 	padding-bottom: 1.5%;
+	padding-left: 6.5%;
 	width: 84%;
 }
 #Footer li {
 	background-color: rgba(38,38,38,1);
 	width: 84%;
 	font-size: 11pt;
-	padding-left: 2.9%;
 	list-style-type: none;
 	color: white;
 	height: auto;
