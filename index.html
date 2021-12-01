@@ -77,9 +77,10 @@
                 </div>
                 </div>
         </div>
-        <div class="container" id="White-sect">
-            <div class="container" id="Definitions">
+        <div class="container" id="Main">
+            <div class="body-container" id="Definitions">
                 <h2>Definitions</h2>
+                <div id="Details-Box">
                 <details>
                     <summary>Neglect of Duty/Unreasonable Judgment</summary>
                 This includes any condcut or omission which is not in accordance with established and ordinary duties or procedures as to such employees or which constitutes use of unreasonable judgment in the exercising of any discretion granted to an employee. [Rule 102 Section 04]
@@ -110,12 +111,13 @@
                 </details>
                 <details>
                     <summary>Finding: Unfounded</summary>
-                    Investiation reveals complained of action did not occur.
+                    Investigation reveals complained of action did not occur.
                 </details>
+                </div>
             </div>
-            <div class="container" id="About">
+            <div class="body-container" id="About">
                 <h2>About</h2>
-                <img src="./about-sect.png" alt="The Boston Police Accountability Project (or Boston Cop Track) was assembled after learning of the Boston Police Department's intentions to construct their own misconduct interface. There exists a clear conflict of interest. Their data keeping practices leave much to be desired, and the terms they use can be hard to decipher. This is by design. For the sake of data transparency and accessibility, this interface was created in order to assist the citizens of Boston to stay informed.">
+                <p>The Boston Police Accountability Project (or Boston Cop Track) was assembled after learning of the Boston Police Department's intentions to construct their own misconduct interface. There exists a clear conflict of interest. Their data keeping practices leave much to be desired, and the terms they use can be hard to decipher. This is by design. For the sake of data transparency and accessibility, this interface was created in order to assist the citizens of Boston to stay informed.</p>
             </div>
         </div>
     </div>
@@ -131,6 +133,8 @@
                 <a href="https://bpdnews.com/complaintform" target="_blank">File a complaint</a>
             </li>
         </ul>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//mattewolfinger.github.io/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/intent/tweet?text=https%3A//mattewolfinger.github.io/" class="fa fa-twitter"></a>
     </div>
     </div>
     <script>
@@ -150,6 +154,16 @@
             let ids = data.map(function(d) {
                 return d.badge;
             });
+
+            let candidates = data.map(function(d) {
+                return `${d.last_name}, ${d.first_name} (#${d.badge})`;
+            });
+
+            /* DO THE W3SCHOOLS STUFF HERE*/
+            /*STEP 4*/
+            /*STEP 5*/
+
+            /*THEN MAKE AUTOCOMPLETE ACTIVE ON AN EXISTING ELEMENT*/
 
             d3.select("#search--button").on("click", function() {
 
