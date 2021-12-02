@@ -18,7 +18,6 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	/* SG: Add width property here */
 	width: 100%;
 }
 html, body {
@@ -157,7 +156,7 @@ Aside {
 h2 {
 	padding-bottom: 1%;
 	margin-top: -30px;
-	padding-left: 2.7%;
+	padding-left: 2.8%;
 	padding-top: 2%;
 	font-size: 1.8em;
 }
@@ -177,7 +176,7 @@ h2 {
 	line-height: 26px;
 	font-size: 16px;
 	margin: 0 auto;
-	margin-bottom: 1px;
+	margin-bottom: 2px;
 	letter-spacing: 0.4px;
 }
 #rights-head {
@@ -227,10 +226,10 @@ a:link {
 	text-decoration: none;
 	background-color: transparent;
 }
-.fa {
+#Footer .fa {
 	padding: 20px;
-	font-size: 30px;
-	width: 30px;
+	font-size: 20px;
+	width: 20px;
 	text-align: center;
 	border-radius: 50%;
 }
@@ -292,20 +291,24 @@ details[open] summary {
 }
 @media (max-width: 550px) { 
 #Main {
-	width: 90%;
-	margin: 0 auto 0 auto;
-	align-content: center;
-	padding-top: 0px;
-	padding-bottom: 0px;
+	max-width: 1400px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px 10px;
+}
+#Details-Box {
+	padding-left: 6%;
+    padding-right: 0%;
 }
 details {
-    border: 1px solid black;
-	font-size: 14pt;
-    padding: .5em .5em 0;
-    width: 134%;
-	margin-left: 56%;
-	margin-right: 20%;
-	margin-bottom: 0px;
+	border: 0.8px solid black;
+    padding: 0.5em 0.6em 0px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 0px;
+    width: 90%;
+    display: flex;
+    letter-spacing: 0.8px;
 }  
 }
 @media (max-width: 550px) { 
@@ -322,6 +325,14 @@ details {
 		margin-left: 38%;
 		margin-bottom: -4%;
 		z-index: 99 !important;
+	}
+	#About p {
+		color: rgb(54, 53, 55);
+		padding-left: 4%;
+		padding-right: 8%;
+		line-height: 22px;
+		font-size: 12px;
+		margin: 0px auto 2px;
 	}
 	}
 	@media (min-width: 551px) {
@@ -342,6 +353,11 @@ details {
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+summary {
+	font-size: 12px;
+	margin: -0.4em -0.4em 0px;
+	padding: 0.7em
+}
 }
 @media (max-width: 550px) { 
 #Search-Duo {
@@ -356,6 +372,13 @@ input {
 Button {
 	height: 48px;
 	font-size: 15px;
+}
+#About {
+	max-width: 1400px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px 10px;
+	padding-top: 60px;
 }
 }
 @media (max-width: 550px) { 
@@ -436,20 +459,23 @@ Aside {
 	}
 @media (max-width: 550px) {
 	h2 {
-		font-size: 34px;
-		margin-left: -58%;
+		font-size: 16pt;
 		font-family: Helvetica;
 		color: black;
-		letter-spacing: 0.4px;
+		padding-left: 0%;
+		letter-spacing: 1px;
 	}
-		#Definitions h2 {
-		margin-left: 36%;
-		font-size: 16pt;
-		padding-bottom: 2%;
+	#Definitions h2 {
+		padding-bottom: 1%;
 		margin-top: -30px;
+		padding-left: 2.9%;
 		padding-top: 2%;
-		text-indent: 9px;
-		padding-right: 89%;
+	}
+	#body-container {
+	display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100%;
 	}
 	}
 /* Add a black background color to the top navigation */
@@ -524,7 +550,6 @@ Aside {
 }
 
 /* Know Your Rights Card Styling */
-
 
 .cards{
 	max-width: 1400px;
