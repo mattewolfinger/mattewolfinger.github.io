@@ -88,25 +88,50 @@ li {
 	letter-spacing: 0.4px;
 }
 #Footer {
-	background-color: rgba(38,38,38,1);
-	width: 100%;
-	color: white;
-	height: auto;
-	line-height: 30px;
+    background-color: rgba(38,38,38,1);
+    width: 100%;
+    color: white;
+    height: auto;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 #Footer ul {
+    color: #ffffff;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 20px;
 	padding-top: 2%;
 	padding-bottom: 1.5%;
+	padding-left: 6.5%;
+	width: 84%;
 }
 #Footer li {
-	background-color: rgba(38,38,38,1);
-	width: 100%;
-	font-size: 11pt;
-	padding-left: 10%;
-	list-style-type: none;
+    background-color: rgba(38,38,38,1);
+    width: 84%;
+    font-size: 11pt;
+    list-style-type: none;
+    color: white;
+    height: auto;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    padding-bottom: 0px;
+}
+#Footer .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa:link {
 	color: white;
-	height: auto;
-	line-height: 30px;
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.7;
 }
 a:link {
 	color: rgba(255,255,255,0.902);
@@ -169,30 +194,8 @@ font-size: 14pt;
 #data-downloads {
     font-size: 11pt;
 }
-#index {
-	position: -webkit-sticky;
-	position: sticky;
-	padding-left: 10%;
-	top: 0;
-	align-self: flex-start;
-}
-#scenario-list {
-	flex: 1 0 40%;
-}
-#scenario-list p {
-	line-height: 24px;
-	padding-right: 20%;
-	padding-top: 2%;
-	padding-bottom: 2.5%;
-	border-bottom: rgb(54, 53, 55) 1px solid;
-    letter-spacing: 0.4px;
-}
-#scenario-list h2 {
-	font-size: 15pt;
-}
 #explanations {
-	flex: 1 0 60%;
-	padding-left: 11%;
+	padding-left: 12%;
 }
 #explanations p {
 	padding-right: 10%;
@@ -203,7 +206,7 @@ font-size: 14pt;
 h2 {
 	color:rgb(54, 53, 55);
 	font-size: 18pt;
-	margin-left: -22px;
+	margin-left: -25.4px;
 }
 #lawyers{
 	padding-top: 20px;
@@ -252,7 +255,7 @@ h2 {
 @media (max-width: 550px) {
 	#Title {
 		align-content: center;
-		padding-left: 10%;
+		padding-left: 12%;
 		padding-right: 10%;
 		width: 100%;
 	}
@@ -291,6 +294,11 @@ h2 {
 		line-height: 22px;
 		color: white;
 		letter-spacing: 0.2px;
+	}
+	#Footer ul {
+		padding-top: 2%;
+		padding-bottom: 1.5%;
+		width: 74%;
 	}
 	}
 /* Add a black background color to the top navigation */
