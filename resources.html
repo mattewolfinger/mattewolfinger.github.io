@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Boston Cop Track - Resources</title>
-        <link rel="stylesheet" href="./style-error.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#305f7c">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+        <title>Boston Cop Track - Your Rights</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+        <link rel="icon" type="image/png" href="./favicon.png">
         <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <meta name="description" content="Look up a Boston Police Department employee to view their misconduct history">
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style-resources.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class="container">
@@ -29,9 +24,69 @@
         </div>
         <div class="container" id="Header">
             <div class="item" id="Title">
-                <img src="./images/cop-track-logo.png" style="margin-top: -10%;">
-            <h1>We're not ready for you yet.</h1>
-            <aside>This prototype is still a work in progress, check back soon for more updates.</aside>
+            <img src="./images/cop-track-logo.png" alt="Boston Cop Track">
+            <h1>RESOURCES</h1>
+            <aside>Here you'll find links to lawyers, bail funds, and educational resources on the history of police misconduct. This page also contains downloads for the data utilized to construct Boston Cop Track. You can either download the cleaned data presented on the site or the raw data in their original form.</aside>
+            </div>
+        </div>
+        <div id="main--container" class="container">
+            <div id="index">
+                <div id="scenario-list">
+                    <h2>Resources</h2>
+                    <a href="#lawyers"><p>Lawyer referral services</p></a>
+                    <a href="#bail-funds"><p>Bail funds</p></a>
+                    <a href="#take-action"><p>Take action</p></a>
+                    <a href="#contact-officials"><p>Contact your local officials</p></a>
+                    <a href="#data-downloads"><p>Download the data</p></a>
+                </div>
+            </div>
+            <div id="explanations">
+                <div id="lawyers">
+                <h2>Lawyer referral services and bar assocations</h2>
+                <ul>
+                    <li><a href="https://bostonbarlawyer.org/" target="_blank">Boston Bar Association Lawyer Referral Service</a><br><a href="tel:6177420625">617-742-0625</a></li>
+                    <li><a href="https://scba.org/" target="_blank">Suffolk County Bar Association</a><br><a href="tel:6172345511">631-234-5511</a></li>
+                    <li><a href="https://www.masslawhelp.com/" target="_blank">Massachusetts Bar Association Lawyer Referral Service</a><br><a href="tel:6176540400">617-654-0400</a></li>
+                    <li><a href="https://masslrf.org/en/home" target="_blank">Massachusetts Legal Resource Finder</a></li>
+                </ul>
+                </div>
+                <div id="bail-funds">
+                <h2>Bail funds</h2>
+                <ul>
+                    <li><a href="https://www.massbailfund.org/" target="_blank">The Massachusetts Bail Fund</a></li>
+                    <li><a href="https://bailproject.org/" target="_blank">The Bail Project</a></li>
+                    <li><a href="https://www.nationalbailout.org/" target="_blank">National Bail Out</a></li>
+                </ul>
+                </div>
+                <div id="take-action">
+                <h2>Take action</h2>
+                <ul>
+                    <li><a href="https://www.aclum.org/en/local-community-action-and-advocacy" target="_blank">ACLU Massachusetts — Local Advocacy Toolkits</a></li>
+                    <li><a href="https://www.aclum.org/en/volunteer/" target="_blank">ACLU Massachusetts — Volunteer Resources</a></li>
+                </ul>
+                </div>
+                <div id="contact-officials">
+                    <h2>Contact your local officials</h2>
+                    <ul>
+                        <li>Boston Mayor Michelle Wu<br>mayor@boston.gov<br><a href="tel:6176354500">617-635-4500</a></li>
+                        <li>Massachusetts Governor Charlie Baker<br><a href="tel:6177254005">617-725-4005</a></li>
+                    </ul>
+                </div>
+                <div id="data-downloads">
+                    <h2>Download the data</h2>
+                    <ul>
+                        <li><a href="./data/2021-11-04_complaints.csv" download="bpd-allegations.csv">bpd-allegations.csv</a>
+                            <p>
+                                A cleaned and organized collection of multiple data sources, initially assembled by the Woke Windows Project. Contains documented allegations leveled against Boston Police Department Employees through the Internal Affairs Department (IAD). Allegations span from January 1st of 2001 to August 15th of 2020. The Boston Police Department has refused to disclose data past this date, violating multiple laws, and is currently being sued by organizations such as The Boston Globe and WBUR. These data were modified and translated to correct a multitude of spelling errors and incorrect classifications, unifying types of allegations to correspond with the BPD’s internal data dictionaries. If you’d rather download the raw dataset, you can do so here. 
+                            </p>
+                        </li>
+                        <li><a href="./data/2021-11-04_officers.csv" download="bpd-officers.csv">bpd-officers.csv</a>
+                            <p>
+                                A cleaned and organized collection of multiple data sources, initially assembled using raw data collected by the Woke Windows Project. Contains an extensive list of civilian and officer employees of the Boston Police Department by sourcing the City of Boston’s Alpha Listings and the bpdnews.com site’s frequently-updated Public Journal. Officers who aren’t currently active might still be receiving annual pay from the City of Boston, as of last year. These data were modified, cleaned and translated to correct spelling errors and group certain classifications to account for human error and allow for further data transparency / accessibility. If you’d rather download the raw dataset, you can do so here.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="container" id="Footer">
