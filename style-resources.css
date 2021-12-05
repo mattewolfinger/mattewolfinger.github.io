@@ -46,7 +46,6 @@ p {
 	color: white;
 	font-size: 16px;
 	line-height: 30px;
-	display: flex;
 	padding-right: 54%;
 }
 h1 {
@@ -134,6 +133,9 @@ a:active {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	background-color: white;
+}
+#raw-download a:link {
+font-size: 14pt;
 }
 #main--container p {
 	color: rgb(54, 53, 55);
