@@ -70,14 +70,69 @@ Promise.all(promises).then(function(data) {
             let div = d3.select("#complaints-container")
                 .append("div")
                 .attr("class", "allegation");
-        
-            // Allegation
-            div.append("h3")
-                .attr("class", "allegation--detail")
-                .html(complaint.allegation);
-        
-            // Finding
-            div.append("h4").html(complaint.finding);
+
+                            // Allegation
+                            
+
+            let definingDiv = div.append("div")
+                .attr("class", "allegation--data");
+
+                definingDiv.append("span").html(complaint.allegation);
+
+                definingDiv.append("img")
+                .attr("src", "./images/definition-button.png")
+                .on("click", function openNav() {
+                document.getElementById("mySidenav").style.width = "400px";
+                });
+
+                let imagefile;
+                if(complaint.finding === "Sustained") {
+                imagefile = "./images/flag-filled.png";
+                } else if(complaint.finding === "Not Sustained") {
+                imagefile = "./images/flag-outline.png";
+                } else if(complaint.finding === "Exonerated") {
+                imagefile = "./images/flag-outline.png";
+                } else if(complaint.finding === "Unfounded") {
+                imagefile = "./images/flag-outline.png";
+                } else if(complaint.finding === "Withdrawn") {
+                imagefile = "./images/flag-outline.png";
+                } else if(complaint.finding === "Filed") {
+                imagefile = "./images/flag-outline.png";
+                } else if(complaint.finding === "Pending") {
+                imagefile = "./images/flag-outline.png";
+                }
+    
+            /* SG EDIT
+            
+            Create a new <div> inside of the <div> you created above.
+            This gets nested inside the larger <div> created with the
+            variable named `div` above.
+
+            Notice I'm giving the <div> a class. Check the CSS!
+
+            */
+            let findingDiv = div.append("div")
+                .attr("class", "finding--data");
+
+            /* SG EDIT
+
+            Then, append the flag <img> and text label to
+            the `findingDiv` element.
+
+            The image and text label get nested inside
+            of the findingDiv.
+
+            Notice below that I changed the complaint.finding
+            text label to a "span" element, instead of h4,
+            because <span> elements display inline (h4 displays block)
+            */
+
+            
+            findingDiv.append("img")
+                .attr("src", imagefile);
+
+            findingDiv.append("span").html(complaint.finding);
+                
         
             // // Penalty
             // div.append("p").html(`Penalty: ${complaint.penalty}`);
@@ -88,12 +143,16 @@ Promise.all(promises).then(function(data) {
                 } else {
                     div.append("p").html(`Penalty: ${complaint.penalty}`);
                 }
-            }
+            };
+
+            // if(complaint.finding === "Sustained") {
+            //     document.getElementByClass("allegation--data").style.color = "#A03835";
+            // }
+            
 
         
             // Incident date
             div.append("h5").html(complaint.received_date);
-        
         
         });
     
@@ -145,12 +204,6 @@ Promise.all(promises).then(function(data) {
 
 
 });
-
-
-
-
-
-
 
 
 // let complaints = [d3.csv("./data/2021-11-04_complaints.csv")];
