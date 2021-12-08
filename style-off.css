@@ -15,8 +15,8 @@
 }
 html, body {
 	font-family: "Helvetica", sans-serif;
-	background-color: #000000;
-    color: #F9F9F9;
+	background-color: white;
+    color: rgb(54, 53, 55);
 	margin: 0px;
 	padding: 0px;
 }
@@ -24,23 +24,21 @@ html, body {
 	box-sizing: border-box;
 }
 h1 {
-    font-weight: normal;
-    font-size: 26px;
-    letter-spacing: 0.4px;
+	color:rgb(54, 53, 55);
+	font-size: 18pt;
 }
-
 h2 {
     font-weight: normal;
     font-size: 18px;
-    color: #F9F9F9;
+    color: rgb(54, 53, 55);
     letter-spacing: 0.6px;
 }
 h3 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 14pt;
     text-align: left;
     margin-left: -2px;
-    margin-bottom: -12px;
+    margin-bottom: -8px;
     letter-spacing: 0.4px;
 }
 h4 {
@@ -58,104 +56,116 @@ h5 {
 ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: -6px;
 }
 li {
     padding-bottom: 20px;
 }
-#counts {
-    font-size: 11.5pt;
-    margin-top: 2px;
-    margin-left: -24px;
-    margin-bottom: -46px;
-}
-img {
-	display: flex;
-	flex-direction: column;
-    margin-left: 4%;
-	margin-bottom: 30px;
-	width: 178px;
-	height: auto;
-}
-#headshot img {
-	display: flex;
-	flex-direction: column;
-    margin-left: -38%;
-    margin-bottom: -33px;
-	width: 110px;
-	height: auto;
+p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 13pt;
 }
 #alleg-head {
-    width: 22%;
+    font-weight: bold;
+    font-size: 18pt;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 2px;
 }
-#officer-active {
-    margin-left: -11px;
-    color: #000000;
-    font-size: 10pt;
+#headshot img {
+    display: flex;
+    flex-direction: column;
+    margin-left: -20%;
+    width: 126px;
+    height: auto;
 }
 #complaints-container {
+    padding-top: 3.5%;
     display: flex;
     flex-direction: column;
     text-align: left;
-}
-#profile {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: left;
-    padding-right: -20px;
-    padding-top: 4%;
-    padding-left: 5%;
+    padding-right: 16%;
+    margin-bottom: 10px;
+    flex: 1 0 60%;
 }
 #Footer {
-	background-color: rgba(38,38,38,1);
-	width: 100%;
-    padding-top: 1%;
-	color: #F9F9F9;
-    padding-left: 8%;
-	height: auto;
+    background-color: rgba(38,38,38,1);
+    width: 100%;
+    color: white;
+    height: auto;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 #Footer ul {
-	color: #F9F9F9;
-	list-style-type: none;
-	font-size: 16px;
-	line-height: 16px;
-	/* SG: add width property here */
-	width: 100%;
+    color: #ffffff;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 20px;
+	padding-top: 2%;
+	padding-bottom: 1.5%;
+	padding-left: 6.5%;
+	width: 84%;
 }
 #Footer li {
-	font-size: 14px;
+    background-color: rgba(38,38,38,1);
+    width: 84%;
+    font-size: 11pt;
+    list-style-type: none;
+    color: white;
+    height: auto;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    padding-bottom: 0px;
+}
+#Footer .fa {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa:link {
+	color: white;
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.7;
 }
 #officer-name {
+    line-height: 8px;
     font-size: 15pt;
-    line-height: 10px;
-    padding-bottom: 2px;
-    margin-left: -28px;
+    padding-bottom: 8px;
 }
 #officer-title {
-    font-size: 11pt;
-    margin-left: -25px;
-    padding-bottom: 4px;
-}
-#report-button {
-    width: 82%;
-    height: auto;
-    margin-top: 30px;
-    margin-left: -38%;
+    font-size: 13pt;
 }
 #badge-id{
-    margin-top: -12px;
-    /* padding: 12px 0 12px 24px; */
-    margin-left: -25px;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+}
+#officer-active {
+    color: #000000;
     font-size: 11pt;
-    /* list-style: none;
-    background-image: url("./images/badge-id-symbol.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 18px; */
+    margin-bottom: -4px;
+}
+#counts {
+    font-size: 13pt;
+}
+#report-button {
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -2px;
+}
+#rights-button {
+    width: 40%;
+    height: auto;
 }
 @media (max-width: 550px) { 
     #Main {
@@ -174,50 +184,74 @@ img {
         width: 98px;
         height: auto;
     }
+    #Footer .fa {
+        padding: 10px;
+        margin-top: 50px;
+        margin-right: 20px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    #Footer .ul {
+        padding-top: 2%;
+        padding-bottom: 1.5%;
+        width: 74%;
+    }
+    #profile {
+        flex-wrap: wrap;
+        padding-top: 1,8%;
+        border-bottom: 1px solid black;
+        padding-left: 10%;
+        padding-bottom: 3px;
+        background-color: white;
+    }
     #officer-name {
         font-size: 14pt;
         line-height: 20px;
         margin-left: -2px;
-        margin-bottom: -6px;
+        margin-bottom: -10px;
     }
     #officer-title {
         font-size: 10pt;
-        color: rgb(175, 174, 174);
-        padding-top: -20px;
+        padding-top: -40px;
         margin-left: 0px;
-        padding-bottom: 5px;
+        padding-bottom: 6px;
     }
     #report-button {
-        width: 100%;
+        width: 50%;
         height: auto;
-        margin-top: 42px;
+        margin-top: 35px;
         margin-left: -112px;
-        padding-right: 28%;
-        padding-bottom: 1%;
+        padding-bottom: 0%;
+    }
+    #rights-button {
+        width: 50%;
+        height: auto;
+        margin-top: 35px;
+        padding-bottom: 0%;
     }
     #badge-id{
         margin: 0;
-        margin-top: -30px;
+        margin-top: -16px;
         padding: 12px 0 12px 20px;
-        margin-bottom: 110px;
-        margin-left: -20px;
-        font-size: 10pt;
+        margin-bottom: -42px;
+        margin-left: -99px;
+        font-size: 8pt;
         list-style: none;
+        letter-spacing: 0.2px;
+
         /* background-image: url("./images/badge-id-symbol.png");
         background-repeat: no-repeat;
         background-position: left center;
         background-size: 14px; */
     }
     #counts {
-        font-size: 11.5pt;
+        font-size: 10pt;
         margin-top: -116px;
         margin-left: 0px;
         letter-spacing: 0.3px;
-        margin-bottom: -67px;
-        color: rgb(175, 174, 174);
-    }
-    #counts b {
-        color: #F9F9F9;
+        margin-bottom: -40px;
     }
     }
     @media (min-width: 551px) {
@@ -289,19 +323,7 @@ img {
 
 /* SG EDITS */
 .allegation {
-    border-bottom: 1px solid #131517;
-    border-left: 1px solid #131517;
-    padding-left: 2%;
-}
-.allegation--detail {
-    font-size: 17pt;
-    line-height: 34px;
-    width: 80%;
-}
-#complaints-container {
-    padding-right: 2%;
-    margin-bottom: 10px;
-    flex: 1 0 60%;
+    border-bottom: rgb(54, 53, 55) 1px solid;
 }
 #no-allegations {
     margin-top: 4%;
@@ -318,67 +340,20 @@ img {
     padding-bottom: 28%;
     font-size: 22pt;
 }
-@media (max-width: 550px) { 
-#main--container {
-    flex-direction: column;
-}
-.allegation {
-    border-bottom: 0.0001px solid #484B4C;
-    border-left: none;
-    border-width: 100%;
-    padding-left: 4%;
-    padding-bottom: 0px;
-    align-content: left;
-}
-.allegation--detail {
-    font-size: 13pt;
-    margin-bottom: -18px;
-    width: 100%;
-}
-#complaints-container {
-    padding-right: 6%;
-    padding-left: 4%;
-    line-height: 24px;
-    flex: 1 0 60%;
-}
-p {
-    margin-bottom: -14px;
-    margin-top: 12px;
-    font-size: 10pt;
-}
-#profile {
-    flex-wrap: wrap;
-    align-content: left;
-    padding-top: 1.8%;
-    border-bottom: 1px solid #F9F9F9;
-    padding-left: 10%;
-    padding-bottom: 3px;
-}
-#alleg-head {
-    width: 34%;
-    margin-top: 14px;
-    margin-left: 14px;
-    margin-bottom: -2px;
-}
-#officer-active {
-    margin-left: 9px;
-    font-size: 9pt;
-}
-}
-
-@media (min-width: 551px) {
-#main--container {
-    flex-direction: row;
-}
-}
 #profile {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    line-height: 18px;
+    line-height: 16px;
     align-self: flex-start;
-    color: #F9F9F9;
-    background-color: #000000;
+    color: rgb(54, 53, 55);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: left;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-bottom: 2.5%;
 }
 #cop-info {
     flex: 1 0 40%;
@@ -403,3 +378,160 @@ a:active {
 	text-decoration: none;
 	background-color: transparent;
 }
+#main--container {
+    flex-direction: row;
+}
+@media (max-width: 550px) { 
+#main--container {
+    flex-direction: column;
+}
+.allegation {
+    border-bottom: 0.0001px solid #484B4C;
+    border-left: none;
+    border-width: 100%;
+    padding-left: 4%;
+    padding-bottom: 0px;
+    align-content: left;
+}
+.allegation--detail {
+    font-size: 14pt;
+    margin-bottom: -18px;
+    width: 100%;
+}
+#complaints-container {
+    padding-right: 6%;
+    padding-left: 4%;
+    margin-bottom: 2px;
+    line-height: 24px;
+    flex: 1 0 60%;
+}
+p {
+    margin-bottom: -14px;
+    font-size: 11pt;
+}
+#alleg-head {
+    width: 34%;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+}
+#officer-active {
+    margin-bottom: 100px;
+    margin-top: -8px;
+    font-size: 8.5pt;
+}
+.allegation--data img {
+    width: 1%;
+    height: auto;
+    flex: 0 1 30px;
+    padding-right: 0.8%;
+}
+}
+
+/* #FINDING-FLAGS */
+
+.finding--data {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.finding--data img {
+    width: 30px;
+    flex: 0 1 30px;
+}
+
+.finding--data span {
+    font-size: 1.1em;
+    margin-left: 2%;
+    letter-spacing: 0.5px;
+}
+
+.allegation--data {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+
+.allegation--data img {
+    width: 1%;
+    height: auto;
+    flex: 0 1 30px;
+    padding-right: 0.8%;
+}
+
+.allegation--data span {
+    font-size: 1.2em;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-right: 2%;
+}
+
+
+    .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav details {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14pt;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    list-style-type: none;
+    }
+
+    .sidenav summary {
+        font-size: 14pt;
+        color: rgba(48,95,124,1);
+        font-weight: bold;
+        display: block;
+        transition: 0.3s;
+        padding-right: 10%;
+        line-height: 24px;
+        letter-spacing: 0.6px;
+        padding-bottom: 3%;
+        }
+
+    .sidenav details {
+        font-size: 11pt;
+        margin-left: 12px;
+        padding-right: 23%;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        line-height: 24px;
+        padding-bottom: 20px;
+        }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav summary:hover {
+    color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }

@@ -64,7 +64,7 @@
                         An officer stops you in public
                     </h3>
                     <p>
-                        You do not have to identify yourself, even when asked. You have the right to ask why they're questioning you. Ask them whether you're under arrest and if you're free to leave. If the latter is true, you have the right to walk away. Do not run or draw attention to yourself while doing so.
+                        You do not have to identify yourself, even when asked. You have the right to ask why an officer is questioning you. Ask them whether you're under arrest and if you're free to leave. If you are not under arrest and free to leave, you have the right to walk away. Do not run or draw attention to yourself while doing so.
                     </p>
                     <a href="./your-rights.html#stopped-in-public">More info</a>
                 </div>
@@ -119,7 +119,9 @@
             </div>
             <div class="body-container" id="About">
                 <h2>About</h2>
-                <p>The Boston Police Accountability Project (or Boston Cop Track) was assembled after learning of the Boston Police Department's intentions to construct their own misconduct interface. There exists a clear conflict of interest. Their data keeping practices leave much to be desired, and the terms they use can be hard to decipher. This is by design. For the sake of data transparency and accessibility, this interface was created in order to assist the citizens of Boston to stay informed.</p>
+                <p>The Boston Police Accountability Project (or Boston Cop Track) was assembled after learning of the Boston Police Department's intentions to construct their own misconduct interface. Given their well-known history of sweeping things under the rug, there exists a clear conflict of interest.</p>
+                <p>Their data keeping practices leave much to be desired, and the terms they use can be hard to decipher. This is without a doubt a produce of the department's design. Further research has revealed that these issues have been prevalent within the BPD for decades.</p>
+                <p>For the sake of data transparency and accessibility, this interface was constructed. Ultimately, it's our hope that the citizens of boston can utilize this interface as a tool to stay safe and informed — having full access to the info the BPD has always been trying to hide.</p>
             </div>
         </div>
     </div>
@@ -140,7 +142,6 @@
     </div>
     </div>
     <script>
-        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -150,90 +151,90 @@
         }
         }
 
-
         d3.csv("./data/2021-11-04_officers.csv").then(function(data) {
 
-            let ids = data.map(function(d) {
-                return d.badge;
-            });
-
-            let candidates = data.map(function(d) {
-                return `${d.last_name}, ${d.first_name} (#${d.badge})`;
-            });
-
-            /* DO THE W3SCHOOLS STUFF HERE*/
-            /*STEP 4*/
-            /*STEP 5*/
-
-            /*THEN MAKE AUTOCOMPLETE ACTIVE ON AN EXISTING ELEMENT*/
-
-            d3.select("#search--button").on("click", function() {
-
-                let badge_id = d3.select("#search--value").property("value");
-
-                if (badge_id === "") {
-                    d3.select("#error").html("You must enter a badge ID");
-                } else if(ids.indexOf(badge_id) < 0) {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "ZZZZZ") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "DSUPT") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "DT419") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "LT96") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "PC") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "SUPT") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else if(badge_id === "CAPT") {
-                    d3.select("#error").html("Please enter a valid badge ID");
-                } else {
-                    let url = `./single-officer.html#${badge_id}`;
-                    window.location = url;
-                }
-
-            });
-
-                d3.select("#search--preview").on("click", function() {
-
-                let badge_id = "1877";
-
-                let url = `./single-officer.html#${badge_id}`;
-
-                window.location = url;
-
-
-});
-
-
+        let ids = data.map(function(d) {
+        return d.badge;
         });
 
+        let candidates = data.map(function(d) {
+        return `${d.last_name}, ${d.first_name} (#${d.badge})`;
+        });
 
         d3.select("#search--button").on("click", function() {
 
-            let badge_id = d3.select("#search--value").property("value");
+        let badge_id = d3.select("#search--value").property("value");
 
-            if (badge_id === "") {
-                d3.select("#error").html("You must enter a badge ID");
-            } else {
-                let url = `./single-officer.html#${badge_id}`;
-                window.location = url;
-            }
-
+        if (badge_id === "") {
+        d3.select("#error").html("You must enter a badge ID");
+        } else if(ids.indexOf(badge_id) < 0) {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "ZZZZZ") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "DSUPT") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "DT419") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "LT96") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "PC") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "SUPT") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else if(badge_id === "CAPT") {
+        d3.select("#error").html("Please enter a valid badge ID");
+        } else {
+        let url = `./single-officer.html#${badge_id}`;
+        window.location = url;
+        }
 
         });
-        
+
         d3.select("#search--preview").on("click", function() {
 
-            let badge_id = "1877";
+        let badge_id = "1877";
 
-            let url = `./single-officer.html#${badge_id}`;
+        let url = `./single-officer.html#${badge_id}`;
 
-            window.location = url;
+        window.location = url;
 
+        });
 
+        });
+
+        d3.select("#search--button").on("click", function() {
+
+        let badge_id = d3.select("#search--value").property("value");
+
+        if (badge_id === "") {
+        d3.select("#error").html("You must enter a badge ID");
+        } else {
+        let url = `./single-officer.html#${badge_id}`;
+        window.location = url;
+        }
+
+        });
+
+        d3.select("#search--preview").on("click", function() {
+
+        let badge_id = "1877";
+
+        let url = `./single-officer.html#${badge_id}`;
+
+        window.location = url;
+
+        });
+
+        const details = document.querySelectorAll("details");
+
+        details.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+        details.forEach((detail) => {
+        if (detail !== targetDetail) {
+        detail.removeAttribute("open");
+        }
+        });
+        });
         });
     </script>
     </body>

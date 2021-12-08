@@ -190,10 +190,11 @@ a:active {
 	padding-left: 11%;
 }
 #explanations p {
-	padding-right: 40%;
-	font-size: 8pt;
-	color: rgb(38,38,38);
-	line-height: 18px;
+	padding-top: 0.6%;
+	padding-right: 43%;
+	font-size: 9pt;
+	color: rgb(139, 139, 139);
+	line-height: 20px;
 }
 h2 {
 	color:rgb(54, 53, 55);
@@ -313,7 +314,7 @@ h2 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	background-color: #CBEAF5;
+	background-color: #ddd;
 	color: black;
 }
 
