@@ -1,9 +1,9 @@
-/* PUT YOUR STYLES HERE */
+/* ERROR PAGE STYLING */
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* SG: Add width property here */
 	width: 100%;
 }
 html, body {
@@ -86,7 +86,6 @@ ul {
 	list-style-type: none;
 	font-size: 16px;
 	line-height: 20px;
-	/* SG: add width property here */
 	width: 100%;
 }
 li {
@@ -236,15 +235,13 @@ a:active {
 		letter-spacing: 0.2px;
 	}
 	}
-/* Add a black background color to the top navigation */
+
 .topnav {
 	background-color: white;
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: 34px;
 }
-
-/* Style the links inside the navigation bar */
 .topnav a {
 	float: left;
 	display: block;
@@ -256,24 +253,17 @@ a:active {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
-/* Change the color of links on hover */
 .topnav a:hover {
 	background-color: #ddd;
 	color: black;
 }
-
-/* Add an active class to highlight the current page */
 .topnav a.active {
 	background-color: #000000;
 	color: white;
 }
-
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
 	display: none;
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
@@ -281,8 +271,6 @@ a:active {
 	display: block;
 	}
 }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
 	.topnav.responsive {position: relative;}
 	.topnav.responsive a.icon {
