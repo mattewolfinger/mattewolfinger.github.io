@@ -255,8 +255,8 @@ h2 {
 Aside {
 	margin-top: -4%;
 	margin-bottom: 11%;
-	padding-right: 28%;
-	margin-right: -60%;
+	padding-right: 18%;
+	margin-right: -54%;
 	text-align: left;
 	font-size: 10pt;
 	line-height: 26px;
@@ -305,15 +305,6 @@ h2 {
 	line-height: 30px;
 	padding-left: 10%;
 	width: 100%;
-}
-Aside {
-	margin-top: 5%;
-	margin-bottom: 87%;
-	padding-right: 6%;
-	text-align: left;
-	line-height: 22px;
-	color: white;
-	letter-spacing: 0.2px;
 }
 #Title {
 	align-content: center;
