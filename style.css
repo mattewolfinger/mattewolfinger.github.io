@@ -566,6 +566,8 @@
 		flex-direction: column;
 		}
 		#Main {
+			display: flex;
+			flex-direction: column;
 			max-width: 1400px;
 			margin: 0px auto;
 			text-align: left;
