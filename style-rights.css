@@ -9,6 +9,7 @@ html, body {
 	font-family: "Helvetica", sans-serif;
 	background-color: rgba(48,95,124,1);
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	margin: 0px;
 	padding: 0px;
 }
@@ -242,7 +243,13 @@ h2 {
 @media (max-width: 550px) { 
 #main--container {
 	flex-direction: column;
-	padding-bottom: 4%;
+	padding-bottom: 7%;
+}
+.topnav {
+	background-color: white;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 24px;
 }
 #index {
 	flex-wrap: wrap;
@@ -254,7 +261,7 @@ h2 {
 }
 Aside {
 	margin-top: -4%;
-	margin-bottom: 11%;
+	margin-bottom: 16%;
 	padding-right: 18%;
 	margin-right: -54%;
 	text-align: left;
@@ -262,10 +269,6 @@ Aside {
 	line-height: 26px;
 	color: white;
 	letter-spacing: 0.2px;
-}
-#Title img {
-	padding: 0%;
-	width: 160px;
 }
 li {
 	line-height: 26px;
@@ -276,7 +279,7 @@ ul {
 	color: rgb(54, 53, 55);
 	font-size: 16px;
 	line-height: 28px;
-	padding-right: 19%;
+	padding-right: 10%;
 }
 h2 {
 	font-size: 13pt;
@@ -315,15 +318,14 @@ h2 {
 #Title img {
 	display: flex;
 	flex-direction: column;
-	padding-top: 10%;
-	width: 64%;
+	width: 145px;
 	height: auto;
 }
 h1 {
 	display: flex;
 	color: white;
 	font-family: Helvetica;
-	font-size: 24px;
+	font-size: 22px;
 	margin-bottom: 26px;
 }
 #Footer ul {
