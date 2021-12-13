@@ -712,16 +712,16 @@
 			height: 1px;
 		}
 		h2 {
-			font-size: 16pt;
-			font-family: Helvetica;
 			color: black;
-			padding-left: 0%;
+			padding-left: 4%;
+			font-size: 1.7em;
+			padding-top: 0%;
 			letter-spacing: 1px;
 		}
 		#Definitions h2 {
 			padding-bottom: 1%;
 			margin-top: -30px;
-			padding-left: 2.9%;
+			padding-left: 4%;
 			padding-top: 2%;
 		}
 			#body-container {
