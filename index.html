@@ -45,9 +45,9 @@
         <div class="container" id="White-before">
             <div class="cards">
                 <a href="./your-rights.html" style= color:rgb(54,53,55);>
-                    <h3 id="rights-head" class="header">
+                    <h2 id="rights-head" class="header">
                         Your Rights
-                    </h3>
+                    </h2>
                 </a>
                 <div class="services">
                 <div class="content content-1">
@@ -153,38 +153,77 @@
 
         d3.csv("./data/2021-11-04_officers.csv").then(function(data) {
 
-        let ids = data.map(function(d) {
-        return d.badge;
+            let ids = data.map(function(d) {
+                return d.badge;
+            });
+
+            let candidates = data.map(function(d) {
+                return `${d.last_name}, ${d.first_name} (#${d.badge})`;
+            });
+
+            d3.select("#search--button").on("click", function() {
+
+                let searchTerm = d3.select("#search--value").property("value");
+
+
+                if(isNan(searchTerm) == true ) {
+
+                    let officer = data.filter(function(d) {
+                        return d.last_name.toLowerCase() === searchTerm.toLowerCase();
+                    })[0];
+
+                // Do something
+                    let url = `./single-officer.html#${officer.badge}`;
+                    window.location = url;
+
+                } else {
+                    if (searchTerm === "") {
+                        d3.select("#error").html("You must enter a badge ID");
+                        } else if(ids.indexOf(searchTerm) < 0) {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "ZZZZZ") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "DSUPT") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "DT419") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "LT96") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "PC") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "SUPT") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else if(searchTerm === "CAPT") {
+                        d3.select("#error").html("Please enter a valid badge ID");
+                        } else {
+                            let url = `./single-officer.html#${searchTerm}`;
+                            window.location = url;
+            }
+                }
+
+
         });
 
-        let candidates = data.map(function(d) {
-        return `${d.last_name}, ${d.first_name} (#${d.badge})`;
+            d3.select("#search--preview").on("click", function() {
+
+        let searchTerm = "1877";
+
+        let url = `./single-officer.html#${searchTerm}`;
+
+        window.location = url;
+
+        });
+
         });
 
         d3.select("#search--button").on("click", function() {
 
-        let badge_id = d3.select("#search--value").property("value");
+        let searchTerm = d3.select("#search--value").property("value");
 
-        if (badge_id === "") {
+        if (searchTerm === "") {
         d3.select("#error").html("You must enter a badge ID");
-        } else if(ids.indexOf(badge_id) < 0) {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "ZZZZZ") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "DSUPT") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "DT419") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "LT96") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "PC") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "SUPT") {
-        d3.select("#error").html("Please enter a valid badge ID");
-        } else if(badge_id === "CAPT") {
-        d3.select("#error").html("Please enter a valid badge ID");
         } else {
-        let url = `./single-officer.html#${badge_id}`;
+        let url = `./single-officer.html#${searchTerm}`;
         window.location = url;
         }
 
@@ -192,34 +231,9 @@
 
         d3.select("#search--preview").on("click", function() {
 
-        let badge_id = "1877";
+        let searchTerm = "1877";
 
-        let url = `./single-officer.html#${badge_id}`;
-
-        window.location = url;
-
-        });
-
-        });
-
-        d3.select("#search--button").on("click", function() {
-
-        let badge_id = d3.select("#search--value").property("value");
-
-        if (badge_id === "") {
-        d3.select("#error").html("You must enter a badge ID");
-        } else {
-        let url = `./single-officer.html#${badge_id}`;
-        window.location = url;
-        }
-
-        });
-
-        d3.select("#search--preview").on("click", function() {
-
-        let badge_id = "1877";
-
-        let url = `./single-officer.html#${badge_id}`;
+        let url = `./single-officer.html#${searchTerm}`;
 
         window.location = url;
 
