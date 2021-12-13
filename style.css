@@ -362,6 +362,9 @@
 		padding-bottom: 2px;
 		padding-top: 30px;
 	}
+	.cards h2 {
+		padding-top: 0%;
+	}
 	#header h3 {
 		margin-left: 20px;
 	}
