@@ -327,9 +327,13 @@ h1 {
 	margin-bottom: 26px;
 }
 #Footer ul {
-	padding-top: 2%;
-	padding-bottom: 1.5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	width: 74%;
+}
+#Footer li {
+	font-size: 12px;
+	line-height: 24px;
 }
 #Header {
 	flex-direction: column;
