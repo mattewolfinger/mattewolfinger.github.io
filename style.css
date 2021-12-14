@@ -1,4 +1,5 @@
 /* COP TRACK STYLING */
+
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -18,7 +19,7 @@
 		width: 100%;
 	}
 	html, body {
-		font-family: "Helvetica Neue", sans-serif;
+		font-family: "Helvetica", sans-serif;
 		background-color: rgba(48,95,124,1);
 		margin: 0px;
 		overflow-x: hidden;
@@ -150,14 +151,14 @@
 		letter-spacing: 0.2px;
 	}
 	#Definitions h2 {
-		padding-left: 9%;
+		padding-left: 7%;
 		padding-top: 2%;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	h2 {
-		text-align: left;
+		padding-left: 2.8%;
 		padding-top: 2.4%;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	#About {
 		max-width: 1400px;
@@ -218,7 +219,7 @@
 		line-height: 30px;
 	}
 	a:link {
-		color: white;
+		color: #ffffff;
 		text-decoration: none;
 		background-color: transparent;
 	}
@@ -237,17 +238,17 @@
 		opacity: 0.7;
 	}
 	a:visited {
-		color: white;
+		color: #ffffff;
 		text-decoration: none;
 		background-color: transparent;
 	}
 	a:hover {
-		color: white;
+		color: #ffffff;
 		text-decoration: none;
 		background-color: transparent;
 	}
 	a:active {
-		color: white;
+		color: #ffffff;
 		text-decoration: none;
 		background-color: transparent;
 	}
@@ -279,7 +280,7 @@
 		display: inline;
 	}
 	summary:hover {
-		color: rgb(39, 39, 39);
+		color: rgba(48,95,124,1);
 		}
 	details[open] {
 		font-size: 10pt;
@@ -361,9 +362,6 @@
 		padding: 70px;
 		padding-bottom: 2px;
 		padding-top: 30px;
-	}
-	.cards h2 {
-		padding-top: 0%;
 	}
 	#header h3 {
 		margin-left: 20px;
@@ -476,11 +474,6 @@
 		letter-spacing: 1px;
 		text-align: left;
 	}
-	.cards h2 {
-		padding-left: 4%;
-		letter-spacing: 1px;
-		text-align: left;
-	}
 	.services{
 		display: flex;
 		align-items: center;
@@ -573,13 +566,10 @@
 		flex-direction: column;
 		}
 		#Main {
-			display: flex;
-			flex-direction: column;
 			max-width: 1400px;
 			margin: 0px auto;
 			text-align: left;
 			padding: 20px 10px;
-			padding-bottom: 11%;
 		}
 		#Details-Box {
 			padding-left: 6%;
@@ -588,10 +578,10 @@
 		details {
 			border: 0.8px solid black;
 			padding: 0.5em 0.6em 0px;
-			font-size: 6px;
+			font-size: 12px;
 			line-height: 17px;
 			margin-top: 0px;
-			width: 70%;
+			width: 90%;
 			display: flex;
 			letter-spacing: 0.8px;
 		}  
@@ -610,6 +600,7 @@
 			z-index: 99 !important;
 		}
 		#About p {
+			color: rgb(54, 53, 55);
 			padding-left: 4%;
 			padding-right: 8%;
 			line-height: 22px;
@@ -626,7 +617,7 @@
 			padding-bottom: 0px;
 		}
 		summary {
-			font-size: 9pt;
+			font-size: 12px;
 			margin: -0.4em -0.4em 0px;
 			padding: 0.7em
 		}
@@ -645,9 +636,10 @@
 		}
 		#About {
 			max-width: 1400px;
-			padding-top: 4%;
-			padding-bottom: 4%;
+			margin: 0px auto;
 			text-align: left;
+			padding: 20px 10px;
+			padding-top: 60px;
 		}
 		Aside {
 			width: 100%;
@@ -665,13 +657,9 @@
 			margin: 0 auto 0 auto;
 		}
 		#Footer ul {
-			padding-top: 1%;
-			padding-bottom: 1%;
+			padding-top: 2%;
+			padding-bottom: 1.5%;
 			width: 74%;
-		}
-		#Footer li {
-			font-size: 13px;
-			line-height: 28px;
 		}
 		#Title {
 			align-content: center;
@@ -718,16 +706,16 @@
 			height: 1px;
 		}
 		h2 {
+			font-size: 16pt;
+			font-family: Helvetica;
 			color: black;
-			padding-left: 4%;
-			font-size: 1.7em;
-			padding-top: 0%;
+			padding-left: 0%;
 			letter-spacing: 1px;
 		}
 		#Definitions h2 {
 			padding-bottom: 1%;
 			margin-top: -30px;
-			padding-left: 4%;
+			padding-left: 2.9%;
 			padding-top: 2%;
 		}
 			#body-container {

@@ -37,6 +37,9 @@ Promise.all(promises).then(function(data) {
     });
 
 
+
+
+
     // Allegations
 
     // if(idType === "badge_id") {
