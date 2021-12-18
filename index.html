@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Boston Cop Track</title>
+        <link rel="stylesheet" href="./css/style-home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+        <link rel="icon" type="image/png" href="./images/favicon.png">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="description" content="Look up a Boston Police Department employee to view their misconduct history">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <div id="top-page">
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html" class="active">
+                    <img src="./images/cop-track-logo.png" alt="Boston Cop Track">
+                </a>
+                <a href="./history.html">History of the BPD</a>
+                <a href="./resources.html">Resources</a>
+                <a href="./definitions.html">Definitions</a>
+                <a href="./your-rights.html">Know Your Rights</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="container" id="Header">
+                <div class="item" id="Title">
+                    <h1>
+                        Look up a Boston Police Department employee to view their misconduct history.
+                    </h1>
+                    <div id="search--preview">
+                        <p>
+                            <u>Don't have the details? See a preview here.</u>
+                        </p>
+                    </div>
+                    <div id="error">
+                        <!-- Error message appears here. !-->
+                    </div>
+                    <div class="item" id="Search-Duo">
+                        <input type="text" id="search--value" placeholder="Enter last name or badge ID number">
+                        <button id="search--button">
+                            Search
+                        </button>
+                        <aside>
+                            Boston Cop Track was assembled from multiple decades of reports from the Boston Police Department's Internal Affairs division in addition to various archival records.
+                        </aside>
+                        <div class="item" id="Hat-section-mobile">
+                            <img src="./images/cop-hat-mobile.svg" alt="Police Officer Hat">
+                        </div>
+                    </div>
+                </div>
+                <div class="item" id="Hat-section">
+                    <img src="./images/cop-hat.svg" alt="Police Officer Hat">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="White-before">
+            <div class="cards">
+                <a href="./your-rights.html" style= color:rgb(54,53,55);>
+                    <h3 id="rights-head" class="header">
+                        Your Rights
+                    </h3>
+                </a>
+                <div class="services">
+                    <div class="content content-1">
+                        <h3>
+                            An officer pulls you over
+                        </h3>
+                        <p>
+                            If pulled over as a driver, you must identify yourself upon request. Passengers do not have to, unless the officer is issuing them a citation. Keep your seatbelt on. Make it clear you're exercising your rights to remain silent and not identify yourself. You have the right to ask officers to identify themselves.
+                        </p>
+                        <a href="./your-rights.html#pulled-over">Read more</a>
+                    </div>
+                    <div class="content content-2">
+                        <h3>
+                            An officer stops you in public
+                        </h3>
+                        <p>
+                            You do not have to identify yourself, even when asked. You have the right to ask why an officer is questioning you. Ask them whether you're under arrest and if you're free to leave. If you are not under arrest and free to leave, you have the right to walk away. Do not run or draw attention to yourself while doing so.
+                        </p>
+                        <a href="./your-rights.html#stopped-in-public">Read more</a>
+                    </div>
+                    <div class="content content-3">
+                        <h3>
+                            The police are at your door
+                        </h3>
+                        <p>
+                            You do not have to answer any questions. You do not have to let them in, unless they have a search warrant. You have the right to ask to see that search warrant before letting them in. You do not have to identify yourself — neither do your guests. Do not lie or provide any false information.
+                        </p>
+                        <a href="./your-rights.html#at-door">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Main">
+            <div class="body-container" id="Definitions">
+                <a href="./definitions.html" style= color:rgb(54,53,55);>
+                    <h2>
+                        Definitions
+                    </h2>
+                </a>
+                <div id="Details-Box">
+                    <details>
+                        <summary>
+                            Neglect of Duty/Unreasonable Judgment
+                        </summary>
+                    This includes any condcut or omission which is not in accordance with established and ordinary duties or procedures as to such employees or which constitutes use of unreasonable judgment in the exercising of any discretion granted to an employee. [Rule 102 Section 04]
+                    </details>
+                    <details>
+                        <summary>
+                            Respectful Treatment
+                        </summary>
+                        Employees shall, on all occasions, be civil and respectful, curteous and considerate toward their supervisors, their subordinates and all other members of the Department and the general public. No employee shall use epithets or terms that tend to denigrate any person(s) due to their race, color, creed, gender identity or sexual orientation except when necessary in police reports or in testimony. [Rule 102 Section 09]
+                    </details>
+                    <details>
+                        <summary>
+                            Use of Force
+                        </summary>
+                        Force is defined by the BPD as "the amount of physical effort, however slight, required by police to compel compliance by an unwilling individual." This definition has since become a lot more complex.
+                    </details>
+                    <details>
+                        <summary>
+                            Conduct Unbecoming
+                        </summary>
+                        Employees shall condcut themselves at all times, both on and off duty in such a manner as to reflect most favorably on the Department. Condcut unbecoming an employee shall include that which tends to indicate that the employee is unable or unfit to continue as a member of the Department, or tends to impair the operation of the Department or its employees. [Rule 102 Section 03]
+                    </details>
+                    <details>
+                        <summary>
+                            Finding: Sustained
+                        </summary>
+                        Sufficient evidence supports the complainant's allegations. The offending officer is subject to disciplinary action.
+                    </details>
+                    <details>
+                        <summary>
+                            Finding: Not Sustained
+                        </summary>
+                        Investigation failed to prove or disprove the allegations.
+                    </details>
+                    <details>
+                        <summary>
+                            Finding: Exonerated
+                        </summary>
+                        Complained of action did occur - however action was reasonable, proper and legal.
+                    </details>
+                    <details>
+                        <summary>
+                            Finding: Unfounded
+                        </summary>
+                        Investigation reveals complained of action did not occur.
+                    </details>
+                </div>
+            </div>
+            <div class="body-container" id="About">
+                <h2>
+                    About
+                </h2>
+                <p>
+                    The Boston Police Accountability Project (or Boston Cop Track) was assembled after learning of the Boston Police Department's intentions to construct their own misconduct interface. Given their well-known history of sweeping things under the rug, there exists a clear conflict of interest.
+                </p>
+                <p>
+                    Their data keeping practices leave much to be desired, and the terms they use can be hard to decipher. This is without a doubt a produce of the department's design. Further research has revealed that these issues have been prevalent within the BPD for decades.
+                </p>
+                <p>
+                    For the sake of data transparency and accessibility, this interface was constructed. It's our hope that the citizens of Boston can utilize this interface as a tool to stay safe and informed — having full access to the info the BPD has always been trying to hide.
+                </p>
+            </div>
+        </div>
+        <div class="container" id="Footer">
+            <ul>
+                <li>
+                    <a href="./resources.html#data-downloads">
+                        Download the data
+                    </a>
+                </li>
+                <li>
+                    <a href="./resources.html#take-action">
+                        Take action
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bpdnews.com/complaintform" target="_blank">
+                        Report an employee
+                    </a>
+                </li>
+            </ul>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//mattewolfinger.github.io/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/intent/tweet?text=https%3A//mattewolfinger.github.io/" class="fa fa-twitter"></a>
+        </div>
+        <script src="./js/homepage.js"></script>
+    </body>
+</html>
