@@ -109,14 +109,14 @@ p {
 }
 #alleg-head {
     font-weight: 420;
-    font-size: 26pt;
+    font-size: 24pt;
     border-bottom: 4px solid #A65D5D;
-    padding-bottom: 13px;
+    padding-bottom: 11px;
     letter-spacing: 0.2px;
     width: 23%;
     margin-top: 14px;
     margin-left: 14px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 #headshot img {
     display: flex;
@@ -126,15 +126,13 @@ p {
     height: auto;
 }
 #complaints-container {
-    padding-right: 6%;
-    padding-left: 4%;
-    margin-bottom: 2px;
-    line-height: 24px;
-    flex: 1 0 60%;
-    padding-top: 2%;
+    padding-top: 3.5%;
     display: flex;
     flex-direction: column;
     text-align: left;
+    padding-right: 16%;
+    margin-bottom: 10px;
+    flex: 1 0 60%;
 }
 #Footer {
 	background-color: rgba(38,38,38,1);
@@ -322,6 +320,13 @@ a:active {
     font-size: 14pt;
     margin-bottom: -18px;
     width: 100%;
+}
+#complaints-container {
+    padding-right: 6%;
+    padding-left: 4%;
+    margin-bottom: 2px;
+    line-height: 24px;
+    flex: 1 0 60%;
 }
 #officer-active {
     font-size: 12pt;

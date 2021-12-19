@@ -59,15 +59,15 @@ h1 {
 	display: flex;
 	color: white;
 	font-family: Helvetica;
-	font-size: 36px;
+	font-size: 21pt;
     letter-spacing: 1.4px;
 }
 Aside {
 	margin-top: 2%;
 	padding-right: 29%;
 	text-align: left;
-    font-size: 15pt;
-	line-height: 30px;
+    font-size: 12pt;
+	line-height: 24px;
 	color: white;
 	letter-spacing: 0.2px;
 }
@@ -80,7 +80,7 @@ Aside {
 ul {
 	color: rgb(54, 53, 55);
 	font-size: 16px;
-	padding-right: 16%;
+	padding-right: 12%;
 	padding-left: 0%;
 	margin-bottom: 4%;
 	list-style-type: disc;
@@ -88,19 +88,21 @@ ul {
 	width: 100%;
 }
 li {
-	line-height: 32px;
-	font-size: 13pt;
+	line-height: 26px;
+	font-size: 10pt;
 	letter-spacing: 0.4px;
 }
+
+/* FOOTER */
 #Footer {
-    background-color: rgba(38,38,38,1);
-    width: 100%;
-    color: white;
-    height: auto;
-    line-height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	background-color: rgba(38,38,38,1);
+	width: 100%;
+	color: white;
+	height: auto;
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 #Footer ul {
     color: #ffffff;
@@ -108,7 +110,7 @@ li {
     font-size: 18px;
     line-height: 40px;
     margin-bottom: 20px;
-	padding-top: 2%;
+	padding-top: 1.4%;
 	padding-bottom: 1.5%;
 	padding-left: 6.5%;
 	width: 84%;
@@ -116,20 +118,25 @@ li {
 #Footer li {
     background-color: rgba(38,38,38,1);
     width: 84%;
-    font-size: 13pt;
+    font-size: 10pt;
     list-style-type: none;
     color: white;
     height: auto;
     letter-spacing: 0.4px;
-    line-height: 34px;
+    line-height: 26px;
     padding-bottom: 0px;
 }
 #Footer .fa {
-    padding: 30px;
-    font-size: 30px;
+    padding: 24px;
+    font-size: 24px;
     width: 20px;
     text-align: center;
     border-radius: 50%;
+}
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
 }
 .fa:link {
 	color: white;
@@ -138,23 +145,18 @@ li {
 .fa:hover {
 	opacity: 0.7;
 }
-a:link {
-	color: rgba(255,255,255,0.902);
-	text-decoration: none;
-	background-color: transparent;
-}
 a:visited {
-	color: rgba(255,255,255,0.902);
+	color: #ffffff;
 	text-decoration: none;
 	background-color: transparent;
 }
 a:hover {
-	color: rgba(255,255,255,0.902);
+	color: #ffffff;
 	text-decoration: none;
 	background-color: transparent;
 }
 a:active {
-	color: rgba(255,255,255,0.902);
+	color: #ffffff;
 	text-decoration: none;
 	background-color: transparent;
 }
@@ -180,7 +182,7 @@ a:active {
 	flex: 1 0 40%;
 }
 #scenario-list p {
-	font-size: 13pt;
+	font-size: 10.5pt;
 	line-height: 24px;
 	padding-right: 20%;
 	padding-top: 2%;
@@ -188,7 +190,7 @@ a:active {
 	border-bottom: rgb(54, 53, 55) 1px solid;
 }
 #scenario-list h2 {
-	font-size: 17pt;
+	font-size: 13.5pt;
 }
 #explanations {
 	flex: 1 0 60%;
@@ -196,14 +198,14 @@ a:active {
 }
 #explanations p {
 	padding-top: 3%;
-	padding-right: 44;
+	padding-right: 44%;
 	font-size: 9pt;
 	color: rgb(139, 139, 139);
 	line-height: 22px;
 }
 h2 {
 	color:rgb(54, 53, 55);
-	font-size: 20pt;
+	font-size: 16pt;
 	margin-left: -22px;
 }
 #pulled-over.scenario {
@@ -222,11 +224,11 @@ h2 {
 	overflow: hidden;
 	width: 100%;
 	flex-direction: row;
-	border-bottom: 5px solid white;
-	padding: 4em 0px 1em;
+	border-bottom: 4px solid white;
+	padding: 54px 0px 14px;
 }
 .topnav img {
-	margin-bottom: -30px;
+	margin-bottom: -24px;
 	display: flex;
 	width: 14%;
 	height: auto;
@@ -235,11 +237,10 @@ h2 {
 	float: right;
 	display: block;
 	text-align: center;
-	padding-right: 20px;
-	font-size: 12px;
+	padding-right: 16px;
+	font-size: 12.8px;
 	color: white;
 	font-family: "Helvetica Neue", serif;
-	font-size: 1em;
 	border-bottom: 0px;
 }
 .topnav a:hover {
@@ -258,7 +259,7 @@ h2 {
 		flex-direction: column;
 		padding-bottom: 0em;
 		background-color: white;
-		padding: 1em 36px 0.1em;
+		padding: 1em 36px 0.4em;
 	}
 	Body {
 		padding: 0;
@@ -334,11 +335,11 @@ h2 {
 		border-bottom: rgb(54, 53, 55) 1px solid;
 	}
 	#explanations {
-	max-width: 1400px;
-	flex-direction: column;
-	padding-left: 0px;
-	margin: 0px auto;
-	text-align: left;
+		max-width: 1400px;
+		flex-direction: column;
+		padding-left: 0px;
+		margin: 0px auto;
+		text-align: left;
 	}
 	#explanations p {
 		padding-right: 14%;
@@ -379,7 +380,7 @@ h2 {
 	#Title {
 		align-content: center;
 		padding-left: 4%;
-		padding-right: 0%;
+		padding-right: 4%;
 		width: 100%;
 	}
 	h1 {
@@ -404,12 +405,6 @@ h2 {
 	#scenario-list h2 {
 		font-size: 13pt;
 		margin-left: 0px;
-	}
-	#Title {
-		align-content: center;
-		padding-left: 10%;
-		padding-right: 10%;
-		width: 100%;
 	}
 	#Title img {
 		display: flex;
