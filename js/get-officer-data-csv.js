@@ -134,4 +134,3 @@ Promise.all(promises).then(function(data) {
             });
         });
     });
-
