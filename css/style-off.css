@@ -216,11 +216,11 @@ p {
 	overflow: hidden;
 	width: 100%;
 	flex-direction: row;
-	border-bottom: 5px solid white;
-	padding: 4em 0px 1em;
+	border-bottom: 4px solid white;
+	padding: 54px 0px 14px;
 }
 .topnav img {
-	margin-bottom: -30px;
+	margin-bottom: -24px;
 	display: flex;
 	width: 14%;
 	height: auto;
@@ -229,11 +229,10 @@ p {
 	float: right;
 	display: block;
 	text-align: center;
-	padding-right: 20px;
-	font-size: 12px;
+	padding-right: 16px;
+	font-size: 12.8px;
 	color: white;
 	font-family: "Helvetica Neue", serif;
-	font-size: 1em;
 	border-bottom: 0px;
 }
 .topnav a:hover {
