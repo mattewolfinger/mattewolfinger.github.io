@@ -147,6 +147,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	position: relative;
 }
 #Footer ul {
     color: #ffffff;
