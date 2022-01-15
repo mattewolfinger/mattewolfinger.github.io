@@ -136,6 +136,8 @@ p {
     margin-bottom: 10px;
     flex: 1 0 60%;
 }
+
+/* FOOTER */
 #Footer {
 	background-color: rgba(38,38,38,1);
 	width: 100%;
@@ -145,7 +147,6 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-    position: relative;
 }
 #Footer ul {
     color: #ffffff;
@@ -153,7 +154,7 @@ p {
     font-size: 18px;
     line-height: 40px;
     margin-bottom: 20px;
-	padding-top: 2%;
+	padding-top: 1.4%;
 	padding-bottom: 1.5%;
 	padding-left: 6.5%;
 	width: 84%;
@@ -166,14 +167,13 @@ p {
     color: white;
     height: auto;
     letter-spacing: 0.4px;
-    line-height: 34px;
+    line-height: 26px;
     padding-bottom: 0px;
 }
 #Footer .fa {
-    margin-top: 60px;
-    padding: 28px;
-    font-size: 26px;
-    width: 26px;
+    padding: 24px;
+    font-size: 24px;
+    width: 20px;
     text-align: center;
     border-radius: 50%;
 }
