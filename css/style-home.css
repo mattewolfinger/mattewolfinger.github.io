@@ -274,14 +274,10 @@ summary {
 	list-style-type: none;
 	font-size: 8.5pt;
 	font-weight: bold;
-	transition: 0.3s;
 	margin: -.5em -.5em 0;
 	padding: 1em;
 	line-height: 22px;
 }
-details {
-	transition: 0.3s;
-	}
 summary {
 	cursor: pointer;
 }
