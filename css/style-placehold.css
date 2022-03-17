@@ -14,7 +14,7 @@ html, body {
 }
 body {
 	max-width: 110em;
-	padding: 0px 73.33px 0.1em;
+	padding: 0px 73.33px 0.2em;
 	margin: 0px auto;
 }
 * {
@@ -48,7 +48,7 @@ Aside {
 	margin-bottom: 0%;
 	padding-right: 20%;
 	text-align: left;
-    font-size: 12pt;
+        font-size: 12pt;
 	line-height: 24px;
 	color: white;
 	letter-spacing: 0.4px;
