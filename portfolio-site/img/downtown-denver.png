@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<!-- tid: homepage-v4-layout -->
+<html lang="en-US" class="sapphire has-serif has-serif-text has-sans-serif has-sans-serif-compact has-sans-serif-condensed viewport--xs viewport--xs-only is-logged-out no-js">
+    <head>
+        <script>
+    if (performance && performance.mark) performance.mark('page_start');
+</script>
+
+<!-- Google Tag Manager GTMHEAD -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=Dfi39JuRK5f5adtRFwWXBw&gtm_preview=env-2&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KPFDDV');</script>
+<!-- End Google Tag Manager -->
+<script>
+    let oneTrustFramesReady = false;
+    let callAdServices = document.createEvent("Event");
+    callAdServices.initEvent("oneTrustScriptsReady", true, false);
+    var ua = window.navigator.userAgent;
+    if (ua.toLowerCase().includes('cxensebot')) {
+        oneTrustFramesReady = true;
+        window.dispatchEvent(callAdServices);
+    }
+</script>
+<!-- Global Privacy Control Script -->
+<script type="text/javascript">
+    var ua = window.navigator.userAgent;
+    if (ua.toLowerCase().includes('cxensebot')) {
+        /**
+         * Function to set  a cookie value and expiry
+         *
+         * Input:
+         *    - Name for the cookie
+         *    - Value for the cookie
+         *    - Number of days in the future the cookie should expires
+         * Returns:
+         *    - N/A
+         *
+         */
+        function setCookie (cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            const expires = 'expires=' + d.toUTCString();
+            document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+        }
+        function getCookie (cname) {
+            const name = cname + '=';
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return '';
+        }
+        function getPurposeId (Id) {
+            let custId = Id;
+            for (let i = 0; i < OneTrust.GetDomainData().Groups.length; i++) {
+                if (OneTrust.GetDomainData().Groups[i].CustomGroupId == custId) {
+                    return OneTrust.GetDomainData().Groups[i].PurposeId;
+                }
+            }
+        }
+        if (navigator.globalPrivacyControl && getCookie('OptanonAlertBoxClosed') == null) {
+            setCookie('OptanonConsent', encodeURIComponent('groups=C0004:0'), 365);
+        }
+    }
+</script>
+
+<!-- OneTrust CPPA scripts -->
+<script
+    src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    charset="UTF-8"
+    data-domain-script="1f6c1dd9-dcff-40cd-91f0-1e2d6599c301"
+    ></script>
+<script type="text/javascript">
+    function OptanonWrapper() {
+        if (!oneTrustFramesReady) {
+            oneTrustFramesReady = true;
+            window.dispatchEvent(callAdServices);
+        }
+    }
+</script>
+<script
+    src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js"
+    charset="UTF-8"
+    ccpa-opt-out-ids="C0004"
+    ccpa-opt-out-geo="ca"
+    ccpa-opt-out-lspa="true"
+    ></script>
+<!-- End OneTrust CPPA scripts -->
+<script type="text/javascript">
+    window.__CX_TIMING__ = window.__CX_TIMING__ || { ran: false };
+
+    window.bizjUserStorageItemSet = function bizjUserStorageItemSet (data) {
+        var userObject = new CustomEvent("userObjectIsSet", {
+            "detail": data
+        });
+        document.dispatchEvent(userObject);
+    }
+    window.cxenseShouldBlockContent = function cxenseShouldBlockContent (data) {
+        window.__CX_TIMING__.block = data;
+        var blockContent = new CustomEvent("cxenseObjectIsSet", {
+            "detail": data
+        });
+        window.dispatchEvent(blockContent);
+    }
+    window.cxenseLatestLoaded = function cxenseLatestLoaded () {
+        var latestLoaded = new CustomEvent("cxenseLatestLoaded");
+        window.dispatchEvent(latestLoaded);
+    }
+    window.cxenseYourNewsLoaded = function cxenseYourNewsLoaded () {
+        var yourNewsLoaded = new CustomEvent("cxenseYourNewsLoaded");
+        window.dispatchEvent(yourNewsLoaded);
+    }
+</script>
+<script type='text/javascript'>var _sf_startpt = (new Date()).getTime()</script>
+    <script async type="text/javascript" src="https://z.moatads.com/bizjournalprebidheader34648475267/moatheader.js"></script>
+    <script type="text/javascript">
+        //POLLING BASED IMPLEMENTATION
+
+            window.onload = () => {
+
+                // Checks if MOAT has targeting data
+                function isMoatDataAvailable() {
+                    return window.moatPrebidApi &&
+                        typeof window.moatPrebidApi.pageDataAvailable === "function" &&
+                        window.moatPrebidApi.pageDataAvailable();
+                }
+                // Adds Viewability target to all available
+                // Google Ads Manager ad slots
+                function setViewabilityTargetingForAllSlots() {
+                    if (!window.moatPrebidApi ||
+                        typeof window.moatPrebidApi.setMoatTargetingForAllSlots !== "function") {
+                        return;
+                    }
+                    window.moatPrebidApi.setMoatTargetingForAllSlots();
+                }
+                // Clears MOAT data and displays ads
+                function requestAds() {
+                    clearTimeout(failsafeTimeoutId);
+                    clearInterval(moatDataAvailableTimeoutId);
+                    setViewabilityTargetingForAllSlots();
+                }
+                // MOAT's recommended amount of time to wait before displaying ads
+                var moatTimeout = 1000;
+                // Displays ads if MOAT takes too long to respond
+                var failsafeTimeoutId = setTimeout(requestAds, moatTimeout);
+                var moatDataAvailableTimeoutId;
+                function checkIfMoatIsReady() {
+                    if (isMoatDataAvailable()) {
+                        requestAds();
+                    }
+                }
+                // If MOAT responds early request ads as soon as possible
+                if (isMoatDataAvailable()) {
+                    requestAds();
+                } else {
+                    moatDataAvailableTimeoutId = setInterval(checkIfMoatIsReady, moatTimeout);
+                }
+
+            }    </script>
+
+<title>Local Business News - The Business Journals</title>
+
+<base href="https://www.bizjournals.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.cxense.com/cx.js" async></script>
+    <script src="https://cdn.cxense.com/cx.cce.js" async></script>
+
+<!--Built Head Meta-->
+<meta name="metered_paywall:json" content="{&quot;interval&quot;:2592000,&quot;unregistered_limit&quot;:&quot;3&quot;,&quot;light_registered_limit&quot;:&quot;5&quot;,&quot;non_test_market&quot;:true,&quot;bypass_domains&quot;:&quot;{\&quot;0\&quot;:\&quot;https:\\\/\\\/news.yahoo.com\&quot;,\&quot;1\&quot;:\&quot;https:\\\/\\\/finance.yahoo.com\&quot;}&quot;}" >
+<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQcHVlVQABABVlVQBgQOU1c=",licenseKey:"b05300bd59",applicationID:"124215953"};;(()=>{var e,t,r={9071:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},6900:(e,t,r)=>{"use strict";let n;if(r.d(t,{H:()=>i}),r(2374).il){const e=document.createElement("div");e.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e",n=e.getElementsByTagName("div").length}var i;i=4===n?6:3===n?7:2===n?8:1===n?9:0},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>p,Mt:()=>v,C5:()=>d,DL:()=>y,OP:()=>L,lF:()=>z,Yu:()=>E,Dg:()=>g,CX:()=>f,GE:()=>w,sU:()=>H});var n={};r.r(n),r.d(n,{agent:()=>A,match:()=>D,version:()=>T});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)(`"${e}" is a protected attribute and can not be changed in feature ${t}.  It will have no effect.`),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function d(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error(`Info for ${e} was never set`);return u[e]}function f(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const l={allow_bfcache:!1,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0,harvestTimeSeconds:10},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},h={};function p(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!h[e])throw new Error(`Configuration for ${e} was never set`);return h[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");h[e]=new s(t,l),(0,i.Qy)(e,h[e],"config")}function v(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=p(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function y(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error(`LoaderConfig for ${e} was never set`);return b[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const E=(0,i.mF)().o;var x=r(6900),O=r(2053),A=null,T=null;if(navigator.userAgent){var _=navigator.userAgent,S=_.match(/Version\/(\S+)\s+Safari/);S&&-1===_.indexOf("Chrome")&&-1===_.indexOf("Chromium")&&(A="Safari",T=S[1])}function D(e,t){if(!A)return!1;if(e!==A)return!1;if(!t)return!0;if(!T)return!1;for(var r=T.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var P=r(5526),R=r(2374);const j="NRBA_SESSION_ID";function I(){if(!R.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(j))&&(e=(0,P.ky)(16),window.sessionStorage.setItem(j,e)),e}catch(e){return null}}var C=R._A?.XMLHttpRequest,N=C&&C.prototype;const k={};function L(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!k[e])throw new Error(`Runtime for ${e} was never set`);return k[e]}function H(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");var r;k[e]=new s(t,(r=e,{customTransaction:void 0,disabled:!1,features:{},isolatedBacklog:!1,loaderType:void 0,maxBytes:6===x.H?2e3:3e4,offset:(0,O.yf)(),onerror:void 0,origin:""+R._A?.location,ptid:void 0,releaseIds:{},sessionId:1==v(r,"privacy.cookies_enabled")?I():null,xhrWrappable:C&&N&&N.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:n})),(0,i.Qy)(e,k[e],"runtime")}function z(e){return function(e){try{const t=d(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n="1223.PROD"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)f(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function f(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function d(){}function f(){return new d}function l(){(u.backlog.api||u.backlog.feature)&&(u.aborted=!0,u.backlog={})}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},h={},p=!1;try{p=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var g={on:b,addEventListener:b,removeEventListener:y,emit:m,get:E,listeners:w,context:v,buffer:x,abort:l,aborted:!1,isBuffering:O,debugId:r,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function v(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,f):f()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=v(n),s=w(e),d=s.length,f=0;f<d;f++)s[f].apply(a,r);var l=A()[c[e]];return l&&l.push([g,e,r,a]),a}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function E(t){return h[t]=h[t]||e(g,t)}function x(e,t){var r=A();g.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function O(e){return!!A()[c[e]]}function A(){return g.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374),i=!1;try{var o=Object.defineProperty({},"passive",{get:function(){i=!0}});n._A?.addEventListener("testPassive",null,o),n._A?.removeEventListener("testPassive",null,o)}catch(e){}function a(e){return i?{passive:!0,capture:!!e}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>a,M:()=>o,Rl:()=>i,ky:()=>s});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(){return s(16)}function a(){return s(32)}function s(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";r.d(t,{nb:()=>c,os:()=>u,yf:()=>s,zO:()=>a});var n=r(7145),i=(new Date).getTime(),o=i;function a(){return n.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function s(){return i}function c(e){o=e}function u(){return o}},7145:(e,t,r)=>{"use strict";r.d(t,{G:()=>n});const n=void 0!==r(2374)._A?.performance?.timing?.navigationStart},6625:(e,t,r)=>{"use strict";r.d(t,{s:()=>c,v:()=>u});var n=r(8283),i=r(9071),o=r(2053),a=r(7145),s=r(2374);let c=!0;function u(e){var t=function(){if(i.I&&i.I<9)return;if(a.G)return c=!1,s._A?.performance?.timing?.navigationStart}();t&&((0,n.B)(e,"starttime",t),(0,o.nb)(t))}},8283:(e,t,r)=>{"use strict";r.d(t,{B:()=>o,L:()=>a});var n=r(2053),i={};function o(e,t,r){void 0===r&&(r=(0,n.zO)()+(0,n.os)()),i[e]=i[e]||{},i[e][t]=r}function a(e,t,r,n){const o=e.sharedContext.agentIdentifier;var a=i[o]?.[r],s=i[o]?.[n];void 0!==a&&void 0!==s&&e.store("measures",t,{value:s-a})}},6368:(e,t,r)=>{"use strict";r.d(t,{e:()=>o});var n=r(2374),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},9548:(e,t,r)=>{"use strict";r.d(t,{T:()=>i});var n=r(2374);const i={isFileProtocol:function(){let e=Boolean("file:"===(0,n.lW)()?.location?.protocol);e&&(i.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn(`New Relic: ${e}`),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error("New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like `self` and `window`.")})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},9226:(e,t,r)=>{"use strict";r.d(t,{$c:()=>u,Ng:()=>d,RR:()=>c});var n=r(6562),i=r(9557),o=r(9548),a=r(8610),s={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"};class c extends i.w{constructor(e){super(e)}shouldObfuscate(){return u(this.sharedContext.agentIdentifier).length>0}obfuscateString(e){if(!e||"string"!=typeof e)return e;for(var t=u(this.sharedContext.agentIdentifier),r=e,n=0;n<t.length;n++){var i=t[n].regex,o=t[n].replacement||"*";r=r.replace(i,o)}return r}}function u(e){var t=[],r=(0,n.Mt)(e,"obfuscate")||[];return t=t.concat(r),o.T.isFileProtocol()&&t.push(s),t}function d(e){for(var t=!1,r=!1,n=0;n<e.length;n++){"regex"in e[n]?"string"!=typeof e[n].regex&&e[n].regex.constructor!==RegExp&&((0,a.Z)('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),r=!0):((0,a.Z)('An obfuscation replacement rule was detected missing a "regex" value.'),r=!0);var i=e[n].replacement;i&&"string"!=typeof i&&((0,a.Z)('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),t=!0)}return!t&&!r}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.zO)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",r);function r(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}}function o(){return"hidden"===document.visibilityState?-1:1/0}},6408:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(2374);function i(){return"function"==typeof n._A?.PerformanceObserver}},8675:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.ajax},8322:(e,t,r)=>{"use strict";r.d(t,{A:()=>i,t:()=>n});const n=r(2325).D.jserrors,i="nr@seenError"},6034:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.metrics},6486:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageAction},2484:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewEvent},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},2628:(e,t,r)=>{"use strict";r.r(t),r.d(t,{ADD_EVENT_LISTENER:()=>a,BST_RESOURCE:()=>u,BST_TIMER:()=>g,END:()=>l,FEATURE_NAME:()=>i,FN_END:()=>p,FN_START:()=>h,ORIG_EVENT:()=>m,PUSH_STATE:()=>v,REMOVE_EVENT_LISTENER:()=>s,RESOURCE:()=>d,RESOURCE_TIMING_BUFFER_FULL:()=>c,START:()=>f,learResourceTimings:()=>o});var n=r(6562);const i=r(2325).D.sessionTrace,o="learResourceTimings",a="addEventListener",s="removeEventListener",c="resourcetimingbufferfull",u="bstResource",d="resource",f="-start",l="-end",h="fn"+f,p="fn"+l,g="bstTimer",v="pushState",m=n.Yu.EV},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(2384),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},2384:(e,t,r)=>{"use strict";r.d(t,{j:()=>y});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),d=r(2053),f=r(4329),l=r(2650),h=r(2374);function p(e,t,n){n||(0,f.R)(e,"api"),function(e){function t(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&e.api[t](...n)}))}["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((r=>{e[r]=function(){for(var e=arguments.length,n=new Array(e),i=0;i<e;i++)n[i]=arguments[i];return t(r,...n)}}))}(t);var p=u.ee.get(e),g=p.get("tracer"),v="api-",m="api-ixn-";function b(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=w(v,r,!0,"api")})),t.addPageAction=w(v,"addPageAction",!0,o.D.pageAction),t.setCurrentRouteName=w(v,"routeName",!0,o.D.spa),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(v,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),w(v,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new b).get()};var y=b.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)("api-ixn-tracer",[(0,d.zO)(),e,r],n,o.D.spa,p),function(){if(g.emit((i?"":"no-")+"fn-start",[(0,d.zO)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{g.emit("fn-end",[(0,d.zO)()],r)}}}};function w(e,t,r,n){return function(){return(0,s.p)("record-supportability",["API/"+t+"/called"],void 0,o.D.metrics,p),(0,s.p)(e+t,[(0,d.zO)()].concat(i()(arguments)),r?null:this,n,p),r?void 0:this}}function E(){r.e(692).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,f.L)(e,"api")}))}(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){y[t]=w(m,t,void 0,o.D.spa)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)("record-supportability",["API/noticeError/called"],void 0,o.D.metrics,p),(0,s.p)("err",[e,(0,d.zO)(),!1,t],void 0,o.D.jserrors,p)},h.v6?E():(0,l.b)((()=>E()),!0)}var g=r(6797);const v={stn:o.D.sessionTrace,err:o.D.jserrors,ins:o.D.pageAction,spa:o.D.spa};function m(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(0,s.p)("block-"+e,[],void 0,v[e],r);t&&!b[e]&&((0,s.p)("feat-"+e,[],void 0,v[e],r),b[e]=!0)})),(0,f.L)(t,o.D.pageViewEvent))}const b={};function y(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},r=arguments.length>2?arguments[2]:void 0,n=arguments.length>3?arguments[3]:void 0,{init:i,info:o,loader_config:s,runtime:c={loaderType:r},exposed:u=!0}=t;const d=(0,g.gG)();let f={};return o||(i=d.init,o=d.info,s=d.loader_config,f=d),h.v6&&(o.jsAttributes={...o.jsAttributes,isWorker:!0}),(0,a.CX)(e,o),(0,a.Dg)(e,i||{}),(0,a.GE)(e,s||{}),(0,a.sU)(e,c),p(e,f,n),(0,g.Qy)(e,d,"api"),(0,g.Qy)(e,u,"exposed"),h.v6||((0,g.EZ)("activatedFeatures",b),(0,g.EZ)("setToken",(t=>m(t,e)))),f}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}},4992:(e,t,r)=>{var n={"./ajax/aggregate":[960,779,960],"./jserrors/aggregate":[6112,779,112],"./metrics/aggregate":[4325,779,325],"./page_action/aggregate":[6817,779,817],"./page_view_event/aggregate":[4823,779,823],"./page_view_timing/aggregate":[8785,779,785],"./session_trace/aggregate":[1307,779,307],"./spa/aggregate":[9378,779,378]};function i(e){if(!r.o(n,e))return Promise.resolve().then((()=>{var t=new Error("Cannot find module '"+e+"'");throw t.code="MODULE_NOT_FOUND",t}));var t=n[e],i=t[0];return Promise.all(t.slice(1).map(r.e)).then((()=>r(i)))}i.keys=()=>Object.keys(n),i.id=4992,e.exports=i}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>e+"."+i.h().slice(0,8)+"-1223.js",i.h=()=>"215647de1097144af948",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var f=u[d];if(f.getAttribute("src")==r||f.getAttribute("data-webpack")==t+o){s=f;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var l=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(l.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=l.bind(null,s.onerror),s.onload=l.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={994:0,774:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,`${e}.enabled`)}(r,e)})),n}var a=i(2384),s=i(909),c=i(9557),u=i(7022);class d extends c.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,u.D)(e,(function(e,r){t[e]=f(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,u.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=f(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=l(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=f(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=h(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function f(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=l(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function l(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function h(e){return"object"!=typeof e?[]:(0,u.D)(e,p)}function p(e,t){return t}var g=i(6797),v=i(5526),m=i(8610);var b=i(9252),y=i(2053),w=i(8283),E=i(6625),x=i(4329),O=i(1509),A=i(2650),T=i(2374);class _ extends O.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.completed=new Promise(((e,t)=>{this.resolve=e,this.reject=t})),this.hasAggregator=!1,this.auto=n,n&&(0,x.R)(e,r)}importAggregator(){try{if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{Aggregate:e}=await i(4992)(`./${this.featureName}/aggregate`);new e(this.agentIdentifier,this.aggregator),this.resolve()}catch(e){(0,m.Z)(`Failed to import aggregator class for ${this.featureName}`,e)}};T.v6?e():(0,A.b)((()=>e()),!0)}catch(e){this.reject(e)}}}var S,D,P,R=i(2484);class j extends _{constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),T.il&&((0,E.v)(e),(0,w.B)(e,"firstbyte",(0,y.yf)()),(0,A.K)((()=>this.measureDomContentLoaded())),(0,A.b)((()=>this.measureWindowLoaded()),!0),this.importAggregator())}measureWindowLoaded(){var t=(0,y.zO)();(0,w.B)(this.agentIdentifier,"onload",t+(0,y.os)()),(0,b.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}measureDomContentLoaded(){(0,w.B)(this.agentIdentifier,"domContent",(0,y.zO)()+(0,y.os)())}}S=j,D="featureName",P=R.t,D in S?Object.defineProperty(S,D,{value:P,enumerable:!0,configurable:!0,writable:!0}):S[D]=P;var I=i(6998),C=i(8544),N=i(6382);class k extends _{constructor(t,r){var n;let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(t,r,N.t,i),n=this,T.il){if(this.pageHiddenTime=(0,I.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return n.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return n.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return n.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,C.iz)(e,(function(){return n.captureInteraction(...arguments)}))})),(0,I.N)((()=>{this.pageHiddenTime=(0,y.zO)(),(0,b.p)("docHidden",[this.pageHiddenTime],void 0,e.D.pageViewTiming,this.ee)}),!0),(0,C.bP)("pagehide",(()=>(0,b.p)("winPagehide",[(0,y.zO)()],void 0,e.D.pageViewTiming,this.ee))),this.importAggregator()}}perfObserver(t,r){t.getEntries().forEach((t=>{"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee)}))}lcpObserver(t,r){var n=t.getEntries();if(n.length>0){var i=n[n.length-1];if(this.pageHiddenTime<i.startTime)return;var o=[i],a=this.addConnectionAttributes({});a&&o.push(a),(0,b.p)("lcp",o,void 0,e.D.pageViewTiming,this.ee)}}clsObserver(t){t.getEntries().forEach((t=>{t.hadRecentInput||(0,b.p)("cls",[t],void 0,e.D.pageViewTiming,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(r){if(r instanceof t.Yu.EV&&!this.fiRecorded){var n=Math.round(r.timeStamp),i={type:r.type};this.addConnectionAttributes(i),n<=(0,y.zO)()?i.fid=(0,y.zO)()-n:n>(0,y.os)()&&n<=Date.now()?(n-=(0,y.os)(),i.fid=(0,y.zO)()-n):n=(0,y.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",n,i],void 0,e.D.pageViewTiming,this.ee)}}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(k,"featureName",N.t);var L=i(4045),H="React",z="Angular",M="AngularJS",B="Backbone",F="Ember",q="Vue",G="Meteor",U="Zepto",V="Jquery";function $(){if(!T.il)return[];var e=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var e=document.querySelectorAll("body > div"),t=0;t<e.length;t++)if(Object.keys(e[t]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(e){return!1}})()&&e.push(H),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(e){return!1}}()&&e.push(M),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(e){return!1}}()&&e.push(z),window.Backbone&&e.push(B),window.Ember&&e.push(F),window.Vue&&e.push(q),window.Meteor&&e.push(G),window.Zepto&&e.push(U),window.jQuery&&e.push(V)}catch(e){}return e}var W=i(9548),X=i(9226),Z=i(8226);const Q=Boolean(T._A?.Worker),Y=Boolean(T._A?.SharedWorker),K=Boolean(T._A?.navigator?.serviceWorker);let J,ee,te;var re=i(6034);class ne extends _{constructor(e,t){var r;let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,re.t,i),r=this,this.PfFeatStatusEnum=n,this.singleChecks(),this.eachSessionChecks(),(0,L.X)("record-supportability",(function(){return r.recordSupportability(...arguments)}),this.featureName,this.ee),(0,L.X)("record-custom",(function(){return r.recordCustom(...arguments)}),this.featureName,this.ee),this.importAggregator()}recordSupportability(e,t){var r=["sm",e,{name:e},t];return(0,b.p)("storeMetric",r,null,this.featureName,this.ee),r}recordCustom(e,t){var r=["cm",e,{name:e},t];return(0,b.p)("storeEventMetrics",r,null,this.featureName,this.ee),r}singleChecks(){this.recordSupportability(`Generic/Version/${Z.q}/Detected`);const{loaderType:e}=(0,t.OP)(this.agentIdentifier);e&&this.recordSupportability(`Generic/LoaderType/${e}/Detected`),T.il&&(0,A.K)((()=>{$().forEach((e=>{this.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);const r=(0,X.$c)(this.agentIdentifier);r.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),r.length>0&&!(0,X.Ng)(r)&&this.recordSupportability("Generic/Obfuscate/Invalid"),T.il&&this.reportPolyfillsNeeded(),function(e){if(!J){if(Q){J=Worker;try{T._A.Worker=r(J,"Dedicated")}catch(e){o(e,"Dedicated")}if(Y){ee=SharedWorker;try{T._A.SharedWorker=r(ee,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(K){te=navigator.serviceWorker.register;try{T._A.navigator.serviceWorker.register=(t=te,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){T.v6||e(`Workers/${t}/Unavailable`)}function i(t,r){e("module"===r?`Workers/${t}/Module`:`Workers/${t}/Classic`)}function o(t,r){e(`Workers/${r}/SM/Unsupported`),(0,m.Z)(`NR Agent: Unable to capture ${r} workers.`,t)}}(this.recordSupportability.bind(this))}reportPolyfillsNeeded(){this.recordSupportability(`Generic/Polyfill/Promise/${this.PfFeatStatusEnum.PROMISE}`),this.recordSupportability(`Generic/Polyfill/ArrayIncludes/${this.PfFeatStatusEnum.ARRAY_INCLUDES}`),this.recordSupportability(`Generic/Polyfill/ObjectAssign/${this.PfFeatStatusEnum.OBJECT_ASSIGN}`),this.recordSupportability(`Generic/Polyfill/ObjectEntries/${this.PfFeatStatusEnum.OBJECT_ENTRIES}`)}eachSessionChecks(){T.il&&(0,C.bP)("pageshow",(e=>{e.persisted&&this.recordCustom("Custom/BFCache/PageRestored")}))}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(ne,"featureName",re.t);var ie=i(3916),oe=i(3752),ae=i(8683),se=i.n(ae),ce=T._A,ue="fetch-",de="fetch-body-",fe=["arrayBuffer","blob","json","text","formData"],le=ce.Request,he=ce.Response,pe="prototype",ge="nr@context";const ve={};function me(e){const t=function(e){return(e||oe.ee).get("fetch")}(e);if(!(le&&he&&ce.fetch))return t;if(ve[t.debugId])return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=se()(arguments),o={};t.emit(n+"before-start",[r],o),o[ge]&&o[ge].dt&&(e=o[ge].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return ve[t.debugId]=!0,(0,u.D)(fe,(function(e,t){r(le[pe],t,de),r(he[pe],t,de)})),r(ce,"fetch",ue),t.on("fetch-end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit("fetch-done",[null,r],n)}else t.emit("fetch-done",[e],n)})),t}var be="nr@original",ye=Object.prototype.hasOwnProperty,we=!1;function Ee(e,t){return e||(e=oe.ee),r.inPlace=function(e,t,n,i,o){n||(n="");var a,s,c,u="-"===n.charAt(0);for(c=0;c<t.length;c++)s=t[c],Ae(a=e[s])||(e[s]=r(a,u?s+n:n,i,s,o))},r.flag=be,r;function r(t,r,i,o,a){return Ae(t)?t:(r||(r=""),nrWrapper[be]=t,Oe(t,nrWrapper,e),nrWrapper);function nrWrapper(){var s,c,u,d;try{c=this,s=se()(arguments),u="function"==typeof i?i(s,c):i||{}}catch(t){xe([t,"",[s,c,o],u],e)}n(r+"start",[s,c,o],u,a);try{return d=t.apply(c,s)}catch(e){throw n(r+"err",[s,c,e],u,a),e}finally{n(r+"end",[s,c,d],u,a)}}}function n(r,n,i,o){if(!we||t){var a=we;we=!0;try{e.emit(r,n,i,t,o)}catch(t){xe([t,r,n,i],e)}we=a}}}function xe(e,t){t||(t=oe.ee);try{t.emit("internal-error",e)}catch(e){}}function Oe(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){xe([e],r)}for(var n in e)ye.call(e,n)&&(t[n]=e[n]);return t}function Ae(e){return!(e&&e instanceof Function&&e.apply&&!e[be])}const Te={};function _e(e){const t=function(e){return(e||oe.ee).get("timer")}(e);if(Te[t.debugId])return t;Te[t.debugId]=!0;var r=Ee(t),n="setTimeout",i="setInterval",o="clearTimeout",a="-start";return r.inPlace(T._A,[n,"setImmediate"],"setTimeout-"),r.inPlace(T._A,[i],"setInterval-"),r.inPlace(T._A,[o,"clearImmediate"],"clearTimeout-"),t.on(i+a,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(n+a,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}const Se={};function De(e){const t=function(e){return(e||oe.ee).get("raf")}(e);if(Se[t.debugId]||!T.il)return t;Se[t.debugId]=!0;var r=Ee(t);return r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),t.on("raf-start",(function(e){e[0]=r(e[0],"fn-")})),t}const Pe={};function Re(e){const t=function(e){return(e||oe.ee).get("history")}(e);if(Pe[t.debugId]||!T.il)return t;Pe[t.debugId]=!0;var r=Ee(t),n=window.history&&window.history.constructor&&window.history.constructor.prototype,i=window.history;return n&&n.pushState&&n.replaceState&&(i=n),r.inPlace(i,["pushState","replaceState"],"-"),t}const je={};function Ie(e){var t=function(e){return(e||oe.ee).get("events")}(e);if(je[t.debugId])return t;je[t.debugId]=!0;var r=Ee(t,!0),n=XMLHttpRequest,i="addEventListener",o="removeEventListener";function a(e){for(var t=e;t&&!t.hasOwnProperty(i);)t=Object.getPrototypeOf(t);t&&s(t)}function s(e){r.inPlace(e,[i,o],"-",c)}function c(e,t){return e[1]}return"getPrototypeOf"in Object?(T.il&&a(document),a(T._A),a(n.prototype)):n.prototype.hasOwnProperty(i)&&(s(T._A),s(n.prototype)),t.on("addEventListener-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,ie.X)(n,"nr@wrapped",(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on("removeEventListener-start",(function(e){e[1]=this.wrapped||e[1]})),t}const Ce={};function Ne(e){var r=e||oe.ee;const n=function(e){return(e||oe.ee).get("xhr")}(r);if(Ce[n.debugId])return n;Ce[n.debugId]=!0,Ie(r);var i=Ee(n),o=t.Yu.XHR,a=t.Yu.MO,s=t.Yu.PR,c=t.Yu.SI,u="readystatechange",d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],f=[],l=T._A.XMLHttpRequest.listeners,h=T._A.XMLHttpRequest=function(e){var t=new o(e);function r(){try{n.emit("new-xhr",[t],t),t.addEventListener(u,g,(0,C.m$)(!1))}catch(e){(0,m.Z)("An error occured while intercepting XHR",e);try{n.emit("internal-error",[e])}catch(e){}}}return this.listeners=l?[...l,r]:[r],this.listeners.forEach((e=>e())),t};function p(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}function g(){var e=this,t=n.context(e);e.readyState>3&&!t.resolved&&(t.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,d,"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,h),h.prototype=o.prototype,i.inPlace(h.prototype,["open","send"],"-xhr-",E),n.on("send-xhr-start",(function(e,t){p(e,t),function(e){f.push(e),a&&(v?v.then(w):c?c(w):(b=-b,y.data=b))}(t)})),n.on("open-xhr-start",p),a){var v=s&&s.resolve();if(!c&&!s){var b=1,y=document.createTextNode(b);new a(w).observe(y,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===u||w()}));function w(){for(var e=0;e<f.length;e++)p(0,f[e]);f.length&&(f=[])}function E(e,t){return t}return n}function ke(e){return Ie(e)}function Le(e){return De(e)}function He(e){return _e(e)}function ze(e){return Ne(e)}var Me,Be={};try{Me=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(Be.console=!0,-1!==Me.indexOf("dev")&&(Be.dev=!0),-1!==Me.indexOf("nr_dev")&&(Be.nrDev=!0))}catch(e){}function Fe(e){try{Be.console&&Fe(e)}catch(e){}}Be.nrDev&&oe.ee.on("internal-error",(function(e){Fe(e.stack)})),Be.dev&&oe.ee.on("fn-err",(function(e,t,r){Fe(r.stack)})),Be.dev&&(Fe("NR AGENT IN DEVELOPMENT MODE"),Fe("flags: "+(0,u.D)(Be,(function(e,t){return e})).join(", ")));var qe=i(8322);class Ge extends _{constructor(r,n){var i;let o=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(r,n,qe.t,o),i=this,this.skipNext=0,this.handleErrors=!1,this.origOnerror=T._A?.onerror;const a=this,s=(0,t.OP)(this.agentIdentifier);s.features.err=!0,a.ee.on("fn-start",(function(e,t,r){a.handleErrors&&(a.skipNext+=1)})),a.ee.on("fn-err",(function(e,t,r){a.handleErrors&&!r[qe.A]&&((0,ie.X)(r,qe.A,(function(){return!0})),this.thrown=!0,Ve(r,void 0,a.ee))})),a.ee.on("fn-end",(function(){a.handleErrors&&!this.thrown&&a.skipNext>0&&(a.skipNext-=1)})),a.ee.on("internal-error",(t=>{(0,b.p)("ierr",[t,(0,y.zO)(),!0],void 0,e.D.jserrors,a.ee)}));const c=T._A?.onerror;T._A.onerror=function(){return c&&c(...arguments),i.onerrorHandler(...arguments),!1};try{T._A?.addEventListener("unhandledrejection",(t=>{const r=new Error(`${t.reason}`);(0,b.p)("err",[r,(0,y.zO)(),!1,{unhandledPromiseRejection:1}],void 0,e.D.jserrors,this.ee)}))}catch(e){}try{throw new Error}catch(e){"stack"in e&&(He(this.ee),Le(this.ee),"addEventListener"in T._A&&ke(this.ee),s.xhrWrappable&&ze(this.ee),a.handleErrors=!0)}this.importAggregator()}onerrorHandler(t,r,n,i,o){try{this.skipNext?this.skipNext-=1:Ve(o||new Ue(t,r,n),!0,this.ee)}catch(t){try{(0,b.p)("ierr",[t,(0,y.zO)(),!0],void 0,e.D.jserrors,this.ee)}catch(e){}}return"function"==typeof this.origOnerror&&this.origOnerror.apply(this,se()(arguments))}}function Ue(e,t,r){this.message=e||"Uncaught error with no additional information",this.sourceURL=t,this.line=r}function Ve(t,r,n){var i=r?null:(0,y.zO)();(0,b.p)("err",[t,i],void 0,e.D.jserrors,n)}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(Ge,"featureName",qe.t);var $e=1;function We(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===T._A?0:(0,ie.X)(e,"nr@id",(function(){return $e++}))}var Xe=i(9071);function Ze(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return JSON.stringify(e).length}catch(e){return}}}var Qe=i(6368);class Ye{constructor(e){this.agentIdentifier=e,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var r=(0,t.DL)(this.agentIdentifier);if(!r)return null;var n=(r.accountID||"").toString()||null,i=(r.agentID||"").toString()||null,o=(r.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,v.M)(),s=(0,v.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof T._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa(JSON.stringify(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var r=!1,n={};if((0,t.Mt)(this.agentIdentifier,"distributed_tracing")&&(n=(0,t.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)r=!0;else if(n.allowed_origins instanceof Array)for(var i=0;i<n.allowed_origins.length;i++){var o=(0,Qe.e)(n.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){r=!0;break}}return r}isDtEnabled(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,t.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var Ke=i(8675);var Je=["load","error","abort","timeout"],et=Je.length,tt=t.Yu.REQ,rt=T._A?.XMLHttpRequest;class nt extends _{constructor(r,n){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(r,n,Ke.t,i);const o=(0,t.OP)(this.agentIdentifier);o.xhrWrappable&&(o.features.xhr=!0,this.dt=new Ye(this.agentIdentifier),this.handler=(e,t,r,n)=>(0,b.p)(e,t,r,n,this.ee),this.wrappedFetch=function(e,t){return r=e,me(r);var r}(this.ee),ze(this.ee),function(r,n,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){A(t,e)}),(0,C.m$)(!1)),Xe.I&&(Xe.I>34||Xe.I<10)||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,C.m$)(!1))}function s(e){this.params={method:e[0]},O(this,e[1]),this.metrics={}}function c(e,n){var i=(0,t.DL)(r);"xpid"in i&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(n.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(n.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&n.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,t){var r=this.metrics,i=e[0],o=this;if(r&&i){var a=Ze(i);a&&(r.txSize=a)}this.startTime=(0,y.zO)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof t.onload))&&o.end(t)}catch(e){try{n.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<et;s++)t.addEventListener(Je[s],this.listener,(0,C.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||this.end(r)}function f(e,t){var r=""+We(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+We(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function h(){this.endTime=(0,y.zO)()}function p(e,t){t instanceof rt&&"load"===e[0]&&n.emit("xhr-load-added",[e[1],e[2]],t)}function g(e,t){t instanceof rt&&"load"===e[0]&&n.emit("xhr-load-removed",[e[1],e[2]],t)}function v(e,t,r){t instanceof rt&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,y.zO)()))}function m(e,t){this.xhrCbStart&&n.emit("xhr-cb-time",[(0,y.zO)()-this.xhrCbStart,this.onload,t],t)}function b(e){var t,r=e[1]||{};"string"==typeof e[0]?t=e[0]:e[0]&&e[0].url?t=e[0].url:T._A?.URL&&e[0]&&e[0]instanceof URL&&(t=e[0].href),t&&(this.parsedOrigin=(0,Qe.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if("string"==typeof e[0]||T._A?.URL&&e[0]&&e[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}else e[0]&&e[0].headers&&s(e[0].headers,n)&&(this.dt=n);function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,y.zO)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof tt?r=i.url:T._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),O(this,r);var o=(""+(i&&i instanceof tt&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=Ze(n.body)||0}function E(t,r){var n;this.endTime=(0,y.zO)(),this.params||(this.params={}),this.params.status=r?r.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,y.zO)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,e.D.ajax)}function x(t){var r=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<et;o++)t.removeEventListener(Je[o],this.listener,!1);r.aborted||(n.duration=(0,y.zO)()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==r.status&&(r.status=0):A(this,t),n.cbTime=this.cbTime,i("xhr",[r,n,this.startTime,this.endTime,"xhr"],this,e.D.ajax))}}function O(e,t){var r=(0,Qe.e)(t),n=e.params;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}function A(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?Ze(e.response):"text"===r||""===r||void 0===r?Ze(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}n.on("new-xhr",a),n.on("open-xhr-start",s),n.on("open-xhr-end",c),n.on("send-xhr-start",u),n.on("xhr-cb-time",d),n.on("xhr-load-added",f),n.on("xhr-load-removed",l),n.on("xhr-resolved",h),n.on("addEventListener-end",p),n.on("removeEventListener-end",g),n.on("fn-end",m),n.on("fetch-before-start",b),n.on("fetch-start",w),n.on("fn-start",v),n.on("fetch-done",E)}(this.agentIdentifier,this.ee,this.handler,this.dt),this.importAggregator())}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(nt,"featureName",Ke.t);var it=i(6408),ot=i(2628);const{ADD_EVENT_LISTENER:at,BST_RESOURCE:st,BST_TIMER:ct,END:ut,FEATURE_NAME:dt,FN_END:ft,FN_START:lt,learResourceTimings:ht,PUSH_STATE:pt,REMOVE_EVENT_LISTENER:gt,RESOURCE:vt,RESOURCE_TIMING_BUFFER_FULL:mt,START:bt,ORIG_EVENT:yt}=ot;class wt extends _{constructor(r,n){if(super(r,n,dt,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!T.il)return;if(!(window.performance&&window.performance.timing&&window.performance.getEntriesByType))return;(0,t.OP)(this.agentIdentifier).features.stn=!0;const i=this.ee;function o(t){if((0,b.p)(st,[window.performance.getEntriesByType(vt)],void 0,e.D.sessionTrace,i),window.performance["c"+ht])try{window.performance[gt](mt,o,!1)}catch(t){}else try{window.performance[gt]("webkit"+mt,o,!1)}catch(t){}}this.timerEE=He(this.ee),this.rafEE=Le(this.ee),Re(this.ee),ke(this.ee),this.ee.on(lt,(function(e,t){e[0]instanceof yt&&(this.bstStart=(0,y.zO)())})),this.ee.on(ft,(function(t,r){var n=t[0];n instanceof yt&&(0,b.p)("bst",[n,r,this.bstStart,(0,y.zO)()],void 0,e.D.sessionTrace,i)})),this.timerEE.on(lt,(function(e,t,r){this.bstStart=(0,y.zO)(),this.bstType=r})),this.timerEE.on(ft,(function(t,r){(0,b.p)(ct,[r,this.bstStart,(0,y.zO)(),this.bstType],void 0,e.D.sessionTrace,i)})),this.rafEE.on(lt,(function(){this.bstStart=(0,y.zO)()})),this.rafEE.on(ft,(function(t,r){(0,b.p)(ct,[r,this.bstStart,(0,y.zO)(),"requestAnimationFrame"],void 0,e.D.sessionTrace,i)})),this.ee.on(pt+bt,(function(e){this.time=(0,y.zO)(),this.startPath=location.pathname+location.hash})),this.ee.on(pt+ut,(function(t){(0,b.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,e.D.sessionTrace,i)})),(0,it.W)()?((0,b.p)(st,[window.performance.getEntriesByType("resource")],void 0,e.D.sessionTrace,i),function(){var t=new PerformanceObserver(((t,r)=>{var n=t.getEntries();(0,b.p)(st,[n],void 0,e.D.sessionTrace,i)}));try{t.observe({entryTypes:["resource"]})}catch(e){}}()):at in window.performance&&(window.performance["c"+ht]?window.performance[at](mt,o,(0,C.m$)(!1)):window.performance[at]("webkit"+mt,o,(0,C.m$)(!1))),document[at]("scroll",this.noOp,(0,C.m$)(!1)),document[at]("keypress",this.noOp,(0,C.m$)(!1)),document[at]("click",this.noOp,(0,C.m$)(!1)),this.importAggregator()}noOp(e){}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(wt,"featureName",dt);var Et=i(6486);class xt extends _{constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,Et.t,r),this.importAggregator()}}!function(e,t,r){t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(xt,"featureName",Et.t),new class{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,v.ky)(16);this.agentIdentifier=r,this.sharedAggregator=new d({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=t.features||[],this.desiredFeatures.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),Object.assign(this,(0,a.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){try{const e=n(this.agentIdentifier);this.desiredFeatures.forEach((t=>{if(e[t.featureName]){const r=(0,s.Z)(t.featureName);r.every((t=>e[t]))||(0,m.Z)(`${t.featureName} is enabled but one or more dependent features has been disabled (${JSON.stringify(r)}). This may cause unintended consequences or missing data...`),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,g.Qy)(this.agentIdentifier,this.features,"features")}catch(e){return(0,m.Z)("Failed to initialize instrument classes",e),!1}}}({features:[j,k,wt,nt,ne,xt,Ge],loaderType:"pro"})})(),window.NRBA=o})();</script>
+<meta http-equiv="content-language" content="en-us" >
+<meta name="market" content="bizjournals" >
+<meta name="market:json" content="{&quot;id&quot;:&quot;2661&quot;,&quot;market_code&quot;:&quot;bizjournals&quot;,&quot;market_name&quot;:&quot; The Business Journals&quot;,&quot;market_abbrev&quot;:&quot;The Business Journals&quot;,&quot;market_color&quot;:&quot;sapphire&quot;,&quot;journal_name&quot;:&quot;The Business Journals&quot;,&quot;twitter&quot;:&quot;bizjournals&quot;,&quot;email&quot;:{&quot;AE&quot;:null,&quot;ME&quot;:null,&quot;BN&quot;:null,&quot;BW&quot;:4081},&quot;market_state&quot;:&quot;NC&quot;,&quot;market_city&quot;:&quot;&quot;,&quot;mpp_enabled&quot;:true,&quot;journal&quot;:[]}" >
+<meta property="og:type" content="website" >
+<meta name="category" content="" >
+<meta name="cxenseparse:articleid" content="page_22206089" >
+<meta name="cxenseparse:recs:recommendable" content="false" >
+<meta name="cxenseparse:taxonomy" content="bizjournals/homepage" >
+<meta name="date" content="2023-02-13T15:23:35-05:00" >
+<meta name="description" content="The Business Journals features local business news from 40-plus cities across the nation. We also provide tools to help businesses grow, network and hire." >
+<meta property="fb:admins" content="9016348,654914897,628377787,1280002853,763321529,696276440,1155362274" >
+<meta property="fb:app_id" content="122785151074126" >
+<meta name="google-site-verification" content="780XUWeB2C6E8_y5ebSXJrLEjQRGdkZzlW8HD-q4cgw" >
+<meta name="msapplication-config" content="none" >
+<meta name="msvalidate.01" content="4A4BA4ACEA94A755ED9C4AD1928D6A3E" >
+<meta name="news_keywords" content="" >
+<meta name="og:description" content="" >
+<meta name="og:url" content="https://www.bizjournals.com/bizjournals/" >
+<meta name="p:domain_verify" content="ec0c534b614190f20737f5959d72ae58" >
+<meta property="page:id" content="22206089" >
+<meta name="page:type" content="homepage" >
+<meta name="pocket-site-verification" content="dcfbf8a491ca04e5df334b6a2d30fd" >
+<meta name="publish-date" content="Mon, 13 Feb 2023 15:23:35 EST" >
+<meta name="robots" content="noodp,noydir" >
+<meta name="sailthru.tags" content="" >
+<meta name="section:id" content="1171" >
+<meta property="twitter:account_id" content="14921083" >
+<meta name="twitter:description" content="" >
+<meta name="y_key" content="ba03ff0c1b6c696c" >
+<meta property="og:title" content="Local Business News - The Business Journals" >
+<meta name="cXenseParse:pageclass" content="frontpage" >
+<meta name="env" content="production" >
+<meta name="special-category:json" content="{&quot;id&quot;:&quot;0&quot;,&quot;spf&quot;:&quot;0&quot;}" >
+<meta name="twitter:card" content="summary" >
+<meta property="article:publisher" content="https://www.facebook.com/bizjournals" >
+<meta property="og:site_name" content="The Business Journals" >
+<meta name="twitter:site" content="@bizjournals" >
+<meta property="gpt:category:exclusions" content="[&quot;Accounting&quot;,&quot;Airline&quot;,&quot;Automotive&quot;,&quot;Banking&quot;,&quot;Cable ISP&quot;,&quot;Construction&quot;,&quot;Credit Cards&quot;,&quot;Database Software&quot;,&quot;Education&quot;,&quot;Electronics Retailer&quot;,&quot;Email Marketing&quot;,&quot;Health Care&quot;,&quot;Hotels&quot;,&quot;House Ad&quot;,&quot;HR&quot;,&quot;Insurance&quot;,&quot;Legal&quot;,&quot;Local&quot;,&quot;Mobile Phones&quot;,&quot;National&quot;,&quot;Office Supplies&quot;,&quot;Personal Finance&quot;,&quot;Real Estate&quot;,&quot;Run of Site&quot;,&quot;Shipping&quot;,&quot;Sports&quot;]" >
+<meta name="gpt-exclusions" content="[&quot;Accounting&quot;,&quot;Airline&quot;,&quot;Automotive&quot;,&quot;Banking&quot;,&quot;Cable ISP&quot;,&quot;Construction&quot;,&quot;Credit Cards&quot;,&quot;Database Software&quot;,&quot;Education&quot;,&quot;Electronics Retailer&quot;,&quot;Email Marketing&quot;,&quot;Health Care&quot;,&quot;Hotels&quot;,&quot;House Ad&quot;,&quot;HR&quot;,&quot;Insurance&quot;,&quot;Legal&quot;,&quot;Local&quot;,&quot;Mobile Phones&quot;,&quot;National&quot;,&quot;Office Supplies&quot;,&quot;Personal Finance&quot;,&quot;Real Estate&quot;,&quot;Run of Site&quot;,&quot;Shipping&quot;,&quot;Sports&quot;]" >
+<meta property="gpt:hierarchy" content="https://www.bizjournals.com" >
+<meta name="gpt-hierarchy" content="https://www.bizjournals.com" >
+<meta property="gpt:params" content="{&quot;at&quot;:&quot;homepage&quot;,&quot;market&quot;:&quot;bizjournals&quot;,&quot;page&quot;:&quot;homepage&quot;,&quot;pageid&quot;:&quot;22206089&quot;,&quot;path&quot;:&quot;https:--www.bizjournals.com&quot;,&quot;reporter&quot;:null,&quot;serverid&quot;:&quot;production&quot;,&quot;spf&quot;:&quot;0&quot;,&quot;template&quot;:&quot;homepage&quot;}" >
+<meta name="gpt-params" content="{&quot;at&quot;:&quot;homepage&quot;,&quot;market&quot;:&quot;bizjournals&quot;,&quot;page&quot;:&quot;homepage&quot;,&quot;pageid&quot;:&quot;22206089&quot;,&quot;path&quot;:&quot;https:--www.bizjournals.com&quot;,&quot;reporter&quot;:null,&quot;serverid&quot;:&quot;production&quot;,&quot;spf&quot;:&quot;0&quot;,&quot;template&quot;:&quot;homepage&quot;}" >
+<meta name="user:type" content="">
+
+<!-- DNS Pre-fetch -->
+<link rel="dns-prefetch" href="//assets.bizjournals.com">
+<link rel="dns-prefetch" href="//media.bizj.us">
+<link rel="dns-prefetch" href="//sb.scorecardresearch.com">
+<link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://tags.crwdcntrl.net">
+<link rel="preconnect" href="https://bcp.crwdcntrl.net">
+<link rel="dns-prefetch" href="https://tags.crwdcntrl.net">
+<link rel="dns-prefetch" href="https://bcp.crwdcntrl.net">
+
+<!-- CSS -->
+<link href="https://assets.bizjournals.com/static/css/bizjournals-mpp.min.css?v=1676307890" media="screen" rel="stylesheet" type="text/css" >
+<link href="https://www.bizjournals.com" hreflang="en-us" rel="alternate" >
+<link href="https://plus.google.com/+bizjournals" rel="publisher" >
+<link href="https://assets.bizjournals.com/lib/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" >
+<link href="https://assets.bizjournals.com/lib/img/bizjournals/apple_touch_icon.png" rel="image_src" >
+<link href="https://www.bizjournals.com" rel="canonical" >
+
+<script>
+    if (performance && performance.mark) performance.mark('css_loaded');
+</script>
+
+<!--JS-->
+<script>
+        window.__ENV__ = [];
+</script>
+<script type="text/javascript">
+    //<!--
+    var _sf_startpt=(new Date()).getTime();    //-->
+</script>
+<script type="text/javascript" src="https://assets.bizjournals.com/static/js/lib/jquery-1.10.2.min.js?v=1676307890"></script>
+<script id="enquire">
+    !function(a,b,c){var d=window.matchMedia;"undefined"!=typeof module&&module.exports?module.exports=c(d):"function"==typeof define&&define.amd?define(function(){return b[a]=c(d)}):b[a]=c(d)}("enquire",this,function(a){"use strict";function b(a,b){var c,d=0,e=a.length;for(d;e>d&&(c=b(a[d],d),c!==!1);d++);}function c(a){return"[object Array]"===Object.prototype.toString.apply(a)}function d(a){return"function"==typeof a}function e(a){this.options=a,!a.deferSetup&&this.setup()}function f(b,c){this.query=b,this.isUnconditional=c,this.handlers=[],this.mql=a(b);var d=this;this.listener=function(a){d.mql=a,d.assess()},this.mql.addListener(this.listener)}function g(){if(!a)throw new Error("matchMedia not present, legacy browsers require a polyfill");this.queries={},this.browserIsIncapable=!a("only all").matches}return e.prototype={setup:function(){this.options.setup&&this.options.setup(),this.initialised=!0},on:function(){!this.initialised&&this.setup(),this.options.match&&this.options.match()},off:function(){this.options.unmatch&&this.options.unmatch()},destroy:function(){this.options.destroy?this.options.destroy():this.off()},equals:function(a){return this.options===a||this.options.match===a}},f.prototype={addHandler:function(a){var b=new e(a);this.handlers.push(b),this.matches()&&b.on()},removeHandler:function(a){var c=this.handlers;b(c,function(b,d){return b.equals(a)?(b.destroy(),!c.splice(d,1)):void 0})},matches:function(){return this.mql.matches||this.isUnconditional},clear:function(){b(this.handlers,function(a){a.destroy()}),this.mql.removeListener(this.listener),this.handlers.length=0},assess:function(){var a=this.matches()?"on":"off";b(this.handlers,function(b){b[a]()})}},g.prototype={register:function(a,e,g){var h=this.queries,i=g&&this.browserIsIncapable;return h[a]||(h[a]=new f(a,i)),d(e)&&(e={match:e}),c(e)||(e=[e]),b(e,function(b){d(b)&&(b={match:b}),h[a].addHandler(b)}),this},unregister:function(a,b){var c=this.queries[a];return c&&(b?c.removeHandler(b):(c.clear(),delete this.queries[a])),this}},new g});
+    var setViewport = function (name) { document.documentElement.classList.add('viewport--' + name); };
+    var unsetViewport = function (name) { document.documentElement.classList.remove('viewport--' + name); };
+    var viewports = {};
+    viewports.breakpoints = {
+        'xs': { min: null, max: '479.98px' },
+        'sm': { min: '480px', max: '767.98px' },
+        'md': { min: '768px', max: '1023.98px' },
+        'lg': { min: '1024px', max: '1199.98px' },
+        'xl': { min: '1200px', max: null }
+    };
+    viewports.mediaQueries = {
+        'xs-only': '(max-width: ' + viewports.breakpoints['xs']['max'] + ')',
+        'sm-only': '(min-width: ' + viewports.breakpoints['sm']['min'] + ') and (max-width: ' + viewports.breakpoints['sm']['max'] + ')',
+        'sm': '(min-width: ' + viewports.breakpoints['sm']['min'] + ')',
+        'md-only': '(min-width: ' + viewports.breakpoints['md']['min'] + ') and (max-width: ' + viewports.breakpoints['md']['max'] + ')',
+        'md': '(min-width: ' + viewports.breakpoints['md']['min'] + ')',
+        'lg-only': '(min-width: ' + viewports.breakpoints['lg']['min'] + ') and (max-width: ' + viewports.breakpoints['lg']['max'] + ')',
+        'lg': '(min-width: ' + viewports.breakpoints['lg']['min'] + ')',
+        'xl-only': '(min-width: ' + viewports.breakpoints['xl']['min'] + ')',
+        'xl': '(min-width: ' + viewports.breakpoints['xl']['min'] + ')',
+    };
+    // xs only
+    enquire.register(viewports.mediaQueries['xs-only'], {
+        match: function () { setViewport('xs'); setViewport('xs-only'); },
+        unmatch: function () { unsetViewport('xs-only'); }
+    });
+    // sm and larger
+    enquire.register(viewports.mediaQueries['sm'], {
+        match: function () { unsetViewport('xs-only'); setViewport('sm'); },
+        unmatch: function () { unsetViewport('sm'); }
+    });
+    // sm only
+    enquire.register(viewports.mediaQueries['sm-only'], {
+        match: function () { setViewport('sm-only'); },
+        unmatch: function () { unsetViewport('sm-only'); }
+    });
+    // md and larger
+    enquire.register(viewports.mediaQueries['md'], {
+        match: function () { setViewport('md'); },
+        unmatch: function () { unsetViewport('md'); }
+    });
+    // md only
+    enquire.register(viewports.mediaQueries['md-only'], {
+        match: function () { setViewport('md-only'); },
+        unmatch: function () { unsetViewport('md-only'); }
+    });
+    // lg and larger
+    enquire.register(viewports.mediaQueries['lg'], {
+        match: function () { setViewport('lg'); },
+        unmatch: function () { unsetViewport('lg'); }
+    });
+    // lg only
+    enquire.register(viewports.mediaQueries['lg-only'], {
+        match: function () { setViewport('lg-only'); },
+        unmatch: function () { unsetViewport('lg-only'); }
+    });
+    // xl and larger
+    enquire.register(viewports.mediaQueries['xl'], {
+        match: function () { setViewport('xl'); setViewport('xl-only'); },
+        unmatch: function () { unsetViewport('xl'); unsetViewport('xl-only'); }
+    });
+    // portrait
+    enquire.register('(orientation:portrait)', {
+        match: function() { setViewport('portrait'); },
+        unmatch: function() { unsetViewport('portrait'); }
+    });
+    // landscape
+    enquire.register('(orientation:landscape)', {
+        match: function() { setViewport('landscape'); },
+        unmatch: function() { unsetViewport('landscape'); }
+    });
+    // md and larger - short height viewports
+    enquire.register('(max-height: 700px)', {
+        match: function() { setViewport('short-height'); },
+        unmatch: function() { unsetViewport('short-height'); }
+    });
+</script>
+    <script type="text/javascript">
+        <!-- Index Exchange -->
+        
+            </script>
+    <script src="https://assets.bizjournals.com/static/dist/js/gpt.min.js?v=1676307890" defer></script>
+    <script src="//securepubads.g.doubleclick.net/tag/js/gpt.js" defer></script>
+
+<!--ComScore-->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({c1: "2", c2: "20214854"});
+    (function () {
+        var ua = window.navigator.userAgent;
+        if (ua.toLowerCase().indexOf('cxensebot') === -1) {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+            s.async = true;
+            s.src = "https://sb.scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        }
+    })();
+</script>
+<noscript>
+    <img src="https://sb.scorecardresearch.com/p?c1=2&c2=20214854&cv=2.0&cj=1" alt=""/>
+</noscript>
+
+<!-- Start Marketo Munchkin -->
+<script type="text/javascript">
+    window.marketoLoaded = false;
+    (function() {
+        function initMunchkin() {
+            if (window.marketoLoaded === false) {
+                Munchkin.init('673-UWY-229', {"wsInfo": "j1RQ", "asyncOnly": true, "domainLevel": 2});
+                window.marketoLoaded = true;
+            }
+        }
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//munchkin.marketo.net/munchkin.js';
+        s.onreadystatechange = function() {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                initMunchkin();
+            }
+        };
+        s.onload = initMunchkin;
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+</script>
+<!-- End Marketo Munchkin -->
+
+<!--Schema.org Definition-->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.bizjournals.com/#website",
+        "name": "",
+        "url": "https://www.bizjournals.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.bizjournals.com/search/results?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "NewsMediaOrganization",
+            "name": "The Business Journals",
+            "logo": "https://assets.bizjournals.com/static/img/logos/bizjournals-logo-schema.png",
+            "url": "https://www.bizjournals.com",
+            "sameAs": [
+        "https://en.wikipedia.org/wiki/The_Business_Journals",
+        "https://www.wikidata.org/wiki/Q2842874",
+        "https://www.facebook.com/bizjournals/",
+        "https://twitter.com/bizjournals"
+    ]        }
+    }
+</script>
+
+    <!--Schema.org Definition-->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "name": "Home",
+                    "position": 1,
+                    "item":  {
+                        "@type": "Thing",
+                        "@id": "https://www.bizjournals.com",
+                        "name": "https://www.bizjournals.com"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "name": "bizjournals",
+                    "position": 2,
+                    "item":  {
+                        "@type": "Thing",
+                        "@id": "https://www.bizjournals.com/bizjournals",
+                        "name": "https://www.bizjournals.com/bizjournals"
+                    }
+                }
+            ]
+        }
+    </script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "The Business Journals",
+    "url": "https://www.bizjournals.com",
+    "thumbnailUrl": "https://media.bizj.us/view/img/11130712/lawsonjeff110818tj-3*700xx6379-3588-0-335.jpg",
+    "dateCreated": "2023-02-13T11:13:00-05:00",
+    "description": "The The Business Journals features local business news about  The Business Journals. We also provide tools to help businesses grow, network and hire.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bizjournals.com/sanfrancisco/news/2023/02/13/twilio-announces-big-cuts.html"
+    },
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://media.bizj.us/view/img/11130712/lawsonjeff110818tj-3*700xx6379-3588-0-335.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ted Andersen"
+    },
+    "creator": {
+        "@type": "Person",
+        "name": "Ted Andersen"
+    },
+    "publisher": {
+        "@type": "NewsMediaOrganization",
+        "logo": {
+    "@type": "ImageObject",
+    "url": "https://cdn.bizjournals.com/static/img/logos/bizjournals-logo.png",
+    "width": 148,
+    "height": 48
+},
+        "sameAs": [
+    "https://en.wikipedia.org/wiki/The_Business_Journals",
+    "https://www.facebook.com/bizjournals",
+    "https://twitter.com/bizjournals",
+    "http://www.linkedin.com/company/american-city-business-journals",
+    "https://www.instagram.com/americancitybusinessjrnls"
+],
+        "name": "The Business Journals"
+        
+    }
+}
+</script>
+
+<!-- Start BounceX tag. Deploy at the beginning of document head. -->
+<script>
+    (function(d, n) {
+        if (n.userAgent.toLowerCase().indexOf('cxensebot') === -1) {
+            var e = d.createElement('script');
+            e.src = d.location.protocol + '//tag.bounceexchange.com/2080/i.js';
+            e.async = true;
+            d.getElementsByTagName("head")[0].appendChild(e);
+        }
+    }(document, navigator));
+</script>
+<!-- End BounceX tag -->
+
+
+    <!-- Moat ad content tag -->
+    <script>
+        (function(){function D(){for(var a=[8],c=1;2>=c;c++)a.push(8+c),a.push(8-c);a=a[Math.floor(Math.random()*a.length)];return{b:a,a:0==Math.floor(Math.random()*a)}}function l(a){var c=a=a.replace(":","");try{for(var d=0;100>d&&(a=decodeURIComponent(a),c!=a)&&!a.match(/^http(s)?\:/);d++)c=a}catch(b){}return a.replace(/(^\s+|\s+$)/g,"")}try{var z=function(a,c,d,b){return a[c]===b&&0===d||a[d]===b&&0===c};if(!location||!location.hostname||!location.pathname)return!1;var e=document.location.hostname.replace(/^www\./,
+            ""),t=function(){for(var a,c=document.getElementsByTagName("meta"),d,b=0,e=c.length;b<e;b++)if(d=c[b],"og:title"===d.getAttribute("property")){a=d.getAttribute("content");break}a||(a=document.title||"Untitled");return a}(),b={},b=function(a,c,b){a.l1=c;a.l2=b;a.l3="__page__";a.l4="-";return a}(b,e,t),m=(new Date).getTime(),n=Math.floor(Math.random()*Math.pow(10,12)),p,f;f=D();p=f.a?f.b:0;b.zmoatab_cm=p;b.t=m;b.de=n;b.zMoatAB_SNPT=!0;var q;q=p?p:1;var u;u=f?f.a?!0:!1:!0;var e=[],v=(new Date).getTime().toString(35),
+            w=[l(b.l1),l(b.l2),l(b.l3),l(b.l4)].join(":"),t=/zct[a-z0-9]+/i,g="",h;for(h in b)b.hasOwnProperty(h)&&h.match(t)&&(g+="&"+h+"="+b[h]);var A=document.referrer.match(/^([^:]{2,}:\/\/[^\/]*)/),r=A?A[1]:document.referrer,x=["e=17","d="+encodeURIComponent(w),"de="+n,"t="+m,"i=BIZJOURNAL_ALL_CONTENT1","cm="+q,String("j="+encodeURIComponent(r)+g),"mp=1","ac=1","pl=1","bq=10","vc=2"],v="https://lgsne9lav615-a.akamaihd.net/"+v+".gif?",y=function(a){for(var c="",b=0;b<a.length;b++)c+=(0===b?"":"&")+a[b];return c}(function(a){for(var b=
+            0;b<a.length;b++){var d=Math.floor(Math.random()*(a.length-b)+b),e=a[b],f=z(a,b,d,x[1]);z(a,b,d,x[0])||f?b--:(a[b]=a[d],a[d]=e)}return a}(x)),y=v+y+"&cs=0",E="https://px.moatads.com/pixel.gif?e=17&d="+encodeURIComponent(w)+"&de="+n+"&t="+m+"&i=BIZJOURNAL_ALL_CONTENT1&cm="+q+"&j="+encodeURIComponent(r)+g+"&mp=0&ac=1&pl=1&bq=10&ad_type=img&vc=2&cs=0",F="https://px.moatads.com/pixel.gif?e=17&d="+encodeURIComponent(w)+"&de="+n+"&t="+m+"&i=BIZJOURNAL_ALL_CONTENT1&cm="+q+"&j="+encodeURIComponent(r)+g+"&ku=1&ac=1&pl=1&bq=10&ad_type=img&vc=2&cs=0";
+            u&&((new Image).src=y,(new Image).src=E);for(var B in b)e.push(B+"="+encodeURIComponent(b[B]));var e=e.join("&"),e=e+"&vc=2",k=document.createElement("script");k.type="text/javascript";k.async=!0;u&&(k.onerror=function(){(new Image).src=F});var C=document.getElementsByTagName("script")[0];C.parentNode.insertBefore(k,C);k.src="https://z.moatads.com/bizjournalallcontent123456789/moatcontent.js#"+e}catch(a){try{var G="//pixel.moatads.com/pixel.gif?e=24&d=data%3Adata%3Adata%3Adata&i=MOATCONTENTABSNIPPET1"+
+            g+"&vc=2&ac=1&k="+encodeURIComponent(a)+"&j="+encodeURIComponent(r)+"&cs="+(new Date).getTime();(new Image).src=G}catch(c){}}})();
+    </script>
+    <!-- End Moat -->
+
+    <script async src="https://cdn.brandmetrics.com/tag/9ef1ef28868c47df9b80e11c37fe3204/bizjournals.js"></script>
+
+<script>
+    if (performance && performance.mark) performance.mark('js_loaded');
+</script>
+        <script src="https://assets.bizjournals.com/static/js/vendor/iframe-resizer/4.3.2/iframeResizer.min.js?v=1676307890"></script>
+    </head>
+    <body>
+            <script type="text/javascript">
+        window.cxenseMarketingNavSubOffer = '6fe160d6915313f82bf0efa26dc5fbc799d1ad75';
+    </script>
+    <!-- market:nav -->
+    <header id="FlatNavigation"
+            class="nav-header sapphire fixed-top">
+                                    <!--view:nav:top:render-->
+            <nav id="SiteNav" class="border-bottom">
+                <!-- header:nav:top -->
+<div class="d-flex justify-content-between align-items-center p-3 px-sm-0 site-nav " role="navigation">
+    <!-- header:nav:top:left -->
+    <div class="mr-auto d-flex site-nav-contents">
+        <!-- header:nav:top:brand -->
+        <div id="SiteNavBranding" class="font-weight-bold text-uppercase text-center pr-3 pr-sm-0">The Business Journals</div>
+        <div class="vertical-divider border-left ml-1 ml-sm-0">&nbsp;</div>
+                    <!-- header:nav:top:left:cities -->
+            <div id="SelectCityDropdown" class="pl-3 pl-sm-4">
+                <button class="dropdown-toggle dropdown-toggle-remove-bs-icon border-0 rounded-0" href="#" id="SelectCityDropdownTrigger" role="button" data-cy="nav-city-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="font-weight-bold">Select a City</span><i class="bi bi-chevron-down px-1" style="font-size: 1rem;"></i>
+                </button>
+                <div id="SelectCityDropdownMenu" class="dropdown-menu rounded-0 border-0 py-3 px-5 px-lg-4 m-0 shadow" aria-labelledby="SelectCityDropdownTrigger">
+                                            <a href="/" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : National" data-cy="market-nav-2661"><span class="line-height-reset">National</span></a>
+                                            <a href="/albany" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Albany" data-cy="market-nav-2251"><span class="line-height-reset">Albany</span></a>
+                                            <a href="/albuquerque" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Albuquerque" data-cy="market-nav-2261"><span class="line-height-reset">Albuquerque</span></a>
+                                            <a href="/atlanta" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Atlanta" data-cy="market-nav-2271"><span class="line-height-reset">Atlanta</span></a>
+                                            <a href="/austin" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Austin" data-cy="market-nav-2281"><span class="line-height-reset">Austin</span></a>
+                                            <a href="/baltimore" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Baltimore" data-cy="market-nav-2291"><span class="line-height-reset">Baltimore</span></a>
+                                            <a href="/birmingham" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Birmingham" data-cy="market-nav-2301"><span class="line-height-reset">Birmingham</span></a>
+                                            <a href="/boston" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Boston" data-cy="market-nav-2311"><span class="line-height-reset">Boston</span></a>
+                                            <a href="/buffalo" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Buffalo" data-cy="market-nav-2321"><span class="line-height-reset">Buffalo</span></a>
+                                            <a href="/charlotte" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Charlotte" data-cy="market-nav-2331"><span class="line-height-reset">Charlotte</span></a>
+                                            <a href="/chicago" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Chicago" data-cy="market-nav-2691"><span class="line-height-reset">Chicago</span></a>
+                                            <a href="/cincinnati" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Cincinnati" data-cy="market-nav-2341"><span class="line-height-reset">Cincinnati</span></a>
+                                            <a href="/cleveland" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Cleveland" data-cy="market-nav-2701"><span class="line-height-reset">Cleveland</span></a>
+                                            <a href="/columbus" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Columbus" data-cy="market-nav-2351"><span class="line-height-reset">Columbus</span></a>
+                                            <a href="/dallas" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Dallas" data-cy="market-nav-2361"><span class="line-height-reset">Dallas</span></a>
+                                            <a href="/dayton" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Dayton" data-cy="market-nav-2371"><span class="line-height-reset">Dayton</span></a>
+                                            <a href="/denver" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Denver" data-cy="market-nav-2381"><span class="line-height-reset">Denver</span></a>
+                                            <a href="/triad" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Greensboro/Winston-Salem" data-cy="market-nav-2611"><span class="line-height-reset">Greensboro/Winston-Salem</span></a>
+                                            <a href="/pacific" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Honolulu" data-cy="market-nav-2481"><span class="line-height-reset">Honolulu</span></a>
+                                            <a href="/houston" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Houston" data-cy="market-nav-2391"><span class="line-height-reset">Houston</span></a>
+                                            <a href="/jacksonville" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Jacksonville" data-cy="market-nav-2401"><span class="line-height-reset">Jacksonville</span></a>
+                                            <a href="/kansascity" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Kansas City" data-cy="market-nav-2411"><span class="line-height-reset">Kansas City</span></a>
+                                            <a href="/losangeles" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Los Angeles" data-cy="market-nav-2421"><span class="line-height-reset">Los Angeles</span></a>
+                                            <a href="/louisville" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Louisville" data-cy="market-nav-2431"><span class="line-height-reset">Louisville</span></a>
+                                            <a href="/memphis" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Memphis" data-cy="market-nav-2441"><span class="line-height-reset">Memphis</span></a>
+                                            <a href="/southflorida" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Miami/Fort Lauderdale" data-cy="market-nav-2581"><span class="line-height-reset">Miami/Fort Lauderdale</span></a>
+                                            <a href="/milwaukee" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Milwaukee" data-cy="market-nav-2451"><span class="line-height-reset">Milwaukee</span></a>
+                                            <a href="/twincities" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Minneapolis/St. Paul" data-cy="market-nav-2631"><span class="line-height-reset">Minneapolis/St. Paul</span></a>
+                                            <a href="/nashville" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Nashville" data-cy="market-nav-2461"><span class="line-height-reset">Nashville</span></a>
+                                            <a href="/newyork" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : New York" data-cy="market-nav-2851"><span class="line-height-reset">New York</span></a>
+                                            <a href="/orlando" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Orlando" data-cy="market-nav-2471"><span class="line-height-reset">Orlando</span></a>
+                                            <a href="/philadelphia" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Philadelphia" data-cy="market-nav-2491"><span class="line-height-reset">Philadelphia</span></a>
+                                            <a href="/phoenix" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Phoenix" data-cy="market-nav-2501"><span class="line-height-reset">Phoenix</span></a>
+                                            <a href="/pittsburgh" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Pittsburgh" data-cy="market-nav-2511"><span class="line-height-reset">Pittsburgh</span></a>
+                                            <a href="/portland" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Portland" data-cy="market-nav-2521"><span class="line-height-reset">Portland</span></a>
+                                            <a href="/rhodeisland" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Providence" data-cy="market-nav-2891"><span class="line-height-reset">Providence</span></a>
+                                            <a href="/triangle" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Raleigh/Durham" data-cy="market-nav-2621"><span class="line-height-reset">Raleigh/Durham</span></a>
+                                            <a href="/sacramento" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Sacramento" data-cy="market-nav-2531"><span class="line-height-reset">Sacramento</span></a>
+                                            <a href="/sanantonio" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : San Antonio" data-cy="market-nav-2541"><span class="line-height-reset">San Antonio</span></a>
+                                            <a href="/sanfrancisco" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : San Francisco" data-cy="market-nav-2551"><span class="line-height-reset">San Francisco</span></a>
+                                            <a href="/seattle" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Seattle" data-cy="market-nav-2571"><span class="line-height-reset">Seattle</span></a>
+                                            <a href="/sanjose" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Silicon Valley" data-cy="market-nav-2561"><span class="line-height-reset">Silicon Valley</span></a>
+                                            <a href="/stlouis" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : St. Louis" data-cy="market-nav-2591"><span class="line-height-reset">St. Louis</span></a>
+                                            <a href="/tampabay" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Tampa Bay" data-cy="market-nav-2601"><span class="line-height-reset">Tampa Bay</span></a>
+                                            <a href="/washington" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Washington, D.C." data-cy="market-nav-2641"><span class="line-height-reset">Washington, D.C.</span></a>
+                                            <a href="/wichita" class="dropdown-item p-0 m-0" data-ct="Nav : Select City : Wichita" data-cy="market-nav-2651"><span class="line-height-reset">Wichita</span></a>
+                                    </div>
+            </div>
+            </div>
+    <!-- header:nav:top:right -->
+    <div class="py-3 pr-sm-2 site-nav-contents">
+        <img
+            v-if="!user.type || markets.length === 0"
+            style="margin-right: 8px;"
+            src="https://assets.bizjournals.com/lib/img/ajax-loader.gif"
+            tabindex="-1"
+            alt="loading..."
+        >
+        <div id="AccountDropdown">
+                            <!-- header:nav:top:right:account -->
+<template
+    v-cloak
+    v-if="user.type"
+>
+    <vue-dropdown
+        :hoverable="settings.account.hover"
+        :options="settings.account.popper"
+        class="nav-top-dropdown nav-top-account-dropdown"
+    >
+        <template v-slot:trigger="state">
+            <button
+                class="nav-top-btn nav-account-btn"
+                data-cy="nav-account-dropdown-activator"
+                aria-haspopup="true"
+                :aria-expanded="state.isOpen ? 'true' : 'false'"
+                tabindex="0"
+            >
+                <span>{{ isSignedIn ? 'Member Account' : 'Sign In'}}</span><i class="icon-custom nav-account-icon"></i>
+            </button>
+        </template>
+        <template v-slot:contents>
+                        <ul
+                v-if="!isSignedIn"
+                class="dropdown-content nav-top-dropdown-account-list"
+            >
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        class="nav-account-link"
+                        :href="`/login/bizjournals?r=${encodedUri}`"
+                        data-ct="Nav : Account Anonymous User : Sign In"
+                        data-cy="nav-account-dropdown-login"
+                    >
+                        <b>Sign In</b>
+                        <small class="nav-account-link-sub">Existing Members</small>
+                    </a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        class="nav-account-link"
+                        :href="`/register/bizjournals?r=${encodedUri}`"
+                        data-ct="Nav : Account Anonymous User : Create Your FREE Account"
+                        data-cy="nav-account-dropdown-register"
+                    >
+                        <b>Become a Member</b>
+                        <small class="nav-account-link-sub">It’s FREE!</small>
+                    </a>
+                </li>
+            </ul>
+                        <ul
+                v-if="isSignedIn"
+                class="dropdown-content nav-top-dropdown-account-list"
+            >
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        class="nav-account-link"
+                        href="/myaccount?market=bizjournals"
+                        data-ct="Nav : Account Registered User : Your Account"
+                        data-cy="nav-account-dropdown-account"
+                    >
+                        <b>Profile</b>
+                        <small class="nav-account-link-sub nav-account-link-sub-email">{{ user.email.toLowerCase() }}</small>
+                    </a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/newsletters?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Newsletters"
+                        data-cy="nav-account-dropdown-newsletters"
+                    ><b>Newsletters</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/subscriptions?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Subscriptions"
+                        data-cy="nav-account-dropdown-subscriptions"
+                    ><b>Subscriptions, Licenses &amp; Access</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/subscriptions/give?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Give Gift Subscription"
+                        data-cy="nav-account-dropdown-give-gift-subscriptions"
+                    ><b>Give Gift Subscriptions</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/subscriptions/accept?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Accept Gift Subscription"
+                        data-cy="nav-account-dropdown-accept-gift-subscriptions"
+                    ><b>Accept Gift Subscriptions</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/subscriptions/track?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Track Gift Subscription"
+                        data-cy="nav-account-dropdown-track-gift-subscriptions"
+                    ><b>Track Gift Subscriptions</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/orders?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Orders"
+                        data-cy="nav-account-dropdown-orders"
+                        rel="nofollow noopener"
+                    ><b>Orders</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/paynow?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Pay Now"
+                        data-cy="nav-account-dropdown-paynow"
+                        rel="nofollow noopener"
+                    ><b>Pay Now</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/orders?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Receipts"
+                        data-cy="nav-account-dropdown-receipts"
+                        rel="nofollow noopener"
+                    ><b>Receipts</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/orders/archive?market=bizjournals"
+                        class="nav-account-link text-secondary ml-2 ml-md-4"
+                        data-ct="Nav : Account Registered User : Orders Archive"
+                        data-cy="nav-account-dropdown-orders-archive"
+                        rel="nofollow noopener"
+                    ><b>Archive</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/downloads?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Downloads"
+                        data-cy="nav-account-dropdown-downloads"
+                        rel="nofollow noopener"
+                    ><b>Downloads</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/paymentmethods?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Payment Methods"
+                        data-cy="nav-account-dropdown-payment"
+                        rel="nofollow noopener"
+                    ><b>Payment Methods</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/listings?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Listings"
+                        data-cy="nav-account-dropdown-listings"
+                        rel="nofollow noopener"
+                    ><b>Listings</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/myaccount/nominations?market=bizjournals"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Nominations"
+                        data-cy="nav-account-dropdown-nominations"
+                        rel="nofollow noopener"
+                    ><b>Nominations</b></a>
+                </li>
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        href="/ads"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Manage My Advertising"
+                        data-cy="nav-account-dropdown-manage-my-advertising"
+                    ><b>Manage My Advertising</b></a>
+                </li>
+                <li
+                    v-if="false"
+                    class="nav-top-dropdown-account-list-item"
+                >
+                    <a
+                        href="javascript:void(0)"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Saved Stories"
+                        data-cy="nav-account-dropdown-stories"
+                        rel="nofollow noopener"                     ><b>Saved Stories</b></a>
+                </li>
+            </ul>
+
+            <hr
+                v-if="isOfficePassPrimary"
+                class="nav-account-divider"
+            />
+
+            <ul
+                v-if="isOfficePassPrimary"
+                class="dropdown-content nav-top-dropdown-account-list"
+            >
+                <li
+                    v-if="false"
+                    class="nav-top-dropdown-account-list-item"
+                >
+                    <a
+                        href="javascript:void(0);"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Manage Site Users"
+                        data-cy="nav-account-dropdown-officepass-users"
+                        rel="nofollow noopener"                     ><b>Manage Site Users</b></a>
+                </li>
+                <li
+                    v-if="isOfficePassPrimary"
+                    class="nav-top-dropdown-account-list-item"
+                >
+                    <a
+                        href="/account/bizjournals/officepass"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Manage Office Pass"
+                        data-cy="nav-account-dropdown-officepass"
+                    ><b>Manage Office Pass</b></a>
+                </li>
+            </ul>
+
+            <hr
+                v-if="isSignedIn"
+                class="nav-account-divider"
+            />
+
+            <ul
+                v-if="isSignedIn"
+                class="dropdown-content nav-top-dropdown-account-list"
+            >
+                <li class="nav-top-dropdown-account-list-item">
+                    <a
+                        @click="signOut"
+                        :href="`/login/bizjournals/logout?r=${encodedUri}`"
+                        class="nav-account-link"
+                        data-ct="Nav : Account Registered User : Sign Out"
+                        data-cy="nav-account-dropdown-signout"
+                    ><b>Sign Out</b></a>
+                </li>
+            </ul>
+        </template>
+    </vue-dropdown>
+
+    <hr
+        v-if="isSignedIn"
+        class="nav-top-divider nav-top-account-divider"
+    />
+
+    <small
+        v-if="isSignedIn"
+        class="nav-top-account-email"
+    >{{ user.email.toLowerCase() }}</small>
+</template>
+                    </div>
+    </div>
+</div>
+            </nav>
+                    <!--view:nav:flat:marketnav:render-->
+            <nav
+                :class="{ 'js-has-bizj-suboffer position-relative': (isBizjSubOfferActive && (isSubscribed !== null && shouldShow) || isCxenseModule) }"
+                id="MarketNav"
+        class="navbar border-bottom p-0  align-items-stretch"
+    >
+<div id="MarketSearch" class="dropdown order-1 order-sm-4" role="search">
+    <button id="MarketSearchDropdownTrigger" class="border-0 px-4 rounded-0 dropdown-toggle dropdown-toggle-remove-bs-icon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="nav-open-btn"><i class="bi bi-search"></i><span class="sr-only">Search Form</span></span>
+        <span class="nav-close-btn"><i class="bi bi-x"></i><span class="sr-only">Close</span></span>
+    </button>
+    <div id="MarketSearchDropdownMenu" class="rounded-0 p-5 m-0 border-0 vw-100 dropdown-menu dropdown-menu-right" aria-labelledby="MarketSearchDropdownTrigger">
+        <div class="container">
+            <form id="search" class="vw-100" name="search" action="/bizjournals/search/results" method="get">
+                <div id="SearchForm" class="position-relative input--overlay form-item form-item--group">
+                    <label for="SearchInput" class="sr-only">Search</label>
+                    <i id="SearchIconDisplay" class="bi bi-search position-absolute text-muted px-1"></i>
+                    <input id="SearchInput" class="form-item__control header__search__input" name="q" type="text" placeholder="Search" aria-label="search term">
+                    <span class="form-item--group__add-on form-item--group__add-on--btn">
+                        <button id="SearchButton" type="submit" aria-label="Submit search" name="search__button" class="search__button bg-white px-2 btn" data-ct="OPT : List Landing : Search Lists">
+                            <i class="bi bi-arrow-right px-2"></i>
+                            <span class="sr-only"> Search</span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="MarketBranding" class="order-0 flex-grow-1 flex-sm-grow-0 text-center header__logo" role="link">
+    <a href="bizjournals" data-ct="Logo" class="d-flex align-items-center text-center mx-auto h-100 logo-link">
+        <img src="https://assets.bizjournals.com/static/img/logos/bizjournals-logo.svg" class="nav-banner-brand-img m-auto" alt="The Business Journals" data-cy="nav-banner-brand-img" onerror="this.onerror=null;this.src=this.src.replace('.svg','.png');" />
+    </a>
+</div>
+<div id="MarketPromo" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center" role="link">
+        <a href="/bizjournals/the-playbook" class="px-4 ml-2">
+                    <div class="promo-overline text-uppercase">The Playbook</div>
+                <div class="promo-title font-weight-bold">What business owners need to know to grow and protect their businesses<i class="bi bi-chevron-right"></i></div>
+    </a>
+    </div>
+    <div class="border-bottom d-sm-none order-3 w-100"></div>
+<div id="MarketSubOffer" class="order-last order-sm-1 d-flex flex-sm-grow-1 justify-content-center justify-content-sm-end w-100 w-sm-auto" role="link">
+    <cxense-sub-nav-offer
+        v-show="!isBizjSubOfferActive"
+        :class='"p-sm-4 py-md-2 p-lg-4 d-flex align-items-center"'
+        widget-id="6fe160d6915313f82bf0efa26dc5fbc799d1ad75" ></cxense-sub-nav-offer>
+    <!-- <cxense-sub-nav-offer widget-id="6fe160d6915313f82bf0efa26dc5fbc799d1ad75" /> -->
+    <div
+        v-if="isBizjSubOfferActive && (isSubscribed !== null && shouldShow)"
+        class="p-sm-4 py-md-2 p-lg-4 d-flex align-items-center"
+    >
+        <div class="d-none order-last order-sm-first d-sm-block text-uppercase mr-sm-3 mr-md-0 mr-lg-4">Limited Time Offer</div>
+        <div class=" d-sm-none order-last order-sm-first text-uppercase mr-sm-3 mr-md-0 mr-lg-4">Become a Member</div>
+        <div class="order-first order-sm-last">
+            <a href="/bizjournals/subscribe?iana=csnav&csrc=6310" class="d-none d-sm-inline-block btn btn--primary btn--small px-5">Subscribe</a>
+            <span class="d-sm-none font-weight-bold text-uppercase">Access All Articles&nbsp;&mdash;&nbsp; </span>
+        </div>
+        <a
+            v-if="isBizjSubOfferActive && (isSubscribed !== null && shouldShow)"
+            href="/bizjournals/subscribe?iana=csnav&csrc=6305"
+            class="stretched-link d-sm-none"
+        ></a>
+    </div>
+</div>
+<div class="border-bottom d-none d-sm-flex order-sm-2 w-sm-100"></div>
+<div id="MarketSiteLinksBar" class="d-sm-flex align-items-center order-first order-sm-3">
+    <button id="MarketSiteLinksDropdownTrigger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MarketSiteLinksDropdownMenu" aria-controls="MarketSiteLinksDropdownMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list nav-open-btn" style="font-size: 2.4rem;"></i>
+        <span class="sr-only">Menu</span>
+        <i class="bi bi-x nav-close-btn" style="font-size: 2.4rem;"></i>
+        <span class="sr-only">Close</span>
+    </button>
+    <div id="MarketSiteLinksMenuDesktop" class="d-none d-sm-none align-items-center mr-auto" role="presentation">
+                <div class="topitems-dt-primary align-items-center">
+                                <a href="/news" class="dropdown-item px-3 " data-ct="2021 Nav : Latest News">Latest News</a>
+                                <a href="/bizjournals/datacenter/lists" class="dropdown-item px-3 " data-ct="2021 Nav : Lists">Lists</a>
+                                <a href="/news/commercial-real-estate" class="dropdown-item px-3 " data-ct="2021 Nav : Commercial Real Estate">Commercial Real Estate</a>
+                                <a href="/news/banking-and-financial-services" class="dropdown-item px-3 " data-ct="2021 Nav : Banking">Banking</a>
+                                <a href="/news/technology" class="dropdown-item px-3 " data-ct="2021 Nav : Technology">Technology</a>
+                                <a href="/news/health-care" class="dropdown-item px-3 " data-ct="2021 Nav : Health Care">Health Care</a>
+                                <a href="/news/residential-real-estate" class="dropdown-item px-3 " data-ct="2021 Nav : Residential Real Estate">Residential Real Estate</a>
+                                <a href="https://www.bizjournals.com/inno" class="dropdown-item px-3 " data-ct="2021 Nav : American Inno">American Inno</a>
+                    </div>
+                <div class="topitems-dt-secondary align-items-center">
+                                <span class="d-block px-3 py-1">|</span>
+                                <a href="/calendar" class="dropdown-item px-3 " data-ct="2021 Nav : Events">Events</a>
+                    </div>
+            </div>
+</div>
+<div id="MarketSiteLinksDropdownMenu" class="collapse navbar-collapse order-2 order-sm-last shadow border-top border-bottom" role="navigation">
+    <div class="navbar-nav">
+        <div id="MarketSiteLinksMenuMobile" class="d-sm-none p-4 mx-4">
+            <div id="MarketSiteLinksMenuMobileInnerContainer">
+                            <a href="/news" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Latest News"><span class="line-height-reset">Latest News</span></a>
+                            <a href="/bizjournals/datacenter/lists" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Lists"><span class="line-height-reset">Lists</span></a>
+                            <a href="/news/commercial-real-estate" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Commercial Real Estate"><span class="line-height-reset">Commercial Real Estate</span></a>
+                            <a href="/news/banking-and-financial-services" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Banking"><span class="line-height-reset">Banking</span></a>
+                            <a href="/news/technology" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Technology"><span class="line-height-reset">Technology</span></a>
+                            <a href="/news/health-care" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Health Care"><span class="line-height-reset">Health Care</span></a>
+                            <a href="/news/residential-real-estate" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Residential Real Estate"><span class="line-height-reset">Residential Real Estate</span></a>
+                            <a href="https://www.bizjournals.com/inno" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : American Inno"><span class="line-height-reset">American Inno</span></a>
+                                                        <a href="/calendar" class="dropdown-item p-0 m-0 " data-ct="2021 Nav : Events"><span class="line-height-reset">Events</span></a>
+                        </div>
+            <div
+                v-if="isSubscribed !== null && shouldShow"
+                id="MarketSubBtnMobile"
+                class="py-4">
+                <a href="/bizjournals/subscribe?iana=csnav&csrc=6310" class="btn btn--primary btn--small d-block px-5 py-3">Subscribe</a>
+            </div>
+        </div>
+        <div id="MarketSiteLinksSubNav" class="accordion p-4 mx-4">
+                    <div class="p-0 nav-item border-top border-bottom-0">
+                <button
+                    type="button"
+                    class="font-weight-bold text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent"
+                    data-toggle="collapse"
+                    data-target="#dropdownMenuButtonIndustriesTopics"
+                    aria-expanded="true"                    aria-controls="dropdownMenuButtonIndustriesTopics">
+                    <div>
+                        Industries & Topics                        <span class="float-right d-inline-block"><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div
+                    id="dropdownMenuButtonIndustriesTopics"
+                    class="border-0 rounded-0 bg-transparent p-0 m-0 rounded-0 w-100 collapse show"
+                    aria-labelledby="dropdownMenuButtonIndustriesTopics"
+                    data-parent="#MarketSiteLinksSubNav">
+                    <div class="row">
+                                                <div class="col-sm-6 col-lg-3 order-sm-0">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Banking & Financial Services"><a href="/news/banking-and-financial-services" >Banking & Financial Services</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Career & Workplace"><a href="/news/career-and-workplace" >Career & Workplace</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Commercial Real Estate"><a href="/news/commercial-real-estate" >Commercial Real Estate</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Diversity, Equity and Inclusion"><a href="/news/career-and-workplace/diversity-equity-and-inclusion" >Diversity, Equity and Inclusion</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Education"><a href="/news/education" >Education</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-2 order-lg-1">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Energy"><a href="/news/energy" >Energy</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Food & Lifestyle"><a href="/news/food-and-lifestyle" >Food & Lifestyle</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Government & Regulations"><a href="/news/government-and-regulations" >Government & Regulations</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Health Care"><a href="/news/health-care" >Health Care</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Manufacturing"><a href="/news/manufacturing" >Manufacturing</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-1 order-lg-2">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Media & Marketing"><a href="/news/media-and-marketing" >Media & Marketing</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Philanthropy & Nonprofits"><a href="/news/philanthropy-and-nonprofits" >Philanthropy & Nonprofits</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Professional Services"><a href="/news/professional-services" >Professional Services</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Residential Real Estate"><a href="/news/residential-real-estate" >Residential Real Estate</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Retailing"><a href="/news/retailing" >Retailing</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-3">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Sports Business"><a href="/news/sports" >Sports Business</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Technology"><a href="/news/technology" >Technology</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Transportation"><a href="/news/transportation" >Transportation</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : Travel & Tourism"><a href="/news/travel-and-tourism" >Travel & Tourism</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : industries : American Inno"><a href="https://www.bizjournals.com/inno" >American Inno</a></div>
+                                                    </div>
+                                            </div>
+                </div>
+            </div>
+                    <div class="p-0 nav-item border-top border-bottom-0">
+                <button
+                    type="button"
+                    class="font-weight-bold text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent"
+                    data-toggle="collapse"
+                    data-target="#dropdownMenuButtonPartnerInsightsSponsoredContent"
+                    aria-expanded="true"                    aria-controls="dropdownMenuButtonPartnerInsightsSponsoredContent">
+                    <div>
+                        Partner Insights (Sponsored Content)                        <span class="float-right d-inline-block"><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div
+                    id="dropdownMenuButtonPartnerInsightsSponsoredContent"
+                    class="border-0 rounded-0 bg-transparent p-0 m-0 rounded-0 w-100 collapse show"
+                    aria-labelledby="dropdownMenuButtonPartnerInsightsSponsoredContent"
+                    data-parent="#MarketSiteLinksSubNav">
+                    <div class="row">
+                                                <div class="col-sm-6 col-lg-3 order-sm-0">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Partner Content"><a href="/bizjournals/partner-content" >Partner Content</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Check Out Your Neighbor"><a href="/bizjournals/partner-insights/check-out-your-neighbor/2023" >Check Out Your Neighbor</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Center Your Growth"><a href="/bizjournals/partner-insights/center-your-growth/2023" >Center Your Growth</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-2 order-lg-1">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Expand to Flyover Country"><a href="/bizjournals/partner-insights/expand-to-flyover-country/2023" >Expand to Flyover Country</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Expand to the Center of Innovation"><a href="/bizjournals/partner-insights/expand-to-the-center-of-innovation/2023" >Expand to the Center of Innovation</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Choosing Florida for Higher Education"><a href="/bizjournals/partner-insights/choosing-florida-for-higher-education" >Choosing Florida for Higher Education</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-1 order-lg-2">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : On-Demand Business Valuations"><a href="/bizjournals/partner-insights/bizequity-on-demand-business-valuations/" >On-Demand Business Valuations</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : Insights for Private Companies"><a href="/bizjournals/news/partners/insights-for-private-companies/" >Insights for Private Companies</a></div>
+                                                                                                                </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-3">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : sponsored_content : How To"><a href="/news/how-to" >How To</a></div>
+                                                    </div>
+                                            </div>
+                </div>
+            </div>
+                    <div class="p-0 nav-item border-top border-bottom-0">
+                <button
+                    type="button"
+                    class="font-weight-bold text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent"
+                    data-toggle="collapse"
+                    data-target="#dropdownMenuButtonEvents"
+                    :aria-expanded="false"                    aria-controls="dropdownMenuButtonEvents">
+                    <div>
+                        Events                        <span class="float-right d-inline-block"><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div
+                    id="dropdownMenuButtonEvents"
+                    class="border-0 rounded-0 bg-transparent p-0 m-0 rounded-0 w-100 collapse "
+                    aria-labelledby="dropdownMenuButtonEvents"
+                    data-parent="#MarketSiteLinksSubNav">
+                    <div class="row">
+                                                <div class="col-sm-6 col-lg-3 order-sm-0">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : events : TBJ Events"><a href="/calendar" >TBJ Events</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-2 order-lg-1">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : events : Nominations"><a href="/nominations" >Nominations</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-1 order-lg-2">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : events : Business Events Calendar"><a href="/calendar/bizjournals" >Business Events Calendar</a></div>
+                                                    </div>
+                                            </div>
+                </div>
+            </div>
+                    <div class="p-0 nav-item border-top border-bottom-0">
+                <button
+                    type="button"
+                    class="font-weight-bold text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent"
+                    data-toggle="collapse"
+                    data-target="#dropdownMenuButtonMarketingSolutions"
+                    :aria-expanded="false"                    aria-controls="dropdownMenuButtonMarketingSolutions">
+                    <div>
+                        Marketing Solutions                        <span class="float-right d-inline-block"><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div
+                    id="dropdownMenuButtonMarketingSolutions"
+                    class="border-0 rounded-0 bg-transparent p-0 m-0 rounded-0 w-100 collapse "
+                    aria-labelledby="dropdownMenuButtonMarketingSolutions"
+                    data-parent="#MarketSiteLinksSubNav">
+                    <div class="row">
+                                                <div class="col-sm-6 col-lg-3 order-sm-0">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Book of Lists"><a href="/book-of-lists" >Book of Lists</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : People on the Move"><a href="https://www.bizjournals.com/bizjournals/potm" >People on the Move</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : BizSpotlight"><a href="https://www.bizjournals.com/bizjournals/bizspotlight" >BizSpotlight</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-2 order-lg-1">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Home of the Day"><a href="https://www.bizjournals.com/bizjournals/home-of-the-day" >Home of the Day</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Property Showcase"><a href="https://www.bizjournals.com/bizjournals/bizspace" >Property Showcase</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : BizLeads"><a href="https://www.bizjournals.com/bizleads" >BizLeads</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-1 order-lg-2">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : BizEquity"><a href="https://www.bizequity.com/" target='_blank' rel='noopener' rel='nofollow, noopener'>BizEquity</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Store"><a href="https://promo.bizjournals.com/bizjournals/store/" target='_blank' rel='noopener'>Store</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Advertise With Us"><a href="https://advertise.bizjournals.com" target='_blank' rel='noopener'>Advertise With Us</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-3">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Leadership Trust"><a href="/bizjournals/news/leadership-trust" >Leadership Trust</a></div>
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : products : Research Intelligence"><a href="/business-intelligence" >Research Intelligence</a></div>
+                                                    </div>
+                                            </div>
+                </div>
+            </div>
+                    <div class="p-0 nav-item border-top border-bottom-0">
+                <button
+                    type="button"
+                    class="font-weight-bold text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent"
+                    data-toggle="collapse"
+                    data-target="#dropdownMenuButtonNewslettersSubscriptions"
+                    :aria-expanded="false"                    aria-controls="dropdownMenuButtonNewslettersSubscriptions">
+                    <div>
+                        Newsletters & Subscriptions                        <span class="float-right d-inline-block"><i class="bi bi-chevron-down"></i></span>
+                    </div>
+                </button>
+                <div
+                    id="dropdownMenuButtonNewslettersSubscriptions"
+                    class="border-0 rounded-0 bg-transparent p-0 m-0 rounded-0 w-100 collapse "
+                    aria-labelledby="dropdownMenuButtonNewslettersSubscriptions"
+                    data-parent="#MarketSiteLinksSubNav">
+                    <div class="row">
+                                                <div class="col-sm-6 col-lg-3 order-sm-0">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : publications : Newsletter Sign-Up"><a href="/newsletters" >Newsletter Sign-Up</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-2 order-lg-1">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : publications : Start a Subscription"><a href="/bizjournals/subscribe/national" >Start a Subscription</a></div>
+                                                    </div>
+                                                <div class="col-sm-6 col-lg-3 order-sm-1 order-lg-2">
+                                                                <div class="pt-1 pb-3 px-0 " data-ct="2021 Nav : publications : Subscriber-Only Content"><a href="/news/subscribers" >Subscriber-Only Content</a></div>
+                                                    </div>
+                                            </div>
+                </div>
+            </div>
+                </div>
+    </div>
+</div>    </nav>
+</header>
+<div id="FlatNavigationFixedSpacer"></div>
+        <main id="homepage-v4-layout">
+            <div class="ad-container ad-container--contrasted ad-container--stripe hidden--print">
+                <gpt
+                    :position="'t1'"
+                    :priority="0"
+                    :sizes="[[320,50],[728,90],[970,90],[970,250]]"
+                    :mapping="[[[728,90],[970,90],[970,250]],[320,50]]"
+                    :params="{ set: 1 }">
+                </gpt>
+            </div>
+            <breaking-news></breaking-news>
+<section class="container container--wide my-4 my-sm-5">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 mt-0">
+            <h1 class="sans-serif border-bottom mt-0 mb-4 p-0 pb-2" style="font-size: 20px;">Top Business News</h1>
+            <div class="pb-4">
+                <div class="bizj_article-leadin isPrimaryStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-img thumb-link rounded-0">
+        <div class="crop--3x2">
+            <div class="cropped">
+                <img src="https://media.bizj.us/view/img/11130712/lawsonjeff110818tj-3*700xx6379-4253-0-2.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+    <div class="card-body px-0 pb-0 ">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Technology            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 30px; line-height: 1.25;">
+            <a href="sanfrancisco/news/2023/02/13/twilio-announces-big-cuts.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Another S.F. tech firm announces big job cuts            </a>
+        </h2>
+        <p class="bizj_leadin-tease mt-2 mb-0" style="">
+            11:13 am EST&nbsp;&nbsp;|&nbsp;&nbsp;The San Francisco company made layoff announcement Monday in an SEC filing.        </p>
+    </div>
+</div>
+            </div>
+            <div class="border-top py-4">
+                <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isColumnLayout">
+    <div class="row">
+        <div class="col-sm-4">
+    <div class="card-img thumb-link rounded-0">
+        <div class="crop--3x2">
+            <div class="cropped">
+                <img src="https://media.bizj.us/view/img/11518494/larry-culp-098*700xx4553-3035-0-79.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="col-sm-8 pl-xl-0">
+    <div class="card-body px-0 pb-0 pt-sm-2 px-sm-0 ">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Manufacturing            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+                GE CEO outlines Aerospace's future for 2023 ahead of spinoff        </h2>
+        <p class="bizj_leadin-tease mt-2 mb-0" style="font-size: 14px; line-height: 1.35;">
+            6:16 am EST&nbsp;&nbsp;|&nbsp;&nbsp;GE Aerospace CEO Lawrence Culp Jr. told shareholders he expects air travel to return to pre-pandemic normals this year.        </p>
+    </div>
+        </div>
+    </div>
+    <a href="cincinnati/news/2023/02/13/ge-aerospace-2023-annual-report.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leadin-stretch-link text-body stretched-link"></a>
+</div>
+            </div>
+            <div class="border-top py-4">
+                <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isColumnLayout">
+    <div class="row">
+        <div class="col-sm-4">
+    <div class="card-img thumb-link rounded-0">
+        <div class="crop--3x2">
+            <div class="cropped">
+                <img src="https://media.bizj.us/view/img/12433304/intel-ohio-fabs-rendering-9*700xx5625-3750-188-0.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="col-sm-8 pl-xl-0">
+    <div class="card-body px-0 pb-0 pt-sm-2 px-sm-0 ">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Manufacturing            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+                Why North Carolina failed to win Intel's $20B chip factory        </h2>
+        <p class="bizj_leadin-tease mt-2 mb-0" style="font-size: 14px; line-height: 1.35;">
+            12:32 pm EST&nbsp;&nbsp;|&nbsp;&nbsp;Multiple sites in North Carolina, including the Triangle, were pitched to chipmaker Intel Corp. as state and local officials scrambled&hellip;        </p>
+    </div>
+        </div>
+    </div>
+    <a href="triangle/news/2023/02/13/intel-semiconductor-plant-nc-ohio-incentives-sites.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leadin-stretch-link text-body stretched-link"></a>
+</div>
+            </div>
+            <div class="border-top py-4">
+                <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isColumnLayout">
+    <div class="row">
+        <div class="col-sm-4">
+    <div class="card-img thumb-link rounded-0">
+        <div class="crop--3x2">
+            <div class="cropped">
+                <img src="https://media.bizj.us/view/img/12250865/gettyimages-527992348*700xx4464-2977-0-0.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="col-sm-8 pl-xl-0">
+    <div class="card-body px-0 pb-0 pt-sm-2 px-sm-0 ">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Health Care            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+                Biotech IPOs may be nonexistent, but Nasdaq is taking the long view        </h2>
+        <p class="bizj_leadin-tease mt-2 mb-0" style="font-size: 14px; line-height: 1.35;">
+            5:47 am EST&nbsp;&nbsp;|&nbsp;&nbsp;&quot;When you put things in a multi-year or multi-decade perspective, we're right where we need to be.&quot;        </p>
+    </div>
+        </div>
+    </div>
+    <a href="boston/news/2023/02/13/biotech-pharma-ipo-market-2023.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leadin-stretch-link text-body stretched-link"></a>
+</div>
+            </div>
+            <div class="border-top py-4">
+                <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isColumnLayout">
+    <div class="row">
+        <div class="col-sm-4">
+    <div class="card-img thumb-link rounded-0">
+        <div class="crop--3x2">
+            <div class="cropped">
+                <img src="https://media.bizj.us/view/img/10735397/1680409514369641729831725908329008473162185o*700xx1560-1040-345-0.jpg" alt="" class="w-100">
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="col-sm-8 pl-xl-0">
+    <div class="card-body px-0 pb-0 pt-sm-2 px-sm-0 ">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Transportation            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+                CSX reaches sick leave agreement with two more unions        </h2>
+        <p class="bizj_leadin-tease mt-2 mb-0" style="font-size: 14px; line-height: 1.35;">
+            3:03 pm EST&nbsp;&nbsp;|&nbsp;&nbsp;CSX has added an additional two unions to its roster of agreements to allow paid sick time to some of&hellip;        </p>
+    </div>
+        </div>
+    </div>
+    <a href="jacksonville/news/2023/02/13/csx-reaches-agreements-with-two-more-unions.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leadin-stretch-link text-body stretched-link"></a>
+</div>
+            </div>
+            <div class="d-block d-lg-none w-100">
+                <div class="border-bottom"></div>
+            </div>
+        </div>
+        <div class="col col-lg-6 mt-0">
+            <div class="row align-items-stretch h-100">
+                <div class="col-sm col-lg-5 mt-5 mt-lg-0 pr-sm-3 px-lg-0">
+                    <div class="d-lg-flex justify-content-lg-end align-items-lg-stretch h-100">
+                        <div class="d-none d-lg-block border-left pl-lg-3 pl-xl-4"></div>
+                        <div class="flex-grow-1">
+                            <h2 class="sans-serif border-bottom mt-0 mb-4 p-0 pb-2 w-100"
+                                style="font-size: 20px; line-height: 1.2;">Latest News</h2>
+                            <cxense-latest></cxense-latest>
+                            <div class="d-block d-lg-none w-100">
+                                <div class="border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-lg-7 mt-5 mt-lg-0">
+                    <div class="d-sm-flex justify-content-sm-end align-items-sm-stretch h-100">
+                        <div class="d-none d-sm-block border-left pl-sm-4"></div>
+                        <div class="flex-grow-1">
+                            <h2 class="sans-serif border-bottom mt-0 mb-4 p-0 pb-2 w-100"
+                                style="font-size: 20px; line-height: 1.2;">The Playbook</h2>
+                            <p class="mt-0">What business owners and executives need to know to grow and protect their businesses</p>
+                            <div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Government & Regulations            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/13/sec-greenhouse-emission-rule-climate.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Why privately held small businesses should pay attention to a looming SEC rule            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Career & Workplace            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/12/six-figure-jobs-in-america.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                America's new six-figure jobs: These weren't $100K jobs before the pandemic, but they are now            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Banking & Financial Services            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/09/sba-7a-lending-ppp-fintech-loan-small-business.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Exclusive: SBA finalizing expansion of one of its most popular lending programs            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Banking & Financial Services            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/09/sba-ppp-loan-forgiveness-errors-guzman-rule.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Bad news for businesses seeking PPP loan forgiveness for 'good faith' errors            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Government & Regulations            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/08/sotu-biden-state-of-the-union-business-jobs.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                6 takeaways for business owners from President Biden's State of the Union address            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Government & Regulations            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/08/sba-congress-small-business-goldman-sachs-hiring.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Small businesses give the federal government a passing grade. Barely.            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Professional Services            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/07/employment-law-issues-osha-pay-transparency.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Four under-the-radar issues that could trip up employers in 2023            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Career & Workplace            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/06/jobs-hiring-worker-shortage-labor-recruitment.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                Companies still need to move fast in this hot hiring market            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Career & Workplace            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/06/playbook-company-culture-pay-benefits-employers.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                The Playbook: If this is the new normal, employers have work to do            </a>
+        </h2>
+    </div>
+</div>
+</div>
+<div class="border-top py-4">
+    <div class="bizj_article-leadin isStandardStory card border-0 rounded-0 isStackedLayout">
+    <div class="card-body px-0 pb-0 pt-0">
+        <div class="bizj_meta meta">
+            <span class="bizj_meta-item meta-item text-capitalize">
+                Technology            </span>
+        </div>
+        <h2 class="bizj_leadin-title mt-2 mb-3 text-body" style="font-size: 18px; line-height: 1.35;">
+            <a href="bizjournals/news/2023/02/05/openai-chatgpt-busines-owners-tips-use.html" data-ct="HPT:HP2022:Featured News Module:Primary Standard Headline" class="bizj_leading-stretch-link text-body stretched-link">
+                How experts say businesses should — and shouldn't — use ChatGPT            </a>
+        </h2>
+    </div>
+</div>
+</div>
+                            <div class="d-block d-lg-none w-100">
+                                <div class="border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container container--wide my-5 pt-0 text-center">
+    <a href="bizjournals/news/" data-ct="HPT:HP2022:News River:All News Link" class="btn btn-outline-primary px-5">More business news <i class="icon-angle-right"></i></a>
+</section>
+<script id="riverState" type="application/json">[{"type":"topic","id":"","title":"The National Observer","code":"the-national-observer","moreUrl":"\/bizjournals\/topic\/the-national-observer","links":[],"apiLink":"https:\/\/content.bizjournals.com\/api\/v1\/news?market=bizjournals&limit=6&tag=The+National+Observer&native=false&advertorial=false"},{"type":"channel","id":2,"title":"Commercial Real Estate","code":"commercial-real-estate","moreUrl":"\/bizjournals\/news\/commercial-real-estate","links":{"CRE Brokerages":{"title":"CRE Brokerages","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/cre-brokerages"},"CRE Developers":{"title":"CRE Developers","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/cre-developers"},"Construction":{"title":"Construction","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/construction"},"LEED":{"title":"LEED","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/leed"},"Retail Development":{"title":"Retail Development","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/retail-development"}},"apiLink":"https:\/\/content.bizjournals.com\/api\/v1\/page\/article\/most-recent?market=bizjournals&limit=6&channel=2&native=false&advertorial=false"},{"type":"promo","id":"potm","title":"People on the Move","moreUrl":"https:\/\/www.bizjournals.com\/bizjournals\/potm","description":"<strong>Discover people making an impact<\/strong> and download their contact information","sideTitle":"Promote employees and highlight your company's success","sideDescription":"Announce your latest big hire and get the word out about the moves your business is making.","sideLinkText":"Submit People on the Move","sideLink":"https:\/\/www.bizjournals.com\/bizjournals\/people-on-the-move"},{"type":"promo","id":"lists","title":"The List","moreUrl":"https:\/\/www.bizjournals.com\/bizjournals\/datacenter\/lists","description":"The leading companies for your business research, sales prospecting, job search and fundraising.","sideDescription":"Get all local list data and updated contact info week-over-week. This is your go-to resource for verified intelligence on  The Business Journals's business and decision makers.","sideTitle":"On the hunt for even more targeted data?","sideLinkText":"Book of Lists Unlimited","sideLink":"https:\/\/www.bizjournals.com\/bizjournals\/datacenter\/lists\/book-of-lists-unlimited"},{"type":"ad","id":"m1"},{"type":"channel","id":1,"title":"Banking & Financial Services","code":"banking-and-financial-services","moreUrl":"\/bizjournals\/news\/banking-and-financial-services","links":{"Credit Unions":{"title":"Credit Unions","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/credit-unions"},"Cryptocurrency":{"title":"Cryptocurrency","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/cryptocurrency"},"Financial Planning":{"title":"Financial Planning","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/financial-planning"},"Mergers and Acquisitions":{"title":"Mergers and Acquisitions","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/mergers-and-acquisitions"},"Mortgages":{"title":"Mortgages","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/mortgages"},"Private equity":{"title":"Private equity","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/private-equity"},"Property & Casualty Insurance":{"title":"Property & Casualty Insurance","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/property--casualty-insurance"},"Venture capital":{"title":"Venture capital","url":"https:\/\/www.bizjournals.com\/bizjournals\/topic\/venture-capital"}},"apiLink":"https:\/\/content.bizjournals.com\/api\/v1\/page\/article\/most-recent?market=bizjournals&limit=6&channel=1&native=false&advertorial=false"},{"type":"promo","id":"events","title":"Events","moreUrl":"https:\/\/www.bizjournals.com\/bizjournals\/event","description":"Network with key influencers and <strong>build relationships that grow your business.<\/strong>","sideTitle":"Current Nominations","sideDescription":"The The Business Journals regularly produces special events to recognize industry leaders and facilitate professional networking.","sideLinkText":"See all current nominations","sideLink":"https:\/\/www.bizjournals.com\/bizjournals\/nominations"},{"type":"promo","id":"cotm","title":"BizSpotlight","moreUrl":"https:\/\/www.bizjournals.com\/bizjournals\/press-release","description":"The premier newswire outlet for sharing <strong>company news, awards, announcements, and more.<\/strong>","sideTitle":"Highlight and promote your company's achievements","sideDescription":"Share your company's latest updates with an elite, engaged, and targeted executive audience.","sideLinkText":"Submit BizSpotlight Press Release","sideLink":"https:\/\/www.bizjournals.com\/bizjournals\/bizspotlight"},{"type":"channel","id":"leadershiptrust","title":"Leadership Trust","moreUrl":"\/bizjournals\/news\/leadership-trust","description":"This content was created by members of the The Business Journals Leadership Trust","apiLink":"\/api\/content\/leadership?market=bizjournals"},{"type":"ad","id":"b1"},{"type":"promo","id":"leads","title":"Sales Leads","moreUrl":"https:\/\/www.bizjournals.com\/bizjournals\/datacenter\/leads","description":"<strong>Stay ahead of the competition<\/strong> using our comprehensive public records.","sideTitle":"Fresh sales leads, ripe opportunities","sideDescription":"See who's buying real estate, filed for bankruptcy, filed tax liens, and more.","sideLinkText":"See all public records","sideLink":"https:\/\/www.bizjournals.com\/bizjournals\/datacenter\/leads"},{"type":"promo","id":"advertising","title":"Advertising ","moreUrl":"https:\/\/advertise.bizjournals.com\/","descriptionTitle":"Reach our audience with your message","description":"Our readers are educated and affluent.  They include top management professionals with high net worth who run fast-growing companies and make major purchasing decisions, personally and for their businesses, every day.","buttonText":"Connect with our audience"}]</script>
+<homepage-river-container
+    v-if="item"
+    v-for="(item, index) in riverItems"
+    :key="index"
+    :item="item"
+    :type="item.type"
+    :in-viewport-offset='800'
+    :in-viewport-once='true'>
+</homepage-river-container>
+<cxense-bottom-bar
+    v-if="!hasAdhesion"
+    widget-id='a57b93b14e41cf5e5b22a44168f955be01161dca' >
+</cxense-bottom-bar>
+        </main>
+<footer class="footer">
+        <!-- view:footer:header -->
+    <div class="footer__header">
+        <div class="container ">
+            <div class="relative">
+                <div class="footer__back-to-top" data-ct="2016 Footer :  : Back to Top">
+                    <a href="javascript:void(0);" onclick="window.scrollTo(0,0)">Back to Top <i class="icon-up-dir"></i>
+                    </a>
+                </div>
+
+                <ul class="footer__logo-and-nav-links">
+                    <li class="footer__logo">
+                        <a class="footer__logo-link" href="/" data-ct="2016 Footer : Logo">
+                            <img src="https://assets.bizjournals.com/static/img/logos/horizontal-black/bizjournals-logo.png"  alt="" onError="this.onerror=null;this.src=this.src.replace('.svg','.png');" class="footer__logo-img">
+                        </a>
+                    </li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : Home"><a href="https://www.bizjournals.com">Home</a></li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : News"><a href="https://www.bizjournals.com/news">News</a></li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : People"><a href="https://www.bizjournals.com/potm">People</a></li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : Companies"><a href="https://www.bizjournals.com/bizjournals/datacenter/companies">Companies</a></li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : Events"><a href="https://www.bizjournals.com/calendar/bizjournals">Events</a></li>
+                                        <li class="hidden--xs hidden--sm" data-ct="2016 Footer : Store"><a href="https://promo.bizjournals.com/bizjournals/store/">Store</a></li>
+                    
+                </ul>
+            </div><!-- /.relative -->
+        </div><!-- /.container -->
+    </div><!-- /.footer__header -->
+        <!-- view:footer:body -->
+    <div class="footer__body hidden--xs hidden--sm">
+        <div class="container ">
+            <div class="row">
+                <div class="1/1 subscriber-promo md__1/4">
+                    <h4 class="link-list-title">Subscribers</h4>
+                    <div class="row">
+                        <div class="1/1">
+                            <ul class="link-list">
+                                                        <li data-ct="2016 Footer : Manage your Account" >
+            <a href="/myaccount?market=bizjournals" >
+                <span class="link-list-item__title">Manage your Account</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Manage My Advertising" >
+            <a href="https://www.bizjournals.com/ads" >
+                <span class="link-list-item__title">Manage My Advertising</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Book of Lists" >
+            <a href="https://www.bizjournals.com/book-of-lists" >
+                <span class="link-list-item__title">Book of Lists</span>
+                        </a>
+        </li>
+                                </ul>
+                        </div>
+                                            </div>
+                </div>
+                <div class="1/1 md__1/4">
+                    <h4 class="link-list-title">About &amp; Contact</h4>
+                    <ul class="link-list">
+                                                <li data-ct="2016 Footer : About The Business Journals" >
+            <a href="https://www.bizjournals.com/about-us/" >
+                <span class="link-list-item__title">About The Business Journals</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Advertise" >
+            <a href="https://advertise.bizjournals.com?ana=om_wb_dg_ftr" >
+                <span class="link-list-item__title">Advertise</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Help & FAQs" >
+            <a href="https://support.bizjournals.com/en/" >
+                <span class="link-list-item__title">Help & FAQs</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Circulation Sales Center Directory" >
+            <a href="https://www.bizjournals.com/about-us/sales-center" >
+                <span class="link-list-item__title">Circulation Sales Center Directory</span>
+                        </a>
+        </li>
+                        </ul>
+                </div>
+                                <div class="1/1 md__1/4">
+                    <h4 class="link-list-title">Follow Us</h4>
+                    <div class="social-follow-bizj">
+                        <a href="https://twitter.com/bizjournals" class="btn btn--social btn--twitter btn--twitter--footer u-float-left" style="clear: left;" target="_blank" rel="noopener" data-ct="2016 Footer :  The Business Journals : twt">
+                            <i class="bi-twitter"></i><span class="icon__hidden-text"> Twitter</span>
+                        </a>
+                        <a href="http://www.linkedin.com/company/american-city-business-journals" class="btn btn--social btn--linkedin btn--linkedin--footer u-float-left" style="clear: none; margin-left: 0;" target="_blank" rel="noopener" data-ct="2016 Footer :  The Business Journals : lkn">
+                            <i class="bi-linkedin"></i><span class="icon__hidden-text"> LinkedIn</span>
+                        </a>
+                        <a href="https://www.facebook.com/bizjournals" class="btn btn--social btn--facebook btn--facebook--footer u-float-left" style="clear: left; margin-bottom:1rem; margin-left: 0;" target="_blank" rel="noopener" data-ct="2016 Footer :  The Business Journals : fbk">
+                            <i class="bi-facebook"></i><span class="icon__hidden-text"> Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/americancitybusinessjrnls" class="btn btn--social btn--instagram btn--instagram--footer u-float-left" style="clear: none; margin-bottom:1rem; margin-left: 0;" target="_blank" rel="noopener" data-ct="2016 Footer :  The Business Journals : ins">
+                            <i class="bi-instagram"></i><span class="icon__hidden-text"> Instagram</span>
+                        </a>
+                    </div>
+                    <div class="multi_row_column">
+                        <h4 class="link-list-title">Newsletters</h4>
+                        <ul class="link-list">
+                                                    <li data-ct="2016 Footer : Sign Up Now" >
+            <a href="https://www.bizjournals.com/newsletters" >
+                <span class="link-list-item__title">Sign Up Now</span>
+                        </a>
+        </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="1/1 md__1/4">
+                    <h4 class="link-list-title">ACBJ</h4>
+                    <ul class="link-list">
+                                                <li data-ct="2016 Footer : American City Business Journals" >
+            <a href="https://www.acbj.com/" >
+                <span class="link-list-item__title">American City Business Journals</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : AmericanInno" >
+            <a href="https://www.bizjournals.com/inno" >
+                <span class="link-list-item__title">AmericanInno</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : BizEquity" >
+            <a href="https://www.bizequity.com/" >
+                <span class="link-list-item__title">BizEquity</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : BizLeads" >
+            <a href="https://www.bizleads.com/" >
+                <span class="link-list-item__title">BizLeads</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Bizwomen" >
+            <a href="https://www.bizjournals.com/bizwomen" >
+                <span class="link-list-item__title">Bizwomen</span>
+                        </a>
+        </li>
+                            <li data-ct="2016 Footer : Hemmings" >
+            <a href="https://www.hemmings.com/" >
+                <span class="link-list-item__title">Hemmings</span>
+                        </a>
+        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer__footer">
+        <div class="container ">
+            <ul class="ul list--unstyled list--inline">
+                <li>
+                    <a href="/useragreement">User Agreement</a>
+                </li>
+                <li>&nbsp; | &nbsp;</li>
+                <li>
+                    <a href="/privacy">Privacy Policy</a>
+                </li>
+                <li class="hidden--xs hidden--sm">&nbsp; | &nbsp;</li>
+                <li>
+                    <br class="hidden--md hidden--lg hidden--xl"><a href="/privacy#ToCVI">Your California Privacy Rights</a>
+                </li>
+                <li>&nbsp; | &nbsp;</li>
+                <li>
+                    <a href="/privacy#ToCV">Ad Choices</a>
+                </li>
+                <li class="d-block mt-3">
+                    <button id="ot-sdk-btn" type="button" role="button" class="ot-sdk-show-settings btn btn--primary">
+                        Do Not Sell My Personal Information
+                    </button>
+                </li>
+            </ul>
+            <p>&copy; 2023 American City Business Journals. All rights reserved. Use of and/or
+                registration on any portion of this site constitutes acceptance of our
+                <a href="/useragreement">User Agreement</a> (updated January 24, 2023)
+                and <a href="/privacy">Privacy Policy</a> (updated January 24, 2023).
+                The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
+                except with the prior written permission of American City Business Journals.</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    function sticky_relocate() {
+            var window_top = $(window).scrollTop() ;
+            var footer_top = $(".footer").offset().top - 30;
+            var div_top = $('#sticky-anchor').offset().top;
+            var div_height = $(".sidebar").height();
+            var leftHeight = $('.primary').height();
+
+            if (window_top + div_height > footer_top){
+                $('.sidebar').removeClass('stick');
+                $('.sidebar').addClass('abs');
+                $('.secondary').css('min-height', leftHeight + 'px');
+            }
+            else if (window_top > div_top) {
+                $('.sidebar').addClass('stick');
+                $('.sidebar').removeClass('abs');
+            } else {
+                $('.sidebar').removeClass('stick');
+                $('.sidebar').removeClass('abs');
+            }
+        }
+
+        $(function () {
+            $(window).on('scroll', function(){
+                if( $('#sticky-anchor').length )         // use this if you are using class to check
+                {
+                    sticky_relocate();
+                }
+            });
+
+        });
+
+</script>
+<!--  Begin Lotame Lightning Tag  -->
+        <script type="text/javascript">
+            ! function() {
+                window.googletag = window.googletag || {};
+                window.googletag.cmd = window.googletag.cmd || [];
+                var targetingKey = 'lotame';
+                var lotameClientId = '3620';
+                var audLocalStorageKey = 'lotame_' + lotameClientId + '_auds';
+                var storedAuds = '';
+
+                // Immediately get audiences from local storage and get them loaded
+                try {
+                    storedAuds = window.localStorage.getItem(audLocalStorageKey) || '';
+
+                    if (storedAuds && (! window.gpt || ! gpt.hasDefinedSlot)) {
+                        googletag.cmd.push(function() {
+                            window.googletag.pubads().setTargeting(targetingKey, storedAuds.split(','));
+                        });
+                    }
+                } catch(e) {
+                }
+
+                // Callback when targeting audience is ready to push latest audience data
+                var audienceReadyCallback = function (profile) {
+                    if(storedAuds) {
+                        return;
+                    }
+
+                    // Get audiences as an array
+                    var lotameAudiences = profile.getAudiences() || [];
+
+                    // Set the new target audiences for call to Google
+                    if((! window.gpt || ! gpt.hasDefinedSlot)) {
+                        googletag.cmd.push(function() {
+                            window.googletag.pubads().setTargeting(targetingKey, lotameAudiences);
+                        });
+                    }
+                };
+
+                // Lotame Config
+                var lotameTagInput = {
+                    data: {
+                                                thirdParty: {
+                            namespace: 'BZJR',
+                            value: 'VBugH3PVkjsWHfi09n8gwA0f389a0c'
+                        }
+                                            },
+                    config: {
+                        clientId: Number(lotameClientId),
+                        audienceLocalStorage: audLocalStorageKey,
+                        onProfileReady: audienceReadyCallback
+                    }
+                };
+
+                // Lotame initialization
+                var lotameConfig = lotameTagInput.config || {};
+                var namespace = window['lotame_' + lotameConfig.clientId] = {};
+                namespace.config = lotameConfig;
+                namespace.data = lotameTagInput.data || {};
+                namespace.cmd = namespace.cmd || [];
+            }();
+        </script>
+        <script async type="text/javascript" src="https://tags.crwdcntrl.net/lt/c/3620/lt.min.js"></script>
+<!--  End Lotame -->
+<script type="text/javascript">
+    //<!--
+var aaData = {
+    "skin": "",
+    "type": "homepage",
+    "contentArticlePageName": "bizjournals | home",
+    "contentArticleTitle": "bizjournals | home",
+    "contentCity": "bizjournals",
+    "contentDescription": "-",
+    "contentFindingMethod": "-",
+    "contentHierarchy": "bizjournals | home",
+    "contentHostname": "bizjournals.com",
+    "contentId": "22206089",
+    "contentIsPremium": "",
+    "contentPagePath": "bizjournals | home",
+    "contentPrimaryCategory": "bizjournals | home",
+    "contentPublication": "the business journals",
+    "contentPublishedAt": "",
+    "contentSecondaryCategory": "bizjournals | home",
+    "contentSponsor": "-",
+    "contentType": "bizjournals | home",
+    "contentUrl": "bizjournals.com\/bizjournals\/",
+    "contentWordCount": "0",
+    "verifiedCompanies": "",
+    "verifiedPeople": "",
+    "market": "bizjournals",
+    "pageName": "Bizjournals - Business News",
+    "publishDate": "2023\/02\/13 Monday",
+    "publishTime": "2023\/02\/13 Monday",
+    "page_type": "homepage",
+    "articleType": "homepage",
+    "isSlideshow": "no",
+    "isSlideshowOnly": "no",
+    "isStory": "no",
+    "isIndex": "yes",
+    "channel": "Bizjournals - Business News",
+    "section2": "Home Page",
+    "path": "\/"
+}
+    //-->
+</script>
+<script type="text/javascript">
+    window.__page__ = {
+        id: null,
+        market: 'bizjournals',
+        isNative: false,
+        isDigitalMarket: true,
+        cxenseRecentNewsModule: 'd97c3aa2de0bd5907d2c672a5e3cb5ab71a9aa55',
+        cxenseYourNewsModule: 'c0850e54197bccc9dbc13d7fe7189684d092990e',
+        digitalMarketModule: []    };
+    window.__components__ = Object.assign(window.__components__ || {}, {
+        bot: {
+            api: "/api/v1/page/article/most-recent?channel=0&limit=10",
+            channelId: "0",
+        },
+        rr: {
+            api: "/api/v1/page/article/most-read?limit=10",
+            clickTrack: "HPT:HP2022",
+            component: "article-item",
+            listTitle: "Trending"
+        }
+    });
+</script>
+    <script type="text/javascript">
+        var dtmUrl = '';
+var script = document.createElement('script');
+if (document.location.hostname.indexOf('bizjournals.com') > -1) {
+dtmUrl = '//assets.adobedtm.com/b944018a7173/71fd789d535d/launch-5eefd86c5137.min.js'; //prod
+} else if (document.location.hostname.indexOf('bizj-staging.com') > -1) {
+dtmUrl = '//assets.adobedtm.com/b944018a7173/71fd789d535d/launch-896aebf798b5-staging.min.js'; //staging
+} else if (document.location.hostname.indexOf('feature-an-26') > -1) {
+dtmUrl = '//assets.adobedtm.com/b944018a7173/71fd789d535d/launch-af8c7ce53748-development.min.js' //dev
+} else {
+dtmUrl = '//assets.adobedtm.com/b944018a7173/71fd789d535d/launch-5eefd86c5137.min.js'; //failover to prod
+}
+script.type = 'text/javascript';
+script.async = true;
+script.src = dtmUrl;
+document.getElementsByTagName('head')[0].appendChild(script);    </script>
+
+<script src="https://assets.bizjournals.com/static/js/app/cxense.js?v=1676307890"></script>
+<script src="https://assets.bizjournals.com/static/js/app/adobe.js?v=1676307890"></script>
+<script>
+    const __CX_CFG__ = window.__CX_CFG__ = {
+        siteId: 1136312745665585376,
+        enabled: true    }
+
+    var siteId = "1136312745665585376";
+    var cxense = new CxenseProvider();
+    var hasRunCxenseInvokeEvent = false;
+    var hasRunAdobeInvokeEvent = false;
+    var adBlockerFetched = false;
+    InvokePageViewEvent.prototype = RunWidget.prototype = SendConversionEvent.prototype = CheckForAdBlocker.prototype = cxense;
+    if (!window.adDetectionHasRun) {
+        new CheckForAdBlocker();
+        window.adDetectionHasRun = true;
+    }
+
+    document.addEventListener('userObjectIsSet', function (e) {
+        if (!hasRunCxenseInvokeEvent) {
+            new InvokePageViewEvent(e.detail, "production");
+            hasRunCxenseInvokeEvent = true;
+                    }
+    
+        //#AN-26
+        if (!hasRunAdobeInvokeEvent) {
+            new InvokePageViewEventAdobe(e.detail, "production");
+            hasRunAdobeInvokeEvent = true;
+        }
+
+    });
+
+    
+    
+</script>
+<script src="https://assets.bizjournals.com/dist/js/vendor.min.js?v=1676307890" defer></script>
+
+    <script src="https://cdn.p-n.io/pushly-sdk.min.js?domain_key=ffJ0AihhAKphQm1RKIegV9uafnfvMHaiya0X" defer></script>
+    <script>
+        window.PushlySDK = window.PushlySDK || [];
+
+        const user = JSON.parse(localStorage.getItem('bizj.user'));
+        const isPremium = Boolean(user && user.type === 'premium');
+
+        function pushly() {
+            window.PushlySDK.push(arguments);
+        }
+
+        pushly('load', {
+            domainKey: 'ffJ0AihhAKphQm1RKIegV9uafnfvMHaiya0X',
+            externalId: 'VBugH3PVkjsWHfi09n8gwA0f389a0c',
+            sw: '/static/js/pushly-sdk-worker.js',
+        });
+
+        pushly('profile', {
+            'is_paying_subscriber': isPremium,
+        });
+
+    </script>
+
+<script src="https://assets.bizjournals.com/dist/js/homepage-v4.min.js?v=1676307890" defer></script>
+        <script>
+            if (performance && performance.mark) performance.mark('page_end');
+        </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b05300bd59","applicationID":"124215953","transactionName":"MVMGZhYEXUUEVRZYXAgZJ0cXEVxbSlIHV1ITWhAdFARUU0pEB19XA0REGiwKXlMVVwVUEzACTQ==","queueTime":0,"applicationTime":58,"atts":"HRQREF4eThpHV0ALSBtL","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
