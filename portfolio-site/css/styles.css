@@ -51,7 +51,8 @@ html, body {
 .navbar_link, .navbar_home_link {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 350;
+	letter-spacing: 0.8px;
 	text-decoration: none;
 	padding: 5px 0px 0px 0px;
 }
@@ -141,7 +142,7 @@ html, body {
 	font-style: normal;
 	line-height: 1.4;
 	font-weight: 700;
-	font-size: 0.9em;
+	font-size: 0.83em;
 	color: white;
 }
 .sample_title_border {
