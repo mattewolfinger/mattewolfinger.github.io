@@ -1,0 +1,679 @@
+/* OFFICER STYLING */
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: left;
+	justify-content: space-between;
+	width: 100%;
+}
+.item {
+	margin-bottom: 10px;
+}
+html, body {
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: rgba(48,95,124,1);
+    color: rgb(54, 53, 55);
+	margin: 0px;
+	padding: 0px;
+}
+body {
+    background-color: rgba(48,95,124,1);
+    max-width: 110em;
+    padding: 0px 73.33px 0.1em;
+    margin: 0px auto;
+}
+* {
+	box-sizing: border-box;
+}
+h1 {
+	color:rgb(54, 53, 55);
+	font-size: 18pt;
+}
+h2 {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(54, 53, 55);
+    letter-spacing: 0.6px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: left;
+    margin-left: -2px;
+    margin-bottom: -8px;
+    letter-spacing: 0.4px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: -6px;
+    letter-spacing: 0.6px;
+}
+h5 {
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: -6px;
+}
+li {
+    padding-bottom: 20px;
+}
+p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 12pt;
+}
+.button {
+    background-color: transparent;
+    border-radius: 0.375em;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 0.8em;
+    font-weight: 640;
+    height: 3.5em;
+    letter-spacing: 0.075em;
+    line-height: 3.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+#rights-button {
+    box-shadow: inset 0 0 0 2px #3B5E79;
+    width: 66%;
+    padding: 0 20px;
+    background-color: #3B5E79;
+    color: white;
+}
+#report-button {
+    box-shadow: inset 0 0 0 2px #8C3737;
+    width: 32%;
+    background-color: #8C3737;
+    color: white;
+}
+#rights-button:hover {
+    box-shadow: inset 0 0 0 2px #3B5E79;
+    color: white;
+    font-weight: 900;
+    background-color: #3B5E79
+}
+#report-button:hover {
+    box-shadow: inset 0 0 0 2px #8C3737;
+    color: white;
+    font-weight: 900;
+    background-color: #8C3737;
+}
+#alleg-head {
+    font-weight: 420;
+    font-size: 20pt;
+    border-bottom: 4px solid #A65D5D;
+    padding-bottom: 8px;
+    letter-spacing: 0.4px;
+    width: 24%;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+}
+#headshot img {
+    display: flex;
+    flex-direction: column;
+    margin-left: -20%;
+    width: 130px;
+    height: auto;
+}
+#complaints-container {
+    padding-top: 3.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 16%;
+    margin-bottom: 10px;
+    flex: 1 0 60%;
+}
+
+/* FOOTER */
+#Footer {
+	background-color: rgba(38,38,38,1);
+	width: 100%;
+	color: white;
+	height: auto;
+	line-height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	position: relative;
+}
+#Footer ul {
+    color: #ffffff;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 20px;
+	padding-top: 1.4%;
+	padding-bottom: 1.5%;
+	padding-left: 6.5%;
+	width: 84%;
+}
+#Footer li {
+    background-color: rgba(38,38,38,1);
+    width: 84%;
+    font-size: 10pt;
+    list-style-type: none;
+    color: white;
+    height: auto;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    padding-bottom: 0px;
+}
+#Footer .fa {
+    margin-top: 60px;
+    padding: 28px;
+    font-size: 26px;
+    width: 26px;
+    text-align: center;
+    border-radius: 50%;
+}
+.fa:link {
+	color: white;
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+#officer-name {
+    line-height: 8px;
+    font-weight: 540;
+    font-size: 18pt;
+    padding-bottom: 6px;
+}
+#officer-title {
+    font-size: 14pt;
+}
+#badge-id{
+    margin-bottom: -8px;
+    font-size: 12pt;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+#officer-active {
+    color: #000000;
+    font-size: 11pt;
+    margin-bottom: -4px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+}
+#counts {
+    font-size: 12.5pt;
+    letter-spacing: 0.5px;
+}
+
+/* NAV BAR */
+.topnav {
+	overflow: hidden;
+	width: 100%;
+	flex-direction: row;
+	border-bottom: 4px solid white;
+	padding: 54px 0px 14px;
+}
+.topnav img {
+	margin-bottom: -24px;
+	display: flex;
+	width: 14%;
+	height: auto;
+}
+.topnav a {
+	float: right;
+	display: block;
+	text-align: center;
+	padding-right: 16px;
+	font-size: 12.8px;
+	color: white;
+	font-family: "Helvetica Neue", serif;
+	border-bottom: 0px;
+}
+.topnav a:hover {
+	color: black;
+}
+.topnav .icon {
+	display: none;
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+.allegation {
+    border-bottom: rgba(196, 200, 202, 0.568) 1px solid;
+    border-left: none;
+    padding-left: 4%;
+    padding-bottom: 0px;
+}
+#no-allegations {
+    margin-top: 4%;
+    margin-left: 10%;
+    padding-top: 16%;
+    padding-right: 40%;
+    font-style: italic;
+    background-image: url("./images/badge-no-alleg.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    color: #262626;
+    opacity: 0.7;
+    padding-bottom: 28%;
+    font-size: 22pt;
+}
+#profile {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    line-height: 16px;
+    align-self: flex-start;
+    color: rgb(54, 53, 55);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: left;
+    padding-top: 2%;
+    padding-left: 6%;
+    padding-bottom: 2.5%;
+}
+#cop-info {
+    flex: 1 0 45%;
+}
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:active {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+#Main {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 45px;
+    padding-bottom: 0px;
+}
+#main--container {
+    flex-direction: row;
+    background-color: white;
+    margin-top: 3.2em;
+    padding-bottom: 64px;
+}
+.allegation--detail {
+    font-size: 14pt;
+    margin-bottom: -18px;
+    width: 100%;
+}
+#complaints-container {
+    padding-right: 6%;
+    padding-left: 4%;
+    margin-bottom: 2px;
+    line-height: 24px;
+    flex: 1 0 55%;
+}
+.allegation--data img {
+    width: 1%;
+    height: 100%;
+    flex: 0 1 30px;
+    padding-right: 0.8%;
+    cursor: pointer;
+}
+
+/* #FINDING-FLAGS */
+.finding--data {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.finding--data img {
+    width: 30px;
+    flex: 0 1 30px;
+    height: 100%;
+}
+.finding--data span {
+    font-size: 14pt;
+    margin-left: 2%;
+    letter-spacing: 0.4px;
+}
+.allegation--data {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+.allegation--data img {
+    width: 1%;
+    height: 100%;
+    flex: 0 1 30px;
+    padding-right: 0.8%;
+    cursor: pointer;
+}
+.allegation--data span {
+    font-size: 15pt;
+    color: black;
+    letter-spacing: 0.5px;
+    padding-right: 2%;
+}
+#alleg-image {
+    position: fixed;
+    bottom: 20px;
+    right: 170px;
+}
+#alleg-image img {
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+#alleg-image img:hover {
+    filter: drop-shadow(0 0 0.4rem rgba(48,95,124,1));
+}
+
+/* SIDE NAV MENU */
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-left: 3px solid rgb(44, 44, 44);
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    }
+.sidenav details {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14pt;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    list-style-type: none;
+}
+.sidenav summary {
+    font-size: 14pt;
+    color: black;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+    padding-right: 10%;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+    padding-bottom: 3%;
+    }
+.sidenav details {
+    font-size: 11pt;
+    margin-left: 12px;
+    padding-right: 23%;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    line-height: 24px;
+    padding-bottom: 20px;
+    }
+.sidenav summary:hover {
+    color: rgba(48,95,124,1);
+    cursor: pointer;
+    }
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+    }
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+@media (max-width: 550px) { 
+    body {
+        background-color: rgba(48,95,124,1);
+        max-width: 110em;
+        padding: 0px;
+        margin: 0px auto;
+    }
+    #headshot img {
+        display: flex;
+        flex-direction: column;
+        margin-left: -18%;
+        margin-bottom: -29px;
+        width: 98px;
+        height: auto;
+    }
+	#Footer li {
+		background-color: rgba(38,38,38,1);
+		width: 84%;
+		font-size: 10pt;
+		list-style-type: none;
+		color: white;
+		height: auto;
+		letter-spacing: 0.4px;
+		line-height: 32px;
+		padding-bottom: 0px;
+	}
+	#Footer .fa {
+        margin-top: 42px;
+		padding: 20px;
+		font-size: 20px;
+		width: 10px;
+		text-align: center;
+		border-radius: 50%;
+	}
+	#Footer ul {
+		padding-top: 2%;
+		padding-bottom: 1.5%;
+		width: 74%;
+	}
+    #profile {
+        flex-wrap: nowrap;
+        padding-top: 3.5%;
+        border-bottom: 0.01px solid black;
+        padding-left: 10%;
+        padding-bottom: 3%;
+        background-color: white;
+    }
+    #officer-name {
+        flex-wrap: wrap;
+        font-size: 13pt;
+        line-height: 20px;
+        margin-left: -2px;
+        margin-top: 0px;
+        margin-bottom: -2px;
+    }
+    #officer-title {
+        font-size: 10pt;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: -12px;
+        padding-bottom: 0px;
+    }
+    #badge-id {
+        margin: 0;
+        font-size: 9pt;
+        list-style: none;
+        letter-spacing: 0.2px;
+        padding-bottom: 1%;
+    }
+    #officer-active {
+        font-size: 9pt;
+    }
+    #counts {
+        font-size: 10pt;
+        margin-top: -14px;
+        margin-left: 0px;
+        letter-spacing: 0.3px;
+        margin-bottom: 0px;
+    }
+    #report-button {
+        box-shadow: inset 0 0 0 2px #8C3737;
+        color: white;
+        font-weight: 900;
+        background-color: #8C3737;
+        width: 50%;
+        font-size: 8pt;
+        margin-left: -112px;
+        height: auto;
+        padding-bottom: 0%;
+    }
+    #rights-button {
+        box-shadow: inset 0 0 0 2px #3B5E79;
+        color: white;
+        font-weight: 900;
+        background-color: #3B5E79;
+        font-size: 8pt;
+        width: 84%;
+        height: auto;
+        padding-bottom: 0%;
+    }
+    #main--container {
+        flex-direction: column;
+        margin-top: 1em;
+        padding-bottom: 6%;
+    }
+    #alleg-head {
+        font-weight: 420;
+        font-size: 17pt;
+        border-bottom: 3px solid #A65D5D;
+        padding-bottom: 5px;
+        letter-spacing: 0.8px;
+        width: 44%;
+        margin-top: 6px;
+        margin-left: 14px;
+        margin-bottom: 6px;
+    }
+    .finding--data {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1.5%;
+        padding-top: 4%;
+    }
+    .finding--data img {
+        width: 26px;
+        flex: 0 1 20px;
+        height: 100%;
+        margin-right: 4px;
+    }
+    .finding--data span {
+        font-size: 0.9em;
+        margin-left: 2%;
+        letter-spacing: 0.4px;
+    }
+    .allegation--data {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3%;
+    }
+    .allegation--data img {
+        width: 1%;
+        height: 100%;
+        flex: 0 1 30px;
+        padding-right: 0.8%;
+        cursor: pointer;
+    }
+    .allegation--data span {
+        font-size: 1em;
+        color: black;
+        letter-spacing: 0.7px;
+        padding-right: 2%;
+        line-height: 22px;
+    }
+    #alleg-image {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+    #alleg-image img {
+        width: 40px;
+        height: 100%;
+        cursor: pointer;
+    }
+    p {
+        margin-top: 4px;
+        font-size: 11.5pt;
+    }
+    h5 {
+        margin-top: 4px;
+        font-size: 8pt;
+    }
+    .topnav {
+		overflow: hidden;
+		width: 97%;
+		flex-direction: row;
+		border-bottom: 2px solid white;
+		padding: 0.4em 4px 1em;
+		margin-left: 5px;
+	}
+	.topnav.responsive img {
+		position: relative;
+		margin-top: -4%;
+		padding-bottom: 9%;
+		padding-left: 0px;
+	}
+	.topnav.responsive a {
+		position: relative;
+		padding-top: 3%;
+		padding-left: 10px;
+		font-size: 1em;
+	}
+	.topnav img {
+		margin-bottom: -34px;
+		padding-left: 8px;
+		display: flex;
+		width: 48%;
+		height: auto;
+	}
+}
+@media (min-width: 551px) {
+    #Main {
+        width: 70%;
+        margin: 0 auto 0 auto;
+        padding-top: 0px;
+        padding-left: 40px;
+        padding-right: 45px;
+        padding-bottom: 0px;
+    }   
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
