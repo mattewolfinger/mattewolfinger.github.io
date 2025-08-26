@@ -325,12 +325,11 @@ details[open] summary {
 .topnav a {
 	float: right;
 	display: inline;
-	font-weight: 400;
 	text-align: center;
 	padding-right: 16px;
 	font-size: 12.8px;
 	color: white;
-	font-family: "Helvetica Neue", sans-serif;
+	font-family: "Helvetica Neue", serif;
 	border-bottom: 0px;
 }
 .topnav a:hover {
