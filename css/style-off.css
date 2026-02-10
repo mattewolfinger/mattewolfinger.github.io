@@ -11,7 +11,7 @@
 	margin-bottom: 10px;
 }
 html, body {
-	font-family: "Helvetica Neue", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	background-color: rgba(48,95,124,1);
     color: rgb(54, 53, 55);
 	margin: 0px;
@@ -75,7 +75,7 @@ p {
     border: 0;
     cursor: pointer;
     display: inline-block;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 0.8em;
     font-weight: 640;
     height: 3.5em;
@@ -234,9 +234,9 @@ p {
 	display: block;
 	text-align: center;
 	padding-right: 16px;
-	font-size: 12.8px;
+	font-size: 17px;
 	color: white;
-	font-family: "Helvetica Neue", serif;
+	font-family: "Helvetica", serif;
 	border-bottom: 0px;
 }
 .topnav a:hover {

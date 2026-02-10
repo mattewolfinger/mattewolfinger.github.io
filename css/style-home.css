@@ -80,7 +80,7 @@ p {
 	padding-right: 54%;
 }
 #search--preview p {
-	font-size: 11px;
+	font-size: 13px;
 	margin-top: -6px;
 	padding-right: 20%;
 	margin-bottom: 10px;
@@ -327,7 +327,7 @@ details[open] summary {
 	display: inline;
 	text-align: center;
 	padding-right: 16px;
-	font-size: 17.5px;
+	font-size: 17px;
 	color: white;
 	font-family: "Helvetica", serif;
 	border-bottom: 0px;
@@ -713,7 +713,7 @@ details[open] summary {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size: 10px;
+		font-size:12px;
 		padding-right: 2%;
 		margin-bottom: -2px;
 	}
