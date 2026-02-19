@@ -80,7 +80,7 @@ p {
 	padding-right: 54%;
 }
 #search--preview p {
-	font-size: 13px;
+	font-size: 14.5px;
 	margin-top: -6px;
 	padding-right: 20%;
 	margin-bottom: 10px;
@@ -100,7 +100,7 @@ input {
 	stroke-miterlimit: 10;
 	shape-rendering: auto;
 	width: 100%;
-	font-size: 8pt;
+	font-size: 10.5pt;
 	height: 40px;
 	text-indent: 11px;
 }
@@ -114,7 +114,7 @@ Button {
 	margin-top: 12px;
 	text-indent: -16px;
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: bold;
 	border-radius: 15px;
 	border: none;
@@ -135,13 +135,13 @@ h1 {
 	flex-direction: row;
 }
 Aside {
+	width: 80%;
 	margin-top: 3%;
-	margin-left: 2px;
 	margin-bottom: 5%;
 	padding-right: 4%;
-	font-size: 12px;
+	font-size: 14.5px;
 	text-align: left;
-	line-height: 21px;
+	line-height: 24px;
 	color: #ffffff;
 	letter-spacing: 0.2px;
 }
@@ -267,7 +267,6 @@ details {
 	margin-right: 20%;
 	width: 60%;
 	line-height: 17px;
-	display: flex;
 	letter-spacing: 0.8px;
 }
 summary {
@@ -276,6 +275,7 @@ summary {
 	font-weight: bold;
 	margin: -.5em -.5em 0;
 	padding: 1em;
+	padding-left: .2em;
 	line-height: 22px;
 }
 summary {
@@ -288,14 +288,11 @@ summary:hover {
 	color: rgba(48,95,124,1);
 	}
 details[open] {
-	font-size: 10pt;
+	font-size: 9pt;
 	line-height: 22px;
-	padding: .5em;
-	margin-bottom: 0em;
 }
 details[open] summary {
-	border-bottom: 1px solid #aaa;
-	margin-bottom: .5em;
+	margin-bottom: .1em;
 }
 #error {
 	margin-top: 1px;
@@ -327,7 +324,7 @@ details[open] summary {
 	display: inline;
 	text-align: center;
 	padding-right: 16px;
-	font-size: 17px;
+	font-size: 16px;
 	color: white;
 	font-family: "Helvetica", serif;
 	border-bottom: 0px;
@@ -570,17 +567,16 @@ details[open] summary {
 		padding: 0em 1em 4.2em;
 	}
 	#Details-Box {
-		padding-left: 6%;
-		padding-right: 20%;
+		padding-left: 0%;
+		padding-right: 18%;
 	}
 	details {
 		border: 0.8px solid black;
 		padding: 0.5em 0.6em 0px;
-		font-size: 12px;
-		line-height: 17px;
+		font-size: 11.5px;
+		line-height: 16px;
 		margin-top: 0px;
 		width: 90%;
-		display: flex;
 		letter-spacing: 0.8px;
 	}  
 	#Hat-section {
@@ -617,21 +613,25 @@ details[open] summary {
 	summary {
 		font-size: 12px;
 		margin: -0.4em -0.4em 0px;
-		padding: 0.7em
+		padding: 0.7em;
+		width: 110%;
 	}
 	#Search-Duo {
 		width: 120%;
-		margin-left: -68px;
-		align-content: center;
+		margin-left: -70px;
+		align-content: left;
 		padding-top: 0px;
 	}
 	input {
 		height: 46px;
-		font-size: 8.5pt;
+		font-size: 9pt;
+		align-content: left;
+		padding-left: -10%;
 	}
 	Button {
 		height: 46px;
 		font-size: 15px;
+		padding-left: -10%;
 	}
 	#About {
 		max-width: 1400px;
@@ -643,11 +643,11 @@ details[open] summary {
 	}
 	Aside {
 		width: 100%;
-		font-size: 7pt;
-		margin-left: 6px;
+		font-size: 9pt;
 		text-align: left;
+		padding-left: -10%;
 		padding-bottom: 20px;
-		line-height: 16px;
+		line-height: 20px;
 		z-index: 100 !important;
 	}
 	#Header {
@@ -713,7 +713,7 @@ details[open] summary {
 		letter-spacing: 0.4px;
 	}
 	#search--preview p {
-		font-size:12px;
+		font-size: 13px;
 		padding-right: 2%;
 		margin-bottom: -2px;
 	}

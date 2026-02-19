@@ -65,7 +65,7 @@ Aside {
 	margin-top: 2%;
 	padding-right: 29%;
 	text-align: left;
-    font-size: 12pt;
+    font-size: 14px;
 	line-height: 24px;
 	color: white;
 	letter-spacing: 0.2px;
@@ -262,7 +262,7 @@ h2 {
 	display: block;
 	text-align: center;
 	padding-right: 16px;
-	font-size: 17px;
+	font-size: 16px;
 	color: white;
 	font-family: "Helvetica", serif;
 	border-bottom: 0px;
@@ -325,12 +325,12 @@ h2 {
 		padding-left: 10%;
 		padding-bottom: 3px;
 	}
-	Aside {
+	aside {
 		margin-top: 2%;
 		margin-bottom: 0%;
 		padding-right: 7%;
 		text-align: left;
-		font-size: 9pt;
+		font-size: 0.5em;
 		line-height: 22px;
 		color: white;
 		letter-spacing: 0.2px;
