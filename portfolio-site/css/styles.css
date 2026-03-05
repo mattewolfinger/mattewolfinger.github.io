@@ -5,15 +5,25 @@ html, body {
 .main-box {
 	height: 100%;
 	min-height: 100%;
-	width: 80%;
-	max-width: 1200px;
+	width: 90%;
+	max-width: 1300px;
 	margin: 0 auto;
-	font-size: 1em;
+	font-size: 1.1em;
 	font-family: 'Helvetica', sans-serif;
 	font-style: normal;
 	background-color: #1a1a1a;
 	color: #ffffff;
 }
+a:not(.sample_link,.navbar_link,.navbar_home_link,.section_more_link) {
+	color:#7eaafe;
+	font-weight:400;
+	text-decoration:none;
+}
+a:hover:not(.sample_link,.navbar_home_link) {
+	border-bottom: solid 3px #7eaafe;
+	transition: border-bottom ease-in-out 0.1s;
+}
+
 .navbar {
 	margin-bottom: 20px;
 }
@@ -55,38 +65,36 @@ html, body {
 	letter-spacing: 0.8px;
 	text-decoration: none;
 	padding: 5px 0px 0px 0px;
-}
+} 
 .navbar_link_active {
 	color: #1a1a1a;
-	border-bottom: solid 3px #BF4834;
 }
 .navbar_home_link:hover {
-	color: #BF4834;
+	color: #7eaafe;
 }
 .navbar_link:hover {
-	border-bottom: solid 3px #BF4834;
-	transition: border-bottom ease-in-out 0.1s;
+	color: #7eaafe;
 }
 .preface {
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 }
 .preface_text {
 	max-width: 820px;
 	font-size: 1em;
 	font-weight: 400;
 	line-height: 1.75;
-	margin: 0px 0px 10px 0px;
+	margin: 0;
 }
 .preface_link {
 	color: #1a1a1a;
-	border-bottom: solid 3px #BF4834;
+	border-bottom: solid 3px #7eaafe;
 	transition: border-bottom ease-in-out 0.1s;
 	text-decoration: none;
 	font-weight: 700;
 	margin: 0;
 }
 .preface_link:hover {
-	border-bottom: solid 3px #BF4834;
+	border-bottom: solid 3px #7eaafe;
 }
 .section_summary {
 	display: block;
@@ -105,7 +113,7 @@ html, body {
 	font-size: 0.9em;
 	color: #ffffff;
 	text-decoration: none;
-	border-bottom: solid 2px #e5e5e5;
+	border-bottom: solid 3px #e5e5e5;
 	transition: border-bottom ease-in-out 0.1s;
 }
 .section_samples {
@@ -136,7 +144,7 @@ html, body {
 	color: #191919;
 }
 .sample_link:hover .sample_title_border, .sample_titler_border, .section_more_link:hover {
-	border-bottom: solid 2px #BF4834;
+	border-bottom: solid 3px #7eaafe;
 	color: #ffffff;
 }
 .sample_link:hover .sample_image {
@@ -147,7 +155,7 @@ html, body {
 	text-transform: uppercase;
 	font-family: 'Helvetica', sans-serif;
 	font-style: normal;
-	line-height: 1.4;
+	line-height: 1.7;
 	font-weight: 700;
 	font-size: 0.83em;
 	color: white;
@@ -180,6 +188,7 @@ html, body {
 }
 .sample_desc {
 	width: 100%;
+	padding-top: 8px;
 }
 .sample_text {
 	margin: 3px 0 0 0;
@@ -192,11 +201,11 @@ html, body {
 	font-weight: 600;
 	color: inherit;
 	text-decoration: none;
-	border-bottom: solid 3px #BF4834;
+	border-bottom: solid 3px #7eaafe;
 	transition: border-bottom ease-in-out 0.1s;
 }
 .sample_text_link:hover {
-	border-bottom: solid 3px #BF4834;
+	border-bottom: solid 3px #7eaafe;
 }
 .sample_skills {
 	font-size: 0.8em;
