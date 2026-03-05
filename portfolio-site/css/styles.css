@@ -118,7 +118,7 @@ a:hover:not(.sample_link,.navbar_home_link) {
 }
 .section_samples {
 	width: 100%;
-	margin-top: 18px;
+	margin-top: 13px;
 	flex-wrap: wrap;
 	display: flex;
 	align-content: space-between;
